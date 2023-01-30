@@ -1,0 +1,1654 @@
+[2023-01-11T03:04:30.163Z] @microsoft/vscode-dev-containers-cli 0.78.0.
+[2023-01-11T03:04:30.163Z] Start: Resolving Remote
+[2023-01-11T03:04:30.166Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2023-01-11T03:04:30.193Z] Stop (27 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2023-01-11T03:04:30.195Z] Start: Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+[2023-01-11T03:04:30.397Z] @devcontainers/cli 0.26.0. Node.js v14.21.1. linux 5.4.0-1098-azure x64.
+[2023-01-11T03:04:30.397Z] Start: Run: docker buildx version
+[2023-01-11T03:04:30.507Z] Stop (110 ms): Run: docker buildx version
+[2023-01-11T03:04:30.508Z] github.com/docker/buildx 0.9.1+azure-2 ed00243a0ce2a0aee75311b06e32d33b44729689
+[2023-01-11T03:04:30.508Z] 
+[2023-01-11T03:04:30.508Z] Start: Resolving Remote
+[2023-01-11T03:04:30.515Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2023-01-11T03:04:30.538Z] Stop (23 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2023-01-11T03:04:30.539Z] Start: Run: docker inspect --type image ghcr.io/cs50/codespace:f16c7548115aed264f416b1ac4959cf176d66190
+[2023-01-11T03:04:30.560Z] Stop (21 ms): Run: docker inspect --type image ghcr.io/cs50/codespace:f16c7548115aed264f416b1ac4959cf176d66190
+[2023-01-11T03:04:31.119Z] local container features stored at: /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/node_modules/vscode-dev-containers/container-features
+[2023-01-11T03:04:31.120Z] Start: Run: tar --no-same-owner -x -f -
+[2023-01-11T03:04:31.155Z] Stop (35 ms): Run: tar --no-same-owner -x -f -
+[2023-01-11T03:04:31.157Z] Start: Run: docker -v
+[2023-01-11T03:04:31.181Z] Stop (24 ms): Run: docker -v
+[2023-01-11T03:04:31.181Z] Start: Run: docker events --format {{json .}} --filter event=start
+[2023-01-11T03:04:31.184Z] Start: Starting container
+[2023-01-11T03:04:31.185Z] Start: Run: docker run --sig-proxy=false -a STDOUT -a STDERR --mount type=bind,src=/var/lib/docker/codespacemount/workspace,dst=/workspaces --mount source=/root/.codespaces/shared,target=/workspaces/.codespaces/shared,type=bind --mount source=/var/lib/docker/codespacemount/.persistedshare,target=/workspaces/.codespaces/.persistedshare,type=bind --mount source=/.codespaces/agent/mount,target=/.codespaces/bin,type=bind --mount source=/mnt/containerTmp,target=/tmp,type=bind --mount type=bind,src=/.codespaces/agent/mount/cache,dst=/vscode -l Type=codespaces -e CODESPACES=true -e ContainerVersion=12 -e RepositoryName=122420533 --label ContainerVersion=12 --hostname codespaces-bd67d6 --add-host codespaces-bd67d6:127.0.0.1 --cap-add sys_nice --network host --entrypoint /bin/sh -l devcontainer.metadata=[{"postCreateCommand":"/opt/cs50/bin/postCreateCommand","customizations":{"vscode":{"extensions":["/opt/cs50/extensions/cs50-0.0.1.vsix","/opt/cs50/extensions/phpliteadmin-0.0.1.vsix","cs50.ddb50","cs50.extension-uninstaller","cs50.lab50","cs50.markdown50","cs50.vscode-presentation-mode","ms-python.python","ms-vscode.cpptools","ms-vscode.hexeditor","ms-vsliveshare.vsliveshare-pack","redhat.java","tomoki1207.pdf","vscjava.vscode-java-debug","vsls-contrib.gitdoc"],"settings":{"C_Cpp.autocomplete":"Disabled","C_Cpp.codeFolding":"Disabled","C_Cpp.debugShortcut":false,"C_Cpp.dimInactiveRegions":false,"C_Cpp.doxygen.generateOnType":false,"C_Cpp.enhancedColorization":"Enabled","C_Cpp.errorSquiggles":"Disabled","breadcrumbs.enabled":false,"editor.autoClosingQuotes":"never","editor.colorDecorators":false,"editor.emptySelectionClipboard":false,"editor.folding":false,"editor.foldingHighlight":false,"editor.guides.indentation":false,"editor.hover.enabled":false,"editor.lightbulb.enabled":false,"editor.matchBrackets":"never","editor.minimap.enabled":false,"editor.occurrencesHighlight":false,"editor.parameterHints.enabled":false,"editor.quickSuggestions":{"comments":"off","other":"off","strings":"off"},"editor.renderWhitespace":"selection","editor.selectionHighlight":false,"editor.semanticTokenColorCustomizations":{"[GitHub Dark Default]":{"rules":{"type":"#FF7E76"}},"[GitHub Light Default]":{"rules":{"type":"#D2343F"}}},"editor.suggestOnTriggerCharacters":false,"explorer.compactFolders":false,"extension-uninstaller.uninstall":["github.copilot","github.copilot-nightly","ms-toolsai.vscode-jupyter-cell-tags","tabnine.tabnine-vscode"],"extensions.ignoreRecommendations":true,"files.autoSave":"afterDelay","files.exclude":{"**/.*":true},"files.trimTrailingWhitespace":true,"files.watcherExclude":{"**/.git/objects/**":true,"**/.git/subtree-cache/**":true,"**/node_modules/*/**":true},"git.autofetch":true,"git.decorations.enabled":false,"git.terminalAuthentication":true,"gitdoc.autoPull":"off","gitdoc.commitMessageFormat":"ccc, LLL d, kkkk, h:mm a ZZ","gitdoc.commitValidationLevel":"none","gitdoc.enabled":true,"gitdoc.pullOnOpen":false,"github.codespaces.devcontainerChangedNotificationStyle":"none","github.gitAuthentication":true,"html.suggest.html5":false,"java.configuration.runtimes":[{"default":true,"name":"JavaSE-18","path":"/opt/jdk-18.0.2.1"}],"java.debug.settings.enableRunDebugCodeLens":false,"java.inlayHints.parameterNames.enabled":"none","java.server.launchMode":"Standard","javascript.suggest.enabled":false,"javascript.validate.enable":false,"problems.decorations.enabled":false,"remote.otherPortsAttributes":{"onAutoForward":"silent"},"scm.countBadge":"off","terminal.integrated.commandsToSkipShell":["workbench.action.toggleSidebarVisibility"],"terminal.integrated.defaultProfile.linux":"bash","terminal.integrated.gpuAcceleration":"off","terminal.integrated.persistentSessionReviveProcess":"never","terminal.integrated.profiles.linux":{"JavaScript Debug Terminal":null,"bash":{"args":["--login"],"icon":"terminal","path":"bash"}},"terminal.integrated.sendKeybindingsToShell":true,"terminal.integrated.shellIntegration.decorationsEnabled":"never","terminal.integrated.shellIntegration.enabled":true,"terminal.integrated.tabs.description":"${task}${separator}${local}","terminal.integrated.tabs.showActiveTerminal":"never","window.autoDetectColorScheme":true,"window.commandCenter":false,"workbench.colorCustomizations":{"[GitHub Dark Default]":{"activityBar.background":"#000","editor.background":"#000","editor.lineHighlightBackground":"#0000","editor.lineHighlightBorder":"#0000","editorWhitespace.foreground":"#59A5FC","panel.background":"#000","sideBar.background":"#000","terminal.background":"#000","terminal.foreground":"#fff"},"[GitHub Light Default]":{"activityBar.background":"#fff","editor.background":"#fff","editor.lineHighlightBackground":"#fff0","editor.lineHighlightBorder":"#fff0","editorWhitespace.foreground":"#1167D7","panel.background":"#fff","sideBar.background":"#fff","terminal.background":"#fff","terminal.foreground":"#000"},"editor.lineHighlightBorder":"#0000","editorError.foreground":"#0000","editorGutter.addedBackground":"#0000","editorGutter.deletedBackground":"#0000","editorGutter.modifiedBackground":"#0000","editorWarning.foreground":"#0000"},"workbench.editor.closeOnFileDelete":true,"workbench.editor.enablePreview":false,"workbench.editor.untitled.hint":"hidden","workbench.editorAssociations":{"*.wav":"vscode.audioPreview","README.md":"lab50.editor"},"workbench.iconTheme":"vs-minimal","workbench.preferredDarkColorTheme":"GitHub Dark Default","workbench.preferredLightColorTheme":"GitHub Light Default","workbench.startupEditor":"none","workbench.statusBar.visible":false,"workbench.tips.enabled":false,"workbench.welcomePage.walkthroughs.openOnInstall":false}}},"mounts":["source=/root/.codespaces/shared,target=/workspaces/.codespaces/shared,type=bind","source=/var/lib/docker/codespacemount/.persistedshare,target=/workspaces/.codespaces/.persistedshare,type=bind","source=/.codespaces/agent/mount,target=/.codespaces/bin,type=bind","source=/mnt/containerTmp,target=/tmp,type=bind"],"containerEnv":{"CODESPACES":"true","ContainerVersion":"12","RepositoryName":"122420533"},"remoteEnv":{"CLOUDENV_ENVIRONMENT_ID":"426f9b95-0f85-46c5-a105-875db4fb0e51","CODESPACE_NAME":"xingstar97-crispy-trout-g9pqgw4x795cvxp7","GITHUB_SERVER_URL":"https://github.com","GITHUB_API_URL":"https://api.github.com","GITHUB_GRAPHQL_URL":"https://api.github.com/graphql","GITHUB_REPOSITORY":"code50/122420533","INTERNAL_VSCS_TARGET_URL":"https://eastus2.online.visualstudio.com","GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN":"preview.app.github.dev","GITHUB_CODESPACE_TOKEN":"A5F72NKULVEQAE7YGZFOJTDDX3H7TANCNFSM4ACQ736Q","GITHUB_TOKEN":"ghu_xYLsKqB4yym8MWNEuyiDAbSArtvn4c1HOWGc","GITHUB_USER":"xingstar97","CODESPACES":"true"},"forwardPorts":[5000,5900,6081,8080,8082]}] ghcr.io/cs50/codespace:f16c7548115aed264f416b1ac4959cf176d66190 -c echo Container started
+[2023-01-11T03:04:31.233Z] Unable to find image 'ghcr.io/cs50/codespace:f16c7548115aed264f416b1ac4959cf176d66190' locally
+[2023-01-11T03:04:31.758Z] f16c7548115aed264f416b1ac4959cf176d66190: Pulling from cs50/codespace
+[2023-01-11T03:04:31.774Z] 
+6e3729cf69e0: Already exists 
+[2023-01-11T03:04:31.846Z] 
+84c34649bcd4: Pulling fs layer 
+[2023-01-11T03:04:31.849Z] 
+[2023-01-11T03:04:31.849Z] 
+[2023-01-11T03:04:31.850Z] 
+[2023-01-11T03:04:31.850Z] 
+[2023-01-11T03:04:31.851Z] bd902276f800: 
+[2023-01-11T03:04:31.854Z] Pulling fs layer 
+[2023-01-11T03:04:31.855Z] 
+[2023-01-11T03:04:31.855Z] 
+[2023-01-11T03:04:31.856Z] 
+[2023-01-11T03:04:31.856Z] 
+[2023-01-11T03:04:31.857Z] 
+[2023-01-11T03:04:31.857Z] 482fc2b1d7b2: 
+[2023-01-11T03:04:31.858Z] Pulling fs layer 
+[2023-01-11T03:04:31.859Z] 
+69e53bef91af: Pulling fs layer 
+8c8c119e5dfa: Pulling fs layer 
+a6b30a53e82d: Pulling fs layer 
+fb4dc4bbcf4c: Pulling fs layer 
+680f4473808d: Pulling fs layer 
+ba7e827ea8b6: Pulling fs layer 
+a17bea57d6ef: Pulling fs layer 
+feab8334bcac: Pulling fs layer 
+aad4f15c1a1e: Pulling fs layer 
+2a418c856895: Pulling fs layer 
+3adc8a5186f7: Pulling fs layer 
+c15cfdcf9457: Pulling fs layer 
+71da1854f124: Pulling fs layer 
+7b9019b9fc76: Pulling fs layer 
+e4a7150cbaeb: Pulling fs layer 
+4f4fb700ef54: Pulling fs layer 
+4dbaaf759770: Pulling fs layer 
+57986b463c17: Pulling fs layer 
+15924a8c2f5f: Pulling fs layer 
+39c9fd8b4ca3: Pulling fs layer 
+f3dd6f4a3d9a: Pulling fs layer 
+[2023-01-11T03:04:31.861Z] 
+88bd48efa698: Pulling fs layer 
+fc9b8b20f058: Pulling fs layer 
+0d12e33b7271: Pulling fs layer 
+c150b1fbe9d8: Pulling fs layer 
+f125865743cc: Pulling fs layer 
+995893064795: Pulling fs layer 
+32142c02aa8e: Pulling fs layer 
+c9cb779ecb1b: Pulling fs layer 
+c321997378f3: Pulling fs layer 
+734ffd4640b0: Pulling fs layer 
+5bb6b829f310: Pulling fs layer 
+bf918fc060a8: Pulling fs layer 
+44e9ab4737ec: Pulling fs layer 7b9019b9fc76: Waiting 69e53bef91af: Waiting e4a7150cbaeb: Waiting 8c8c119e5dfa: Waiting 4f4fb700ef54: Waiting a6b30a53e82d: Waiting 4dbaaf759770: Waiting fb4dc4bbcf4c: Waiting 57986b463c17: Waiting 680f4473808d: Waiting 15924a8c2f5f: Waiting ba7e827ea8b6: Waiting a17bea57d6ef: Waiting 39c9fd8b4ca3: Waiting f3dd6f4a3d9a: Waiting feab8334bcac: Waiting 88bd48efa698: Waiting aad4f15c1a1e: Waiting fc9b8b20f058: Waiting 2a418c856895: Waiting 0d12e33b7271: Waiting 3adc8a5186f7: Waiting c150b1fbe9d8: Waiting c15cfdcf9457: Waiting 71da1854f124: Waiting f125865743cc: Waiting 995893064795: Waiting bf918fc060a8: Waiting 44e9ab4737ec: Waiting 32142c02aa8e: Waiting c9cb779ecb1b: Waiting c321997378f3: Waiting 734ffd4640b0: Waiting 5bb6b829f310: Waiting 
+[2023-01-11T03:04:32.073Z] 482fc2b1d7b2: 
+[2023-01-11T03:04:32.073Z] Downloading  81.92kB/7.132MB
+[2023-01-11T03:04:32.128Z] 84c34649bcd4: Downloading  294.9kB/28.76MB
+[2023-01-11T03:04:32.133Z] 482fc2b1d7b2: Verifying Checksum 
+[2023-01-11T03:04:32.134Z] 482fc2b1d7b2: Download complete 
+[2023-01-11T03:04:32.228Z] 84c34649bcd4: Downloading  14.31MB/28.76MB
+[2023-01-11T03:04:32.262Z] bd902276f800: Downloading  65.54kB/6.46MB
+[2023-01-11T03:04:32.335Z] 84c34649bcd4: Downloading  26.87MB/28.76MB
+[2023-01-11T03:04:32.353Z] 84c34649bcd4: Verifying Checksum 
+[2023-01-11T03:04:32.354Z] 84c34649bcd4: Download complete bd902276f800: Verifying Checksum bd902276f800: Download complete 
+[2023-01-11T03:04:32.396Z] 
+[2023-01-11T03:04:32.396Z] 
+[2023-01-11T03:04:32.397Z] 
+[2023-01-11T03:04:32.397Z] 69e53bef91af: 
+[2023-01-11T03:04:32.397Z] Downloading  534.3kB/217.2MB
+[2023-01-11T03:04:32.397Z] 
+[2023-01-11T03:04:32.499Z] 69e53bef91af: Downloading  12.32MB/217.2MB
+[2023-01-11T03:04:32.534Z] 84c34649bcd4: Extracting  294.9kB/28.76MB
+[2023-01-11T03:04:32.597Z] 8c8c119e5dfa: Downloading  534.3kB/61.16MB
+[2023-01-11T03:04:32.610Z] 
+[2023-01-11T03:04:32.610Z] 69e53bef91af: Downloading  24.11MB/217.2MB
+[2023-01-11T03:04:32.659Z] 
+[2023-01-11T03:04:32.660Z] 84c34649bcd4: Extracting  1.475MB/28.76MB
+[2023-01-11T03:04:32.684Z] a6b30a53e82d: 
+[2023-01-11T03:04:32.685Z] Downloading  458.8kB/44.33MB
+[2023-01-11T03:04:32.714Z] 8c8c119e5dfa: 
+[2023-01-11T03:04:32.714Z] Downloading  5.361MB/61.16MB
+[2023-01-11T03:04:32.719Z] 69e53bef91af: 
+[2023-01-11T03:04:32.720Z] Downloading  35.38MB/217.2MB
+[2023-01-11T03:04:32.778Z] 84c34649bcd4: Extracting  2.064MB/28.76MB
+[2023-01-11T03:04:32.818Z] 8c8c119e5dfa: 
+[2023-01-11T03:04:32.819Z] Downloading  14.41MB/61.16MB
+[2023-01-11T03:04:32.823Z] 
+[2023-01-11T03:04:32.823Z] a6b30a53e82d: Downloading  4.094MB/44.33MB69e53bef91af: Downloading  41.79MB/217.2MB
+[2023-01-11T03:04:32.890Z] 84c34649bcd4: Extracting  2.359MB/28.76MB
+[2023-01-11T03:04:32.926Z] a6b30a53e82d: Downloading  9.547MB/44.33MB
+[2023-01-11T03:04:32.944Z] 8c8c119e5dfa: Downloading   23.5MB/61.16MB69e53bef91af: Downloading  49.29MB/217.2MB
+[2023-01-11T03:04:33.009Z] a6b30a53e82d: Downloading  16.79MB/44.33MB84c34649bcd4: Extracting  2.949MB/28.76MB
+[2023-01-11T03:04:33.070Z] 69e53bef91af: Downloading  56.24MB/217.2MB
+[2023-01-11T03:04:33.071Z] 8c8c119e5dfa: Downloading  29.35MB/61.16MB
+[2023-01-11T03:04:33.137Z] a6b30a53e82d: Downloading  21.77MB/44.33MB
+[2023-01-11T03:04:33.138Z] 69e53bef91af: Downloading  65.85MB/217.2MB
+[2023-01-11T03:04:33.514Z] 
+[2023-01-11T03:04:33.515Z] 
+[2023-01-11T03:04:33.515Z] 
+[2023-01-11T03:04:33.515Z] 8c8c119e5dfa: 
+[2023-01-11T03:04:33.515Z] Downloading  35.21MB/61.16MB
+[2023-01-11T03:04:33.515Z] 
+[2023-01-11T03:04:33.515Z] 
+[2023-01-11T03:04:33.515Z] 
+[2023-01-11T03:04:33.515Z] 
+[2023-01-11T03:04:33.515Z] a6b30a53e82d: 
+[2023-01-11T03:04:33.515Z] Downloading  27.18MB/44.33MB
+[2023-01-11T03:04:33.515Z] 
+[2023-01-11T03:04:33.516Z] 
+[2023-01-11T03:04:33.516Z] 
+[2023-01-11T03:04:33.516Z] 
+[2023-01-11T03:04:33.516Z] 8c8c119e5dfa: 
+[2023-01-11T03:04:33.516Z] Downloading  37.86MB/61.16MB
+[2023-01-11T03:04:33.516Z] 
+[2023-01-11T03:04:33.516Z] 
+[2023-01-11T03:04:33.516Z] 
+[2023-01-11T03:04:33.516Z] 
+[2023-01-11T03:04:33.516Z] 69e53bef91af: 
+[2023-01-11T03:04:33.516Z] Downloading  69.03MB/217.2MB
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.517Z] a6b30a53e82d: 
+[2023-01-11T03:04:33.517Z] Downloading  29.45MB/44.33MB
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.517Z] 
+[2023-01-11T03:04:33.518Z] 8c8c119e5dfa: 
+[2023-01-11T03:04:33.518Z] Downloading  38.94MB/61.16MB
+[2023-01-11T03:04:33.518Z] 
+[2023-01-11T03:04:33.519Z] 
+[2023-01-11T03:04:33.519Z] 
+[2023-01-11T03:04:33.519Z] 
+[2023-01-11T03:04:33.519Z] 69e53bef91af: 
+[2023-01-11T03:04:33.519Z] Downloading  70.63MB/217.2MB
+[2023-01-11T03:04:33.519Z] 
+[2023-01-11T03:04:33.520Z] 
+[2023-01-11T03:04:33.520Z] 
+[2023-01-11T03:04:33.520Z] 
+[2023-01-11T03:04:33.520Z] 84c34649bcd4: 
+[2023-01-11T03:04:33.520Z] Extracting  3.539MB/28.76MB
+[2023-01-11T03:04:33.521Z] 
+[2023-01-11T03:04:33.521Z] 
+[2023-01-11T03:04:33.521Z] 
+[2023-01-11T03:04:33.521Z] 
+[2023-01-11T03:04:33.521Z] a6b30a53e82d: 
+[2023-01-11T03:04:33.522Z] Downloading  32.18MB/44.33MB
+[2023-01-11T03:04:33.522Z] 
+[2023-01-11T03:04:33.522Z] 
+[2023-01-11T03:04:33.524Z] 
+[2023-01-11T03:04:33.524Z] 
+[2023-01-11T03:04:33.524Z] 69e53bef91af: 
+[2023-01-11T03:04:33.524Z] Downloading  74.37MB/217.2MB
+[2023-01-11T03:04:33.524Z] 
+[2023-01-11T03:04:33.564Z] 
+[2023-01-11T03:04:33.565Z] 
+[2023-01-11T03:04:33.565Z] 
+[2023-01-11T03:04:33.565Z] 8c8c119e5dfa: 
+[2023-01-11T03:04:33.565Z] Downloading  43.22MB/61.16MB
+[2023-01-11T03:04:33.569Z] 
+[2023-01-11T03:04:33.600Z] 69e53bef91af: Downloading  82.34MB/217.2MB
+[2023-01-11T03:04:33.600Z] 
+[2023-01-11T03:04:33.606Z] a6b30a53e82d: Downloading  35.37MB/44.33MB
+[2023-01-11T03:04:33.634Z] 84c34649bcd4: Extracting  4.129MB/28.76MB
+[2023-01-11T03:04:33.669Z] 8c8c119e5dfa: Downloading  47.48MB/61.16MB
+[2023-01-11T03:04:33.707Z] a6b30a53e82d: Downloading  40.82MB/44.33MB
+[2023-01-11T03:04:33.733Z] 69e53bef91af: Downloading  87.69MB/217.2MB
+[2023-01-11T03:04:33.747Z] 84c34649bcd4: Extracting  4.719MB/28.76MB
+[2023-01-11T03:04:33.786Z] 8c8c119e5dfa: Downloading  51.24MB/61.16MB
+[2023-01-11T03:04:33.815Z] a6b30a53e82d: Verifying Checksum 
+[2023-01-11T03:04:33.815Z] a6b30a53e82d: Download complete 
+[2023-01-11T03:04:33.848Z] 69e53bef91af: Downloading  90.36MB/217.2MB
+[2023-01-11T03:04:33.852Z] 
+[2023-01-11T03:04:33.853Z] 84c34649bcd4: Extracting  5.603MB/28.76MB
+[2023-01-11T03:04:33.871Z] 8c8c119e5dfa: Downloading  56.06MB/61.16MB
+[2023-01-11T03:04:33.932Z] 69e53bef91af: Downloading  98.37MB/217.2MB
+[2023-01-11T03:04:33.980Z] 84c34649bcd4: Extracting  6.783MB/28.76MB8c8c119e5dfa: Downloading  60.86MB/61.16MB
+[2023-01-11T03:04:34.003Z] 8c8c119e5dfa: Verifying Checksum 8c8c119e5dfa: Download complete 
+[2023-01-11T03:04:34.030Z] 69e53bef91af: Downloading    108MB/217.2MB
+[2023-01-11T03:04:34.068Z] 84c34649bcd4: 
+[2023-01-11T03:04:34.068Z] Extracting  7.963MB/28.76MB
+[2023-01-11T03:04:34.107Z] fb4dc4bbcf4c: Downloading  534.3kB/97.64MB
+[2023-01-11T03:04:34.149Z] 69e53bef91af: Downloading  112.8MB/217.2MB
+[2023-01-11T03:04:34.198Z] 84c34649bcd4: Extracting  9.142MB/28.76MB
+[2023-01-11T03:04:34.221Z] fb4dc4bbcf4c: Downloading  9.101MB/97.64MB
+[2023-01-11T03:04:34.251Z] 69e53bef91af: Downloading  119.2MB/217.2MB
+[2023-01-11T03:04:34.385Z] fb4dc4bbcf4c: Downloading  16.58MB/97.64MB
+[2023-01-11T03:04:34.436Z] 69e53bef91af: Downloading    124MB/217.2MB
+[2023-01-11T03:04:34.437Z] 
+[2023-01-11T03:04:34.437Z] 
+[2023-01-11T03:04:34.438Z] 
+[2023-01-11T03:04:34.438Z] fb4dc4bbcf4c: 
+[2023-01-11T03:04:34.438Z] Downloading  18.19MB/97.64MB
+[2023-01-11T03:04:34.438Z] 
+[2023-01-11T03:04:34.438Z] 
+[2023-01-11T03:04:34.438Z] 
+[2023-01-11T03:04:34.438Z] 
+[2023-01-11T03:04:34.438Z] 84c34649bcd4: 
+[2023-01-11T03:04:34.438Z] Extracting  10.32MB/28.76MB
+[2023-01-11T03:04:34.439Z] 
+[2023-01-11T03:04:34.486Z] 
+[2023-01-11T03:04:34.486Z] 
+[2023-01-11T03:04:34.486Z] 
+[2023-01-11T03:04:34.486Z] 69e53bef91af: 
+[2023-01-11T03:04:34.486Z] Downloading  125.6MB/217.2MB
+[2023-01-11T03:04:34.486Z] 
+[2023-01-11T03:04:34.546Z] 
+[2023-01-11T03:04:34.547Z] 680f4473808d: Downloading  528.1kB/188.8MB
+[2023-01-11T03:04:34.547Z] 
+[2023-01-11T03:04:34.548Z] fb4dc4bbcf4c: 
+[2023-01-11T03:04:34.548Z] Downloading   19.8MB/97.64MB
+[2023-01-11T03:04:34.549Z] 
+[2023-01-11T03:04:34.577Z] 
+[2023-01-11T03:04:34.579Z] 84c34649bcd4: Extracting  10.91MB/28.76MB
+[2023-01-11T03:04:34.600Z] 69e53bef91af: Downloading  130.4MB/217.2MB
+[2023-01-11T03:04:34.636Z] fb4dc4bbcf4c: Downloading  26.74MB/97.64MB
+[2023-01-11T03:04:34.642Z] 680f4473808d: 
+[2023-01-11T03:04:34.642Z] Downloading  1.599MB/188.8MB
+[2023-01-11T03:04:34.693Z] 84c34649bcd4: Extracting   11.5MB/28.76MB
+[2023-01-11T03:04:34.711Z] 69e53bef91af: 
+[2023-01-11T03:04:34.712Z] Downloading  134.2MB/217.2MB
+[2023-01-11T03:04:34.758Z] 
+[2023-01-11T03:04:34.759Z] fb4dc4bbcf4c: Downloading  31.01MB/97.64MB
+[2023-01-11T03:04:34.783Z] 680f4473808d: Downloading  2.663MB/188.8MB
+[2023-01-11T03:04:34.800Z] 
+[2023-01-11T03:04:34.800Z] 69e53bef91af: Downloading    139MB/217.2MB
+[2023-01-11T03:04:34.809Z] 84c34649bcd4: Extracting  12.09MB/28.76MB
+[2023-01-11T03:04:34.863Z] 
+[2023-01-11T03:04:34.863Z] 
+[2023-01-11T03:04:34.864Z] 
+[2023-01-11T03:04:34.864Z] fb4dc4bbcf4c: 
+[2023-01-11T03:04:34.864Z] Downloading  36.87MB/97.64MB
+[2023-01-11T03:04:34.864Z] 
+[2023-01-11T03:04:34.909Z] 69e53bef91af: Downloading  144.8MB/217.2MB
+[2023-01-11T03:04:34.962Z] 680f4473808d: Downloading  5.327MB/188.8MB
+[2023-01-11T03:04:34.964Z] 84c34649bcd4: Extracting  12.98MB/28.76MB
+[2023-01-11T03:04:34.980Z] fb4dc4bbcf4c: Downloading  41.67MB/97.64MB
+[2023-01-11T03:04:35.022Z] 69e53bef91af: Downloading  149.1MB/217.2MB
+[2023-01-11T03:04:35.046Z] 680f4473808d: Downloading  8.517MB/188.8MB
+[2023-01-11T03:04:35.070Z] 84c34649bcd4: Extracting  13.57MB/28.76MB
+[2023-01-11T03:04:35.083Z] 
+[2023-01-11T03:04:35.083Z] fb4dc4bbcf4c: Downloading  45.95MB/97.64MB
+[2023-01-11T03:04:35.123Z] 69e53bef91af: Downloading  153.4MB/217.2MB
+[2023-01-11T03:04:35.162Z] 680f4473808d: Downloading   12.8MB/188.8MB
+[2023-01-11T03:04:35.189Z] fb4dc4bbcf4c: Downloading  48.62MB/97.64MB
+[2023-01-11T03:04:35.199Z] 84c34649bcd4: Extracting  14.45MB/28.76MB
+[2023-01-11T03:04:35.253Z] 69e53bef91af: Downloading  158.7MB/217.2MB
+[2023-01-11T03:04:35.276Z] 680f4473808d: Downloading  15.99MB/188.8MB
+[2023-01-11T03:04:35.282Z] fb4dc4bbcf4c: Downloading  53.96MB/97.64MB
+[2023-01-11T03:04:35.308Z] 84c34649bcd4: 
+[2023-01-11T03:04:35.308Z] Extracting  14.75MB/28.76MB
+[2023-01-11T03:04:35.350Z] 69e53bef91af: 
+[2023-01-11T03:04:35.350Z] Downloading  161.4MB/217.2MB
+[2023-01-11T03:04:35.374Z] 
+[2023-01-11T03:04:35.374Z] 680f4473808d: Downloading  18.12MB/188.8MB
+[2023-01-11T03:04:35.420Z] fb4dc4bbcf4c: 
+[2023-01-11T03:04:35.421Z] Downloading  56.08MB/97.64MB
+[2023-01-11T03:04:35.452Z] 69e53bef91af: Downloading  164.6MB/217.2MB
+[2023-01-11T03:04:35.480Z] 
+[2023-01-11T03:04:35.481Z] 
+[2023-01-11T03:04:35.482Z] 
+[2023-01-11T03:04:35.489Z] 84c34649bcd4: 
+[2023-01-11T03:04:35.489Z] Extracting  15.63MB/28.76MB
+[2023-01-11T03:04:35.493Z] 
+[2023-01-11T03:04:35.499Z] 
+[2023-01-11T03:04:35.500Z] 
+[2023-01-11T03:04:35.500Z] 
+[2023-01-11T03:04:35.504Z] 680f4473808d: 
+[2023-01-11T03:04:35.517Z] Downloading  20.27MB/188.8MB
+[2023-01-11T03:04:35.523Z] fb4dc4bbcf4c: Downloading  60.36MB/97.64MB
+[2023-01-11T03:04:35.568Z] 69e53bef91af: Downloading  167.8MB/217.2MB
+[2023-01-11T03:04:35.604Z] 680f4473808d: 
+[2023-01-11T03:04:35.604Z] Downloading  22.41MB/188.8MB84c34649bcd4: Extracting  16.22MB/28.76MB
+[2023-01-11T03:04:35.648Z] fb4dc4bbcf4c: Downloading  63.55MB/97.64MB
+[2023-01-11T03:04:35.663Z] 69e53bef91af: Downloading  171.6MB/217.2MB
+[2023-01-11T03:04:35.697Z] 680f4473808d: Downloading   25.6MB/188.8MB
+[2023-01-11T03:04:35.735Z] fb4dc4bbcf4c: Downloading   68.9MB/97.64MB
+[2023-01-11T03:04:35.746Z] 84c34649bcd4: Extracting  16.81MB/28.76MB
+[2023-01-11T03:04:35.775Z] 69e53bef91af: 
+[2023-01-11T03:04:35.776Z] Downloading  176.4MB/217.2MB
+[2023-01-11T03:04:35.817Z] 680f4473808d: 
+[2023-01-11T03:04:35.817Z] Downloading  30.39MB/188.8MB
+[2023-01-11T03:04:35.840Z] fb4dc4bbcf4c: Downloading  74.26MB/97.64MB
+[2023-01-11T03:04:35.865Z] 84c34649bcd4: Extracting  17.69MB/28.76MB
+[2023-01-11T03:04:35.879Z] 69e53bef91af: Downloading  180.6MB/217.2MB
+[2023-01-11T03:04:35.922Z] 680f4473808d: Downloading  35.17MB/188.8MB
+[2023-01-11T03:04:35.991Z] 69e53bef91af: Downloading  191.9MB/217.2MB
+[2023-01-11T03:04:36.010Z] fb4dc4bbcf4c: Downloading  76.94MB/97.64MB
+[2023-01-11T03:04:36.059Z] 84c34649bcd4: Extracting  18.28MB/28.76MB
+[2023-01-11T03:04:36.060Z] 
+[2023-01-11T03:04:36.061Z] 
+[2023-01-11T03:04:36.061Z] 
+[2023-01-11T03:04:36.061Z] 680f4473808d: 
+[2023-01-11T03:04:36.062Z] Downloading  39.98MB/188.8MB
+[2023-01-11T03:04:36.062Z] 
+[2023-01-11T03:04:36.089Z] 69e53bef91af: Downloading  197.8MB/217.2MB
+[2023-01-11T03:04:36.120Z] fb4dc4bbcf4c: Downloading  84.95MB/97.64MB
+[2023-01-11T03:04:36.176Z] 680f4473808d: Downloading  43.18MB/188.8MB
+[2023-01-11T03:04:36.186Z] 84c34649bcd4: Extracting  18.58MB/28.76MB
+[2023-01-11T03:04:36.204Z] fb4dc4bbcf4c: Downloading  92.95MB/97.64MB
+[2023-01-11T03:04:36.233Z] 69e53bef91af: Downloading  202.6MB/217.2MB
+[2023-01-11T03:04:36.264Z] fb4dc4bbcf4c: Verifying Checksum fb4dc4bbcf4c: Download complete 
+[2023-01-11T03:04:36.273Z] 680f4473808d: Downloading  45.34MB/188.8MB
+[2023-01-11T03:04:36.314Z] 84c34649bcd4: Extracting  19.17MB/28.76MB
+[2023-01-11T03:04:36.332Z] 69e53bef91af: Downloading  209.5MB/217.2MB
+[2023-01-11T03:04:36.385Z] 680f4473808d: Downloading  49.09MB/188.8MB
+[2023-01-11T03:04:36.404Z] 69e53bef91af: Verifying Checksum 69e53bef91af: Download complete 
+[2023-01-11T03:04:36.413Z] 84c34649bcd4: Extracting  20.05MB/28.76MB
+[2023-01-11T03:04:36.480Z] 680f4473808d: Downloading  56.03MB/188.8MB
+[2023-01-11T03:04:36.518Z] 84c34649bcd4: Extracting  22.41MB/28.76MB
+[2023-01-11T03:04:36.555Z] ba7e827ea8b6: Downloading  538.1kB/91.33MB
+[2023-01-11T03:04:36.612Z] 680f4473808d: Downloading  64.04MB/188.8MB
+[2023-01-11T03:04:36.628Z] 84c34649bcd4: Extracting   23.3MB/28.76MB
+[2023-01-11T03:04:36.698Z] ba7e827ea8b6: Downloading  8.553MB/91.33MB680f4473808d: Downloading  69.93MB/188.8MB
+[2023-01-11T03:04:36.728Z] a17bea57d6ef: Downloading  30.16kB/2.936MB
+[2023-01-11T03:04:36.730Z] 84c34649bcd4: Extracting  24.48MB/28.76MB
+[2023-01-11T03:04:36.781Z] a17bea57d6ef: Verifying Checksum 
+[2023-01-11T03:04:36.782Z] ba7e827ea8b6: Downloading  17.64MB/91.33MB
+[2023-01-11T03:04:36.782Z] a17bea57d6ef: Download complete 
+[2023-01-11T03:04:36.821Z] 680f4473808d: Downloading   76.9MB/188.8MB
+[2023-01-11T03:04:36.834Z] 84c34649bcd4: Extracting  25.07MB/28.76MB
+[2023-01-11T03:04:36.886Z] ba7e827ea8b6: 
+[2023-01-11T03:04:36.886Z] Downloading  26.17MB/91.33MB
+[2023-01-11T03:04:36.903Z] 680f4473808d: Downloading  84.38MB/188.8MB
+[2023-01-11T03:04:36.903Z] 
+[2023-01-11T03:04:36.936Z] 84c34649bcd4: 
+[2023-01-11T03:04:36.936Z] Extracting  26.54MB/28.76MB
+[2023-01-11T03:04:36.982Z] ba7e827ea8b6: 
+[2023-01-11T03:04:36.982Z] Downloading  35.78MB/91.33MB
+[2023-01-11T03:04:37.006Z] 
+[2023-01-11T03:04:37.006Z] 680f4473808d: Downloading  92.41MB/188.8MB
+[2023-01-11T03:04:37.060Z] 84c34649bcd4: 
+[2023-01-11T03:04:37.060Z] Extracting  27.43MB/28.76MB
+[2023-01-11T03:04:37.084Z] ba7e827ea8b6: 
+[2023-01-11T03:04:37.084Z] Downloading  42.17MB/91.33MB
+[2023-01-11T03:04:37.113Z] 680f4473808d: 
+[2023-01-11T03:04:37.113Z] Downloading  102.6MB/188.8MB
+[2023-01-11T03:04:37.141Z] feab8334bcac: 
+[2023-01-11T03:04:37.141Z] Downloading   6.89kB/570.8kB
+[2023-01-11T03:04:37.176Z] 84c34649bcd4: 
+[2023-01-11T03:04:37.177Z] Extracting  28.31MB/28.76MB
+[2023-01-11T03:04:37.194Z] 
+[2023-01-11T03:04:37.194Z] ba7e827ea8b6: Downloading  52.81MB/91.33MB
+[2023-01-11T03:04:37.210Z] 
+[2023-01-11T03:04:37.211Z] feab8334bcac: Downloading  570.8kB/570.8kB
+[2023-01-11T03:04:37.212Z] feab8334bcac: Verifying Checksum feab8334bcac: Download complete 
+[2023-01-11T03:04:37.228Z] 84c34649bcd4: Extracting  28.76MB/28.76MB
+[2023-01-11T03:04:37.262Z] 680f4473808d: Downloading  111.1MB/188.8MB
+[2023-01-11T03:04:37.364Z] ba7e827ea8b6: Downloading  61.37MB/91.33MB
+[2023-01-11T03:04:37.407Z] 680f4473808d: Downloading  119.6MB/188.8MB
+[2023-01-11T03:04:37.481Z] ba7e827ea8b6: Downloading  64.58MB/91.33MB
+[2023-01-11T03:04:37.487Z] 680f4473808d: Downloading  123.9MB/188.8MB
+[2023-01-11T03:04:37.570Z] 
+[2023-01-11T03:04:37.571Z] ba7e827ea8b6: Downloading  68.88MB/91.33MB
+[2023-01-11T03:04:37.599Z] 680f4473808d: Downloading  127.1MB/188.8MB
+[2023-01-11T03:04:37.718Z] 
+[2023-01-11T03:04:37.721Z] ba7e827ea8b6: Downloading  71.02MB/91.33MB
+[2023-01-11T03:04:37.729Z] 
+[2023-01-11T03:04:37.736Z] 680f4473808d: Downloading  129.3MB/188.8MB
+[2023-01-11T03:04:37.765Z] aad4f15c1a1e: Downloading    213kB/20.6MB
+[2023-01-11T03:04:37.824Z] 680f4473808d: Downloading    133MB/188.8MB
+[2023-01-11T03:04:37.847Z] ba7e827ea8b6: Downloading  77.92MB/91.33MB
+[2023-01-11T03:04:37.891Z] aad4f15c1a1e: Downloading  4.452MB/20.6MB
+[2023-01-11T03:04:37.931Z] 680f4473808d: Downloading    140MB/188.8MB
+[2023-01-11T03:04:37.940Z] ba7e827ea8b6: Downloading  84.91MB/91.33MB
+[2023-01-11T03:04:38.030Z] aad4f15c1a1e: Downloading  9.528MB/20.6MB680f4473808d: Downloading  150.1MB/188.8MB
+[2023-01-11T03:04:38.066Z] ba7e827ea8b6: Downloading  88.63MB/91.33MB
+[2023-01-11T03:04:38.130Z] aad4f15c1a1e: 
+[2023-01-11T03:04:38.130Z] Downloading   14.4MB/20.6MB
+[2023-01-11T03:04:38.170Z] 680f4473808d: Downloading  158.7MB/188.8MB
+[2023-01-11T03:04:38.170Z] ba7e827ea8b6: Downloading  91.31MB/91.33MB
+[2023-01-11T03:04:38.171Z] ba7e827ea8b6: Verifying Checksum 
+[2023-01-11T03:04:38.172Z] ba7e827ea8b6: Download complete 
+[2023-01-11T03:04:38.193Z] aad4f15c1a1e: Verifying Checksum aad4f15c1a1e: Download complete 
+[2023-01-11T03:04:38.233Z] 680f4473808d: Downloading  168.3MB/188.8MB
+[2023-01-11T03:04:38.333Z] 680f4473808d: Downloading  180.6MB/188.8MB
+[2023-01-11T03:04:38.384Z] 680f4473808d: Verifying Checksum 
+[2023-01-11T03:04:38.384Z] 680f4473808d: 
+[2023-01-11T03:04:38.384Z] Download complete 
+[2023-01-11T03:04:38.401Z] 2a418c856895: Downloading  28.79kB/2.779MB
+[2023-01-11T03:04:38.439Z] 2a418c856895: Verifying Checksum 
+[2023-01-11T03:04:38.440Z] 2a418c856895: Download complete 
+[2023-01-11T03:04:38.484Z] 3adc8a5186f7: Downloading  538.1kB/273.7MB
+[2023-01-11T03:04:38.586Z] 3adc8a5186f7: Downloading  11.22MB/273.7MB
+[2023-01-11T03:04:38.660Z] c15cfdcf9457: Downloading  534.3kB/132MB
+[2023-01-11T03:04:38.687Z] 3adc8a5186f7: Downloading   24.5MB/273.7MB
+[2023-01-11T03:04:38.740Z] 71da1854f124: Downloading  26.03kB/2.509MB
+[2023-01-11T03:04:38.748Z] 84c34649bcd4: Pull complete 
+[2023-01-11T03:04:38.789Z] c15cfdcf9457: Downloading  5.351MB/132MB
+[2023-01-11T03:04:38.800Z] 3adc8a5186f7: Downloading  37.35MB/273.7MB
+[2023-01-11T03:04:38.810Z] 71da1854f124: Verifying Checksum 
+[2023-01-11T03:04:38.810Z] 71da1854f124: Download complete 
+[2023-01-11T03:04:38.820Z] bd902276f800: Extracting  65.54kB/6.46MB
+[2023-01-11T03:04:38.885Z] c15cfdcf9457: Downloading  11.72MB/132MB
+[2023-01-11T03:04:38.894Z] 3adc8a5186f7: Downloading  44.26MB/273.7MB
+[2023-01-11T03:04:38.999Z] c15cfdcf9457: Downloading  19.18MB/132MB3adc8a5186f7: 
+[2023-01-11T03:04:39.000Z] Downloading  51.76MB/273.7MB
+[2023-01-11T03:04:39.058Z] bd902276f800: 
+[2023-01-11T03:04:39.059Z] Extracting  262.1kB/6.46MB
+[2023-01-11T03:04:39.103Z] c15cfdcf9457: Downloading  30.92MB/132MB
+[2023-01-11T03:04:39.106Z] 3adc8a5186f7: 
+[2023-01-11T03:04:39.106Z] Downloading  59.22MB/273.7MB
+[2023-01-11T03:04:39.125Z] 7b9019b9fc76: Downloading  1.378kB/5.572kB
+[2023-01-11T03:04:39.126Z] 7b9019b9fc76: Downloading  5.572kB/5.572kB
+[2023-01-11T03:04:39.171Z] 7b9019b9fc76: Verifying Checksum 7b9019b9fc76: Download complete bd902276f800: Extracting  786.4kB/6.46MB
+[2023-01-11T03:04:39.194Z] c15cfdcf9457: Downloading  37.35MB/132MB
+[2023-01-11T03:04:39.206Z] 3adc8a5186f7: Downloading  65.06MB/273.7MB
+[2023-01-11T03:04:39.274Z] bd902276f800: Extracting  1.769MB/6.46MB
+[2023-01-11T03:04:39.314Z] c15cfdcf9457: Downloading  45.38MB/132MB
+[2023-01-11T03:04:39.325Z] 3adc8a5186f7: Downloading  73.59MB/273.7MB
+[2023-01-11T03:04:39.385Z] bd902276f800: Extracting  2.753MB/6.46MB
+[2023-01-11T03:04:39.417Z] 
+[2023-01-11T03:04:39.417Z] c15cfdcf9457: Downloading  55.02MB/132MB
+[2023-01-11T03:04:39.431Z] 3adc8a5186f7: Downloading  82.64MB/273.7MB
+[2023-01-11T03:04:39.522Z] 3adc8a5186f7: Downloading  91.73MB/273.7MB
+[2023-01-11T03:04:39.530Z] 
+[2023-01-11T03:04:39.530Z] bd902276f800: Extracting   3.08MB/6.46MBc15cfdcf9457: Downloading  61.95MB/132MB
+[2023-01-11T03:04:39.542Z] e4a7150cbaeb: Downloading  1.378kB/2.073kBe4a7150cbaeb: Downloading  2.073kB/2.073kB
+[2023-01-11T03:04:39.543Z] e4a7150cbaeb: Verifying Checksum e4a7150cbaeb: Download complete 
+[2023-01-11T03:04:39.612Z] c15cfdcf9457: Downloading  72.09MB/132MB
+[2023-01-11T03:04:39.625Z] 3adc8a5186f7: Downloading  99.75MB/273.7MB
+[2023-01-11T03:04:39.655Z] bd902276f800: Extracting  3.867MB/6.46MB
+[2023-01-11T03:04:39.717Z] c15cfdcf9457: Downloading  80.65MB/132MB
+[2023-01-11T03:04:39.722Z] 3adc8a5186f7: Downloading  107.3MB/273.7MB
+[2023-01-11T03:04:39.876Z] c15cfdcf9457: Downloading  85.44MB/132MBbd902276f800: Extracting  4.129MB/6.46MB3adc8a5186f7: Downloading  107.8MB/273.7MB
+[2023-01-11T03:04:39.962Z] 
+[2023-01-11T03:04:39.964Z] bd902276f800: Extracting  4.325MB/6.46MB
+[2023-01-11T03:04:39.977Z] 3adc8a5186f7: Downloading  108.3MB/273.7MB
+[2023-01-11T03:04:40.054Z] c15cfdcf9457: Downloading   86.5MB/132MB
+[2023-01-11T03:04:40.061Z] bd902276f800: Extracting  4.653MB/6.46MB
+[2023-01-11T03:04:40.103Z] 4f4fb700ef54: Downloading      32B/32B4f4fb700ef54: Verifying Checksum 4f4fb700ef54: Download complete 3adc8a5186f7: Downloading    111MB/273.7MB
+[2023-01-11T03:04:40.130Z] 
+[2023-01-11T03:04:40.132Z] c15cfdcf9457: Downloading  88.64MB/132MB
+[2023-01-11T03:04:40.166Z] 
+[2023-01-11T03:04:40.168Z] bd902276f800: Extracting  4.719MB/6.46MB
+[2023-01-11T03:04:40.176Z] 3adc8a5186f7: Downloading  111.5MB/273.7MB
+[2023-01-11T03:04:40.233Z] c15cfdcf9457: Downloading  91.29MB/132MB
+[2023-01-11T03:04:40.274Z] bd902276f800: Extracting  4.915MB/6.46MB
+[2023-01-11T03:04:40.295Z] 3adc8a5186f7: Downloading  115.8MB/273.7MB
+[2023-01-11T03:04:40.348Z] c15cfdcf9457: Downloading  98.75MB/132MB
+[2023-01-11T03:04:40.396Z] 3adc8a5186f7: Downloading  121.1MB/273.7MB
+[2023-01-11T03:04:40.397Z] bd902276f800: Extracting  5.112MB/6.46MB
+[2023-01-11T03:04:40.438Z] 
+[2023-01-11T03:04:40.438Z] 4dbaaf759770: Downloading  1.378kB/1.893kB4dbaaf759770: Downloading  1.893kB/1.893kB
+[2023-01-11T03:04:40.438Z] 
+[2023-01-11T03:04:40.439Z] 4dbaaf759770: Verifying Checksum 4dbaaf759770: Download complete 
+[2023-01-11T03:04:40.448Z] c15cfdcf9457: Downloading  104.1MB/132MB
+[2023-01-11T03:04:40.502Z] 3adc8a5186f7: Downloading    126MB/273.7MB
+[2023-01-11T03:04:40.514Z] bd902276f800: 
+[2023-01-11T03:04:40.515Z] Extracting  5.636MB/6.46MB
+[2023-01-11T03:04:40.561Z] c15cfdcf9457: Downloading  109.4MB/132MB
+[2023-01-11T03:04:40.617Z] 3adc8a5186f7: Downloading  131.3MB/273.7MB
+[2023-01-11T03:04:40.620Z] bd902276f800: Extracting  5.898MB/6.46MB
+[2023-01-11T03:04:40.666Z] c15cfdcf9457: Downloading  113.7MB/132MB
+[2023-01-11T03:04:40.700Z] 57986b463c17: Downloading     955B/955B
+[2023-01-11T03:04:40.701Z] 57986b463c17: Verifying Checksum 57986b463c17: Download complete 
+[2023-01-11T03:04:40.708Z] 3adc8a5186f7: Downloading  137.7MB/273.7MB
+[2023-01-11T03:04:40.782Z] 
+[2023-01-11T03:04:40.782Z] c15cfdcf9457: Downloading  122.3MB/132MB
+[2023-01-11T03:04:40.818Z] 
+[2023-01-11T03:04:40.818Z] bd902276f800: Extracting  6.226MB/6.46MB
+[2023-01-11T03:04:40.832Z] 3adc8a5186f7: Downloading  140.9MB/273.7MB
+[2023-01-11T03:04:40.890Z] c15cfdcf9457: Downloading  130.4MB/132MB
+[2023-01-11T03:04:40.911Z] c15cfdcf9457: Downloading    132MB/132MB
+[2023-01-11T03:04:40.911Z] c15cfdcf9457: Verifying Checksum 
+[2023-01-11T03:04:40.914Z] c15cfdcf9457: Download complete 
+[2023-01-11T03:04:40.918Z] bd902276f800: Extracting   6.46MB/6.46MB
+[2023-01-11T03:04:40.927Z] 3adc8a5186f7: Downloading  146.3MB/273.7MB
+[2023-01-11T03:04:41.000Z] 15924a8c2f5f: Downloading     165B/165B
+[2023-01-11T03:04:41.001Z] 15924a8c2f5f: Verifying Checksum 15924a8c2f5f: Download complete 
+[2023-01-11T03:04:41.032Z] 3adc8a5186f7: Downloading  153.8MB/273.7MB
+[2023-01-11T03:04:41.131Z] 3adc8a5186f7: Downloading  166.6MB/273.7MB
+[2023-01-11T03:04:41.162Z] 39c9fd8b4ca3: Downloading     197B/197B
+[2023-01-11T03:04:41.164Z] 39c9fd8b4ca3: Verifying Checksum 39c9fd8b4ca3: Download complete 
+[2023-01-11T03:04:41.236Z] 3adc8a5186f7: Downloading  177.3MB/273.7MB
+[2023-01-11T03:04:41.278Z] f3dd6f4a3d9a: Downloading  534.3kB/59MB
+[2023-01-11T03:04:41.344Z] 3adc8a5186f7: Downloading  188.5MB/273.7MB
+[2023-01-11T03:04:41.385Z] f3dd6f4a3d9a: 
+[2023-01-11T03:04:41.386Z] Downloading  6.404MB/59MB
+[2023-01-11T03:04:41.445Z] 3adc8a5186f7: 
+[2023-01-11T03:04:41.445Z] Downloading    197MB/273.7MB
+[2023-01-11T03:04:41.488Z] 88bd48efa698: Downloading  539.2kB/94.54MB
+[2023-01-11T03:04:41.499Z] f3dd6f4a3d9a: Downloading  13.88MB/59MB
+[2023-01-11T03:04:41.546Z] 3adc8a5186f7: 
+[2023-01-11T03:04:41.546Z] Downloading  203.4MB/273.7MB
+[2023-01-11T03:04:41.632Z] f3dd6f4a3d9a: Downloading  20.28MB/59MB88bd48efa698: Downloading  5.879MB/94.54MB
+[2023-01-11T03:04:41.659Z] 3adc8a5186f7: Downloading  208.8MB/273.7MB
+[2023-01-11T03:04:41.722Z] f3dd6f4a3d9a: Downloading  24.55MB/59MB
+[2023-01-11T03:04:41.756Z] 3adc8a5186f7: Downloading  217.9MB/273.7MB
+[2023-01-11T03:04:41.757Z] 88bd48efa698: Downloading  10.67MB/94.54MB
+[2023-01-11T03:04:41.802Z] 
+[2023-01-11T03:04:41.803Z] f3dd6f4a3d9a: Downloading  34.15MB/59MB
+[2023-01-11T03:04:41.839Z] 88bd48efa698: Downloading  14.95MB/94.54MB
+[2023-01-11T03:04:41.894Z] 
+[2023-01-11T03:04:41.894Z] 3adc8a5186f7: Downloading  222.2MB/273.7MB
+[2023-01-11T03:04:41.916Z] 
+[2023-01-11T03:04:41.917Z] f3dd6f4a3d9a: Downloading  38.42MB/59MB
+[2023-01-11T03:04:41.967Z] 88bd48efa698: Downloading  24.06MB/94.54MB
+[2023-01-11T03:04:41.967Z] 
+[2023-01-11T03:04:41.988Z] 3adc8a5186f7: Downloading  228.1MB/273.7MB
+[2023-01-11T03:04:42.054Z] 
+[2023-01-11T03:04:42.054Z] 88bd48efa698: Downloading  32.61MB/94.54MB
+[2023-01-11T03:04:42.082Z] f3dd6f4a3d9a: Downloading  42.68MB/59MB
+[2023-01-11T03:04:42.119Z] 3adc8a5186f7: Downloading  231.8MB/273.7MB
+[2023-01-11T03:04:42.135Z] 88bd48efa698: Downloading  37.94MB/94.54MB
+[2023-01-11T03:04:42.161Z] f3dd6f4a3d9a: Downloading  50.65MB/59MB
+[2023-01-11T03:04:42.273Z] 
+[2023-01-11T03:04:42.278Z] 3adc8a5186f7: Downloading  237.1MB/273.7MB
+[2023-01-11T03:04:42.286Z] 88bd48efa698: Downloading  42.76MB/94.54MBf3dd6f4a3d9a: Downloading  57.09MB/59MB
+[2023-01-11T03:04:42.291Z] f3dd6f4a3d9a: Verifying Checksum 
+[2023-01-11T03:04:42.292Z] f3dd6f4a3d9a: Download complete 
+[2023-01-11T03:04:42.353Z] 3adc8a5186f7: Downloading  243.5MB/273.7MB
+[2023-01-11T03:04:42.385Z] 88bd48efa698: Downloading  50.76MB/94.54MB
+[2023-01-11T03:04:42.451Z] 3adc8a5186f7: Downloading  252.1MB/273.7MB
+[2023-01-11T03:04:42.512Z] 88bd48efa698: Downloading  65.19MB/94.54MB
+[2023-01-11T03:04:42.532Z] bd902276f800: Pull complete 
+[2023-01-11T03:04:42.559Z] 3adc8a5186f7: Downloading  263.3MB/273.7MB
+[2023-01-11T03:04:42.589Z] 88bd48efa698: Downloading  72.16MB/94.54MB
+[2023-01-11T03:04:42.605Z] 482fc2b1d7b2: Extracting   98.3kB/7.132MB
+[2023-01-11T03:04:42.638Z] fc9b8b20f058: Downloading  14.92kB/1.389MB
+[2023-01-11T03:04:42.650Z] 3adc8a5186f7: Downloading  273.4MB/273.7MB
+[2023-01-11T03:04:42.651Z] 3adc8a5186f7: Verifying Checksum 
+[2023-01-11T03:04:42.651Z] 3adc8a5186f7: Download complete 
+[2023-01-11T03:04:42.689Z] 88bd48efa698: Downloading  79.09MB/94.54MB
+[2023-01-11T03:04:42.731Z] fc9b8b20f058: Verifying Checksum 
+[2023-01-11T03:04:42.731Z] fc9b8b20f058: Download complete 
+[2023-01-11T03:04:42.783Z] 482fc2b1d7b2: Extracting  294.9kB/7.132MB
+[2023-01-11T03:04:42.797Z] 88bd48efa698: Downloading  91.38MB/94.54MB
+[2023-01-11T03:04:42.838Z] 88bd48efa698: Verifying Checksum 
+[2023-01-11T03:04:42.839Z] 88bd48efa698: Download complete 
+[2023-01-11T03:04:42.884Z] 482fc2b1d7b2: Extracting  1.966MB/7.132MB
+[2023-01-11T03:04:42.913Z] 0d12e33b7271: Downloading  424.5kB/41.14MB
+[2023-01-11T03:04:42.991Z] 482fc2b1d7b2: Extracting  2.949MB/7.132MB
+[2023-01-11T03:04:43.014Z] c150b1fbe9d8: Downloading   6.89kB/629.8kB
+[2023-01-11T03:04:43.015Z] 0d12e33b7271: Downloading  9.667MB/41.14MB
+[2023-01-11T03:04:43.043Z] c150b1fbe9d8: Downloading  629.8kB/629.8kB
+[2023-01-11T03:04:43.044Z] c150b1fbe9d8: Verifying Checksum c150b1fbe9d8: Download complete 
+[2023-01-11T03:04:43.096Z] 482fc2b1d7b2: Extracting  3.932MB/7.132MB
+[2023-01-11T03:04:43.123Z] 0d12e33b7271: Downloading  17.24MB/41.14MB
+[2023-01-11T03:04:43.133Z] f125865743cc: Downloading  540.7kB/163.7MB
+[2023-01-11T03:04:43.209Z] 482fc2b1d7b2: Extracting  4.325MB/7.132MB
+[2023-01-11T03:04:43.231Z] 0d12e33b7271: Downloading  26.09MB/41.14MB
+[2023-01-11T03:04:43.406Z] f125865743cc: Downloading  11.73MB/163.7MB0d12e33b7271: Downloading  30.29MB/41.14MB
+[2023-01-11T03:04:43.461Z] f125865743cc: Downloading  15.48MB/163.7MB482fc2b1d7b2: Extracting  4.424MB/7.132MB
+[2023-01-11T03:04:43.480Z] 0d12e33b7271: Downloading  33.67MB/41.14MB
+[2023-01-11T03:04:43.570Z] 
+[2023-01-11T03:04:43.572Z] f125865743cc: Downloading  17.63MB/163.7MB
+[2023-01-11T03:04:43.589Z] 
+[2023-01-11T03:04:43.591Z] 0d12e33b7271: Downloading  34.51MB/41.14MB
+[2023-01-11T03:04:43.621Z] 482fc2b1d7b2: Extracting   4.62MB/7.132MB
+[2023-01-11T03:04:43.692Z] 
+[2023-01-11T03:04:43.700Z] f125865743cc: Downloading  20.84MB/163.7MB
+[2023-01-11T03:04:43.709Z] 
+[2023-01-11T03:04:43.710Z] 0d12e33b7271: Downloading  37.03MB/41.14MB
+[2023-01-11T03:04:43.825Z] 0d12e33b7271: Downloading  39.54MB/41.14MB
+[2023-01-11T03:04:43.834Z] 995893064795: Downloading  147.5kB/13.18MB
+[2023-01-11T03:04:43.836Z] f125865743cc: Downloading  23.52MB/163.7MB
+[2023-01-11T03:04:43.848Z] 482fc2b1d7b2: Extracting  4.915MB/7.132MB
+[2023-01-11T03:04:43.911Z] 0d12e33b7271: Verifying Checksum 0d12e33b7271: Download complete 
+[2023-01-11T03:04:43.950Z] 
+[2023-01-11T03:04:43.951Z] f125865743cc: Downloading  28.87MB/163.7MB
+[2023-01-11T03:04:43.952Z] 995893064795: Downloading  4.634MB/13.18MB
+[2023-01-11T03:04:43.959Z] 482fc2b1d7b2: Extracting  5.407MB/7.132MB
+[2023-01-11T03:04:44.055Z] 995893064795: Downloading  11.01MB/13.18MB
+[2023-01-11T03:04:44.065Z] f125865743cc: Downloading  35.29MB/163.7MB
+[2023-01-11T03:04:44.090Z] 482fc2b1d7b2: Extracting  5.603MB/7.132MB
+[2023-01-11T03:04:44.091Z] 995893064795: Verifying Checksum 995893064795: Download complete 
+[2023-01-11T03:04:44.152Z] f125865743cc: 
+[2023-01-11T03:04:44.152Z] Downloading  42.77MB/163.7MB
+[2023-01-11T03:04:44.193Z] 482fc2b1d7b2: 
+[2023-01-11T03:04:44.194Z] Extracting  6.291MB/7.132MB
+[2023-01-11T03:04:44.256Z] f125865743cc: Downloading  51.85MB/163.7MB
+[2023-01-11T03:04:44.286Z] 32142c02aa8e: Downloading     207B/207B
+[2023-01-11T03:04:44.286Z] 32142c02aa8e: Verifying Checksum 
+[2023-01-11T03:04:44.287Z] 32142c02aa8e: Download complete 
+[2023-01-11T03:04:44.295Z] 482fc2b1d7b2: Extracting  6.881MB/7.132MB
+[2023-01-11T03:04:44.333Z] 482fc2b1d7b2: Extracting  7.132MB/7.132MB
+[2023-01-11T03:04:44.361Z] f125865743cc: Downloading  58.24MB/163.7MB
+[2023-01-11T03:04:44.463Z] f125865743cc: Downloading  69.46MB/163.7MB
+[2023-01-11T03:04:44.533Z] c321997378f3: 
+[2023-01-11T03:04:44.533Z] Downloading  1.355kB/1.355kB
+[2023-01-11T03:04:44.534Z] c321997378f3: 
+[2023-01-11T03:04:44.534Z] Verifying Checksum c321997378f3: Download complete 
+[2023-01-11T03:04:44.564Z] c9cb779ecb1b: Downloading  244.3kB/23.33MB
+[2023-01-11T03:04:44.567Z] 
+[2023-01-11T03:04:44.567Z] f125865743cc: Downloading  82.82MB/163.7MB
+[2023-01-11T03:04:44.673Z] f125865743cc: Downloading  94.08MB/163.7MB
+[2023-01-11T03:04:44.683Z] c9cb779ecb1b: Downloading  6.327MB/23.33MB
+[2023-01-11T03:04:44.764Z] c9cb779ecb1b: Downloading  12.89MB/23.33MB
+[2023-01-11T03:04:44.787Z] f125865743cc: Downloading  106.4MB/163.7MB
+[2023-01-11T03:04:44.864Z] 734ffd4640b0: Downloading  1.378kB/63.6kB
+[2023-01-11T03:04:44.869Z] 734ffd4640b0: Downloading   63.6kB/63.6kB
+[2023-01-11T03:04:44.869Z] c9cb779ecb1b: Verifying Checksum 
+[2023-01-11T03:04:44.869Z] c9cb779ecb1b: Download complete 
+[2023-01-11T03:04:44.872Z] 734ffd4640b0: Verifying Checksum 
+[2023-01-11T03:04:44.873Z] 734ffd4640b0: Download complete 
+[2023-01-11T03:04:44.876Z] f125865743cc: Downloading  113.9MB/163.7MB
+[2023-01-11T03:04:44.976Z] f125865743cc: 
+[2023-01-11T03:04:44.976Z] Downloading  127.2MB/163.7MB
+[2023-01-11T03:04:45.082Z] f125865743cc: Downloading  141.6MB/163.7MB
+[2023-01-11T03:04:45.106Z] 5bb6b829f310: Downloading   1.05kB/1.05kB
+[2023-01-11T03:04:45.107Z] 5bb6b829f310: Verifying Checksum 5bb6b829f310: Download complete 
+[2023-01-11T03:04:45.148Z] bf918fc060a8: Downloading     180B/180Bbf918fc060a8: Verifying Checksum bf918fc060a8: Download complete 
+[2023-01-11T03:04:45.182Z] f125865743cc: Downloading  153.4MB/163.7MB
+[2023-01-11T03:04:45.248Z] f125865743cc: Verifying Checksum f125865743cc: Download complete 
+[2023-01-11T03:04:45.360Z] 44e9ab4737ec: 
+[2023-01-11T03:04:45.360Z] Downloading  65.54kB/4.934MB
+[2023-01-11T03:04:45.411Z] 44e9ab4737ec: Verifying Checksum 44e9ab4737ec: Download complete 
+[2023-01-11T03:04:46.310Z] 
+[2023-01-11T03:04:46.310Z] 
+[2023-01-11T03:04:46.311Z] 482fc2b1d7b2: Pull complete 
+[2023-01-11T03:04:46.470Z] 69e53bef91af: Extracting  557.1kB/217.2MB
+[2023-01-11T03:04:46.585Z] 69e53bef91af: Extracting  3.899MB/217.2MB
+[2023-01-11T03:04:46.687Z] 69e53bef91af: Extracting  7.242MB/217.2MB
+[2023-01-11T03:04:46.809Z] 69e53bef91af: 
+[2023-01-11T03:04:46.809Z] Extracting   11.7MB/217.2MB
+[2023-01-11T03:04:46.910Z] 69e53bef91af: Extracting   15.6MB/217.2MB
+[2023-01-11T03:04:47.066Z] 69e53bef91af: 
+[2023-01-11T03:04:47.066Z] Extracting  18.94MB/217.2MB
+[2023-01-11T03:04:47.208Z] 69e53bef91af: Extracting  20.05MB/217.2MB
+[2023-01-11T03:04:47.326Z] 69e53bef91af: Extracting  21.17MB/217.2MB
+[2023-01-11T03:04:47.457Z] 69e53bef91af: Extracting  22.28MB/217.2MB
+[2023-01-11T03:04:47.582Z] 69e53bef91af: Extracting   23.4MB/217.2MB
+[2023-01-11T03:04:47.722Z] 69e53bef91af: Extracting  25.07MB/217.2MB
+[2023-01-11T03:04:47.831Z] 69e53bef91af: Extracting  26.18MB/217.2MB
+[2023-01-11T03:04:47.934Z] 69e53bef91af: Extracting  30.64MB/217.2MB
+[2023-01-11T03:04:48.037Z] 69e53bef91af: Extracting  35.09MB/217.2MB
+[2023-01-11T03:04:48.145Z] 69e53bef91af: Extracting  37.88MB/217.2MB
+[2023-01-11T03:04:48.254Z] 69e53bef91af: 
+[2023-01-11T03:04:48.254Z] Extracting  42.34MB/217.2MB
+[2023-01-11T03:04:48.359Z] 69e53bef91af: 
+[2023-01-11T03:04:48.360Z] Extracting  46.79MB/217.2MB
+[2023-01-11T03:04:48.464Z] 69e53bef91af: 
+[2023-01-11T03:04:48.465Z] Extracting  50.14MB/217.2MB
+[2023-01-11T03:04:48.568Z] 69e53bef91af: Extracting  52.92MB/217.2MB
+[2023-01-11T03:04:48.668Z] 69e53bef91af: Extracting  55.71MB/217.2MB
+[2023-01-11T03:04:48.784Z] 69e53bef91af: Extracting  59.05MB/217.2MB
+[2023-01-11T03:04:48.892Z] 69e53bef91af: Extracting   63.5MB/217.2MB
+[2023-01-11T03:04:48.996Z] 69e53bef91af: Extracting   67.4MB/217.2MB
+[2023-01-11T03:04:49.104Z] 69e53bef91af: Extracting  70.19MB/217.2MB
+[2023-01-11T03:04:49.209Z] 69e53bef91af: 
+[2023-01-11T03:04:49.209Z] Extracting  74.09MB/217.2MB
+[2023-01-11T03:04:49.326Z] 69e53bef91af: Extracting  77.99MB/217.2MB
+[2023-01-11T03:04:49.436Z] 69e53bef91af: Extracting  80.77MB/217.2MB
+[2023-01-11T03:04:49.537Z] 69e53bef91af: Extracting  83.56MB/217.2MB
+[2023-01-11T03:04:49.645Z] 69e53bef91af: 
+[2023-01-11T03:04:49.646Z] Extracting  87.46MB/217.2MB
+[2023-01-11T03:04:49.751Z] 69e53bef91af: 
+[2023-01-11T03:04:49.752Z] Extracting  89.69MB/217.2MB
+[2023-01-11T03:04:49.862Z] 69e53bef91af: Extracting  91.91MB/217.2MB
+[2023-01-11T03:04:49.974Z] 69e53bef91af: Extracting  95.81MB/217.2MB
+[2023-01-11T03:04:50.106Z] 
+[2023-01-11T03:04:50.106Z] 69e53bef91af: Extracting  98.04MB/217.2MB
+[2023-01-11T03:04:50.199Z] 
+[2023-01-11T03:04:50.199Z] 69e53bef91af: Extracting   98.6MB/217.2MB
+[2023-01-11T03:04:50.334Z] 
+[2023-01-11T03:04:50.343Z] 69e53bef91af: Extracting  99.71MB/217.2MB
+[2023-01-11T03:04:50.343Z] 
+[2023-01-11T03:04:50.480Z] 
+[2023-01-11T03:04:50.485Z] 69e53bef91af: Extracting  100.3MB/217.2MB
+[2023-01-11T03:04:50.630Z] 69e53bef91af: Extracting  100.8MB/217.2MB
+[2023-01-11T03:04:50.746Z] 69e53bef91af: Extracting  101.9MB/217.2MB
+[2023-01-11T03:04:50.858Z] 69e53bef91af: Extracting  105.3MB/217.2MB
+[2023-01-11T03:04:50.963Z] 69e53bef91af: Extracting  108.1MB/217.2MB
+[2023-01-11T03:04:51.071Z] 69e53bef91af: Extracting  111.4MB/217.2MB
+[2023-01-11T03:04:51.184Z] 69e53bef91af: Extracting  114.8MB/217.2MB
+[2023-01-11T03:04:51.306Z] 69e53bef91af: Extracting  116.4MB/217.2MB
+[2023-01-11T03:04:51.431Z] 69e53bef91af: Extracting  118.1MB/217.2MB
+[2023-01-11T03:04:51.546Z] 69e53bef91af: Extracting  119.8MB/217.2MB
+[2023-01-11T03:04:51.688Z] 69e53bef91af: Extracting  122.6MB/217.2MB
+[2023-01-11T03:04:51.812Z] 69e53bef91af: Extracting  125.3MB/217.2MB
+[2023-01-11T03:04:51.929Z] 69e53bef91af: 
+[2023-01-11T03:04:51.930Z] Extracting  127.6MB/217.2MB
+[2023-01-11T03:04:52.061Z] 69e53bef91af: Extracting  129.8MB/217.2MB
+[2023-01-11T03:04:52.177Z] 69e53bef91af: Extracting  131.5MB/217.2MB
+[2023-01-11T03:04:52.284Z] 69e53bef91af: Extracting  133.1MB/217.2MB
+[2023-01-11T03:04:52.401Z] 69e53bef91af: 
+[2023-01-11T03:04:52.402Z] Extracting  134.8MB/217.2MB
+[2023-01-11T03:04:52.504Z] 69e53bef91af: 
+[2023-01-11T03:04:52.504Z] Extracting    137MB/217.2MB
+[2023-01-11T03:04:52.613Z] 69e53bef91af: Extracting  139.3MB/217.2MB
+[2023-01-11T03:04:52.716Z] 69e53bef91af: Extracting    142MB/217.2MB
+[2023-01-11T03:04:52.824Z] 69e53bef91af: Extracting  145.4MB/217.2MB
+[2023-01-11T03:04:52.939Z] 69e53bef91af: Extracting  149.8MB/217.2MB
+[2023-01-11T03:04:53.049Z] 69e53bef91af: Extracting  152.6MB/217.2MB
+[2023-01-11T03:04:53.159Z] 69e53bef91af: Extracting  157.1MB/217.2MB
+[2023-01-11T03:04:53.266Z] 69e53bef91af: Extracting    161MB/217.2MB
+[2023-01-11T03:04:53.388Z] 69e53bef91af: Extracting  164.9MB/217.2MB
+[2023-01-11T03:04:53.490Z] 69e53bef91af: Extracting  167.7MB/217.2MB
+[2023-01-11T03:04:53.601Z] 69e53bef91af: Extracting  170.5MB/217.2MB
+[2023-01-11T03:04:53.702Z] 69e53bef91af: Extracting  173.8MB/217.2MB
+[2023-01-11T03:04:53.810Z] 69e53bef91af: Extracting  177.7MB/217.2MB
+[2023-01-11T03:04:53.911Z] 69e53bef91af: Extracting  180.5MB/217.2MB
+[2023-01-11T03:04:54.034Z] 69e53bef91af: Extracting  184.4MB/217.2MB
+[2023-01-11T03:04:54.147Z] 69e53bef91af: Extracting  188.3MB/217.2MB
+[2023-01-11T03:04:54.294Z] 69e53bef91af: Extracting  191.6MB/217.2MB
+[2023-01-11T03:04:54.530Z] 69e53bef91af: Extracting  192.7MB/217.2MB
+[2023-01-11T03:04:54.643Z] 
+[2023-01-11T03:04:54.643Z] 69e53bef91af: Extracting  194.4MB/217.2MB
+[2023-01-11T03:04:54.745Z] 69e53bef91af: Extracting  196.1MB/217.2MB
+[2023-01-11T03:04:54.864Z] 69e53bef91af: Extracting  197.8MB/217.2MB
+[2023-01-11T03:04:54.965Z] 69e53bef91af: Extracting    200MB/217.2MB
+[2023-01-11T03:04:55.135Z] 69e53bef91af: Extracting  201.7MB/217.2MB
+[2023-01-11T03:04:55.262Z] 69e53bef91af: Extracting  203.3MB/217.2MB
+[2023-01-11T03:04:55.363Z] 69e53bef91af: Extracting  205.6MB/217.2MB
+[2023-01-11T03:04:55.478Z] 69e53bef91af: Extracting  208.3MB/217.2MB
+[2023-01-11T03:04:55.597Z] 69e53bef91af: Extracting  210.6MB/217.2MB
+[2023-01-11T03:04:55.731Z] 69e53bef91af: Extracting  212.2MB/217.2MB
+[2023-01-11T03:04:55.866Z] 69e53bef91af: Extracting  213.9MB/217.2MB
+[2023-01-11T03:04:56.030Z] 69e53bef91af: Extracting    215MB/217.2MB
+[2023-01-11T03:04:56.274Z] 69e53bef91af: Extracting  216.1MB/217.2MB
+[2023-01-11T03:04:56.421Z] 69e53bef91af: Extracting  217.2MB/217.2MB
+[2023-01-11T03:04:57.849Z] 
+[2023-01-11T03:04:57.850Z] 69e53bef91af: Pull complete 
+[2023-01-11T03:04:57.969Z] 8c8c119e5dfa: Extracting  557.1kB/61.16MB
+[2023-01-11T03:04:58.073Z] 8c8c119e5dfa: Extracting  4.456MB/61.16MB
+[2023-01-11T03:04:58.178Z] 8c8c119e5dfa: Extracting  8.356MB/61.16MB
+[2023-01-11T03:04:58.284Z] 8c8c119e5dfa: Extracting   11.7MB/61.16MB
+[2023-01-11T03:04:58.383Z] 8c8c119e5dfa: Extracting  13.37MB/61.16MB
+[2023-01-11T03:04:58.490Z] 8c8c119e5dfa: Extracting  16.15MB/61.16MB
+[2023-01-11T03:04:58.613Z] 8c8c119e5dfa: Extracting   19.5MB/61.16MB
+[2023-01-11T03:04:58.713Z] 8c8c119e5dfa: Extracting  22.28MB/61.16MB
+[2023-01-11T03:04:58.824Z] 8c8c119e5dfa: Extracting  25.07MB/61.16MB
+[2023-01-11T03:04:58.940Z] 8c8c119e5dfa: Extracting  28.41MB/61.16MB
+[2023-01-11T03:04:59.043Z] 8c8c119e5dfa: Extracting   31.2MB/61.16MB
+[2023-01-11T03:04:59.144Z] 8c8c119e5dfa: Extracting  33.98MB/61.16MB
+[2023-01-11T03:04:59.252Z] 8c8c119e5dfa: Extracting  36.77MB/61.16MB
+[2023-01-11T03:04:59.375Z] 8c8c119e5dfa: Extracting  37.88MB/61.16MB
+[2023-01-11T03:04:59.483Z] 8c8c119e5dfa: Extracting  38.99MB/61.16MB
+[2023-01-11T03:04:59.591Z] 8c8c119e5dfa: Extracting  45.12MB/61.16MB
+[2023-01-11T03:04:59.696Z] 8c8c119e5dfa: Extracting  51.81MB/61.16MB
+[2023-01-11T03:04:59.831Z] 8c8c119e5dfa: Extracting  55.71MB/61.16MB
+[2023-01-11T03:04:59.957Z] 8c8c119e5dfa: Extracting  57.93MB/61.16MB
+[2023-01-11T03:05:00.159Z] 8c8c119e5dfa: 
+[2023-01-11T03:05:00.159Z] Extracting  58.49MB/61.16MB
+[2023-01-11T03:05:00.622Z] 8c8c119e5dfa: Extracting  59.05MB/61.16MB
+[2023-01-11T03:05:01.032Z] 8c8c119e5dfa: 
+[2023-01-11T03:05:01.033Z] Extracting   59.6MB/61.16MB
+[2023-01-11T03:05:01.448Z] 8c8c119e5dfa: Extracting  60.16MB/61.16MB
+[2023-01-11T03:05:01.511Z] 8c8c119e5dfa: Extracting  61.16MB/61.16MB
+[2023-01-11T03:05:03.120Z] 8c8c119e5dfa: Pull complete 
+[2023-01-11T03:05:03.217Z] a6b30a53e82d: 
+[2023-01-11T03:05:03.217Z] Extracting  458.8kB/44.33MB
+[2023-01-11T03:05:03.319Z] a6b30a53e82d: 
+[2023-01-11T03:05:03.319Z] Extracting  6.423MB/44.33MB
+[2023-01-11T03:05:03.422Z] a6b30a53e82d: Extracting  14.68MB/44.33MB
+[2023-01-11T03:05:03.611Z] a6b30a53e82d: Extracting  16.52MB/44.33MB
+[2023-01-11T03:05:03.991Z] a6b30a53e82d: Extracting  16.97MB/44.33MB
+[2023-01-11T03:05:03.992Z] 
+[2023-01-11T03:05:04.281Z] a6b30a53e82d: Extracting  17.89MB/44.33MB
+[2023-01-11T03:05:04.703Z] a6b30a53e82d: Extracting  18.35MB/44.33MB
+[2023-01-11T03:05:05.173Z] a6b30a53e82d: Extracting  18.81MB/44.33MB
+[2023-01-11T03:05:05.618Z] a6b30a53e82d: Extracting  19.27MB/44.33MB
+[2023-01-11T03:05:05.719Z] a6b30a53e82d: Extracting   21.1MB/44.33MB
+[2023-01-11T03:05:05.830Z] a6b30a53e82d: Extracting  22.02MB/44.33MB
+[2023-01-11T03:05:05.935Z] a6b30a53e82d: 
+[2023-01-11T03:05:05.936Z] Extracting  24.31MB/44.33MB
+[2023-01-11T03:05:06.098Z] a6b30a53e82d: Extracting  27.07MB/44.33MB
+[2023-01-11T03:05:06.217Z] 
+[2023-01-11T03:05:06.218Z] a6b30a53e82d: Extracting  29.36MB/44.33MB
+[2023-01-11T03:05:06.370Z] a6b30a53e82d: Extracting   31.2MB/44.33MB
+[2023-01-11T03:05:06.518Z] a6b30a53e82d: Extracting  31.65MB/44.33MB
+[2023-01-11T03:05:06.625Z] a6b30a53e82d: Extracting  34.87MB/44.33MB
+[2023-01-11T03:05:06.731Z] a6b30a53e82d: Extracting  37.62MB/44.33MB
+[2023-01-11T03:05:06.732Z] 
+[2023-01-11T03:05:06.878Z] a6b30a53e82d: 
+[2023-01-11T03:05:06.878Z] Extracting  39.45MB/44.33MB
+[2023-01-11T03:05:06.995Z] 
+[2023-01-11T03:05:06.996Z] a6b30a53e82d: Extracting  40.37MB/44.33MB
+[2023-01-11T03:05:07.097Z] a6b30a53e82d: 
+[2023-01-11T03:05:07.097Z] Extracting  42.21MB/44.33MB
+[2023-01-11T03:05:07.207Z] a6b30a53e82d: Extracting  44.33MB/44.33MB
+[2023-01-11T03:05:08.882Z] a6b30a53e82d: Pull complete 
+[2023-01-11T03:05:09.001Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:09.001Z] Extracting  557.1kB/97.64MB
+[2023-01-11T03:05:09.112Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:09.112Z] Extracting  4.456MB/97.64MB
+[2023-01-11T03:05:09.221Z] fb4dc4bbcf4c: Extracting  8.356MB/97.64MB
+[2023-01-11T03:05:09.328Z] fb4dc4bbcf4c: Extracting  10.58MB/97.64MB
+[2023-01-11T03:05:09.441Z] fb4dc4bbcf4c: Extracting  13.93MB/97.64MB
+[2023-01-11T03:05:09.544Z] fb4dc4bbcf4c: Extracting  16.71MB/97.64MB
+[2023-01-11T03:05:09.663Z] fb4dc4bbcf4c: Extracting  20.05MB/97.64MB
+[2023-01-11T03:05:09.784Z] fb4dc4bbcf4c: Extracting   23.4MB/97.64MB
+[2023-01-11T03:05:09.901Z] fb4dc4bbcf4c: Extracting  26.18MB/97.64MB
+[2023-01-11T03:05:10.002Z] fb4dc4bbcf4c: Extracting  28.41MB/97.64MB
+[2023-01-11T03:05:10.115Z] fb4dc4bbcf4c: Extracting  30.64MB/97.64MB
+[2023-01-11T03:05:10.216Z] fb4dc4bbcf4c: Extracting  33.42MB/97.64MB
+[2023-01-11T03:05:10.316Z] fb4dc4bbcf4c: Extracting  36.21MB/97.64MB
+[2023-01-11T03:05:10.427Z] fb4dc4bbcf4c: Extracting  38.99MB/97.64MB
+[2023-01-11T03:05:10.546Z] fb4dc4bbcf4c: Extracting  42.34MB/97.64MB
+[2023-01-11T03:05:10.670Z] fb4dc4bbcf4c: Extracting  44.01MB/97.64MB
+[2023-01-11T03:05:10.813Z] fb4dc4bbcf4c: Extracting  45.12MB/97.64MB
+[2023-01-11T03:05:10.814Z] 
+[2023-01-11T03:05:10.943Z] fb4dc4bbcf4c: Extracting  49.58MB/97.64MB
+[2023-01-11T03:05:11.079Z] fb4dc4bbcf4c: Extracting  51.25MB/97.64MB
+[2023-01-11T03:05:11.183Z] fb4dc4bbcf4c: Extracting  54.59MB/97.64MB
+[2023-01-11T03:05:11.309Z] fb4dc4bbcf4c: Extracting  57.93MB/97.64MB
+[2023-01-11T03:05:11.419Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:11.420Z] Extracting   59.6MB/97.64MB
+[2023-01-11T03:05:11.541Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:11.541Z] Extracting  61.28MB/97.64MB
+[2023-01-11T03:05:11.662Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:11.662Z] Extracting   63.5MB/97.64MB
+[2023-01-11T03:05:11.765Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:11.766Z] Extracting  65.18MB/97.64MB
+[2023-01-11T03:05:11.879Z] fb4dc4bbcf4c: Extracting   67.4MB/97.64MB
+[2023-01-11T03:05:11.879Z] 
+[2023-01-11T03:05:11.983Z] fb4dc4bbcf4c: Extracting  69.07MB/97.64MB
+[2023-01-11T03:05:12.089Z] fb4dc4bbcf4c: Extracting   71.3MB/97.64MB
+[2023-01-11T03:05:12.189Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:12.190Z] Extracting  73.53MB/97.64MB
+[2023-01-11T03:05:12.308Z] fb4dc4bbcf4c: Extracting  75.76MB/97.64MB
+[2023-01-11T03:05:12.429Z] fb4dc4bbcf4c: Extracting  78.54MB/97.64MB
+[2023-01-11T03:05:12.542Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:12.543Z] Extracting  80.77MB/97.64MB
+[2023-01-11T03:05:12.650Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:12.650Z] Extracting     83MB/97.64MB
+[2023-01-11T03:05:12.764Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:12.765Z] Extracting  84.67MB/97.64MB
+[2023-01-11T03:05:12.882Z] fb4dc4bbcf4c: Extracting   86.9MB/97.64MB
+[2023-01-11T03:05:13.019Z] 
+[2023-01-11T03:05:13.086Z] fb4dc4bbcf4c: Extracting  87.46MB/97.64MB
+[2023-01-11T03:05:13.239Z] 
+[2023-01-11T03:05:13.241Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:13.241Z] Extracting  88.01MB/97.64MB
+[2023-01-11T03:05:13.458Z] fb4dc4bbcf4c: Extracting  88.57MB/97.64MB
+[2023-01-11T03:05:13.718Z] 
+[2023-01-11T03:05:13.718Z] fb4dc4bbcf4c: Extracting  89.13MB/97.64MB
+[2023-01-11T03:05:13.824Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:13.824Z] Extracting  90.24MB/97.64MB
+[2023-01-11T03:05:13.925Z] fb4dc4bbcf4c: 
+[2023-01-11T03:05:13.925Z] Extracting  91.36MB/97.64MB
+[2023-01-11T03:05:14.097Z] fb4dc4bbcf4c: Extracting  92.47MB/97.64MB
+[2023-01-11T03:05:14.224Z] fb4dc4bbcf4c: Extracting  93.59MB/97.64MB
+[2023-01-11T03:05:14.342Z] fb4dc4bbcf4c: Extracting   94.7MB/97.64MB
+[2023-01-11T03:05:14.449Z] fb4dc4bbcf4c: Extracting  95.81MB/97.64MB
+[2023-01-11T03:05:14.598Z] fb4dc4bbcf4c: Extracting  97.48MB/97.64MB
+[2023-01-11T03:05:14.620Z] fb4dc4bbcf4c: Extracting  97.64MB/97.64MB
+[2023-01-11T03:05:15.184Z] 
+[2023-01-11T03:05:15.185Z] fb4dc4bbcf4c: Pull complete 
+[2023-01-11T03:05:15.325Z] 680f4473808d: 
+[2023-01-11T03:05:15.325Z] Extracting  557.1kB/188.8MB
+[2023-01-11T03:05:15.433Z] 680f4473808d: Extracting  5.014MB/188.8MB
+[2023-01-11T03:05:15.539Z] 680f4473808d: Extracting  10.58MB/188.8MB
+[2023-01-11T03:05:15.645Z] 680f4473808d: Extracting  18.94MB/188.8MB
+[2023-01-11T03:05:15.760Z] 680f4473808d: Extracting  26.18MB/188.8MB
+[2023-01-11T03:05:15.861Z] 680f4473808d: 
+[2023-01-11T03:05:15.862Z] Extracting  32.87MB/188.8MB
+[2023-01-11T03:05:15.967Z] 680f4473808d: 
+[2023-01-11T03:05:15.968Z] Extracting  40.11MB/188.8MB
+[2023-01-11T03:05:16.074Z] 680f4473808d: 
+[2023-01-11T03:05:16.074Z] Extracting  47.91MB/188.8MB
+[2023-01-11T03:05:16.182Z] 680f4473808d: 
+[2023-01-11T03:05:16.182Z] Extracting  56.26MB/188.8MB
+[2023-01-11T03:05:16.285Z] 680f4473808d: 
+[2023-01-11T03:05:16.285Z] Extracting  62.95MB/188.8MB
+[2023-01-11T03:05:16.387Z] 680f4473808d: Extracting  69.63MB/188.8MB
+[2023-01-11T03:05:16.487Z] 680f4473808d: Extracting  74.09MB/188.8MB
+[2023-01-11T03:05:16.594Z] 680f4473808d: 
+[2023-01-11T03:05:16.595Z] Extracting  79.66MB/188.8MB
+[2023-01-11T03:05:16.705Z] 680f4473808d: 
+[2023-01-11T03:05:16.705Z] Extracting  83.56MB/188.8MB
+[2023-01-11T03:05:16.815Z] 680f4473808d: Extracting   86.9MB/188.8MB
+[2023-01-11T03:05:16.932Z] 680f4473808d: 
+[2023-01-11T03:05:16.932Z] Extracting   90.8MB/188.8MB
+[2023-01-11T03:05:17.037Z] 680f4473808d: 
+[2023-01-11T03:05:17.037Z] Extracting  94.14MB/188.8MB
+[2023-01-11T03:05:17.146Z] 680f4473808d: 
+[2023-01-11T03:05:17.147Z] Extracting  98.04MB/188.8MB
+[2023-01-11T03:05:17.248Z] 680f4473808d: 
+[2023-01-11T03:05:17.249Z] Extracting  101.4MB/188.8MB
+[2023-01-11T03:05:17.361Z] 
+[2023-01-11T03:05:17.361Z] 680f4473808d: Extracting  105.3MB/188.8MB
+[2023-01-11T03:05:17.466Z] 680f4473808d: Extracting  108.6MB/188.8MB
+[2023-01-11T03:05:17.580Z] 680f4473808d: Extracting    112MB/188.8MB
+[2023-01-11T03:05:17.685Z] 680f4473808d: 
+[2023-01-11T03:05:17.686Z] Extracting  115.3MB/188.8MB
+[2023-01-11T03:05:17.791Z] 680f4473808d: Extracting  118.7MB/188.8MB
+[2023-01-11T03:05:17.905Z] 680f4473808d: Extracting    122MB/188.8MB
+[2023-01-11T03:05:18.020Z] 680f4473808d: Extracting  125.3MB/188.8MB
+[2023-01-11T03:05:18.123Z] 680f4473808d: Extracting  127.6MB/188.8MB
+[2023-01-11T03:05:18.245Z] 680f4473808d: Extracting  130.9MB/188.8MB
+[2023-01-11T03:05:18.353Z] 680f4473808d: Extracting  134.3MB/188.8MB
+[2023-01-11T03:05:18.463Z] 680f4473808d: Extracting  138.1MB/188.8MB
+[2023-01-11T03:05:18.568Z] 680f4473808d: Extracting  141.5MB/188.8MB
+[2023-01-11T03:05:18.672Z] 680f4473808d: Extracting  149.3MB/188.8MB
+[2023-01-11T03:05:18.775Z] 680f4473808d: Extracting  156.5MB/188.8MB
+[2023-01-11T03:05:18.880Z] 680f4473808d: Extracting  163.8MB/188.8MB
+[2023-01-11T03:05:18.984Z] 680f4473808d: Extracting    171MB/188.8MB
+[2023-01-11T03:05:18.984Z] 
+[2023-01-11T03:05:19.110Z] 680f4473808d: Extracting  177.1MB/188.8MB
+[2023-01-11T03:05:19.229Z] 680f4473808d: Extracting  178.8MB/188.8MB
+[2023-01-11T03:05:19.399Z] 680f4473808d: Extracting  180.5MB/188.8MB
+[2023-01-11T03:05:19.615Z] 680f4473808d: Extracting  182.2MB/188.8MB
+[2023-01-11T03:05:19.732Z] 680f4473808d: Extracting  183.3MB/188.8MB
+[2023-01-11T03:05:19.844Z] 680f4473808d: Extracting  186.6MB/188.8MB
+[2023-01-11T03:05:19.905Z] 680f4473808d: Extracting  188.8MB/188.8MB
+[2023-01-11T03:05:19.908Z] 680f4473808d: Extracting  188.8MB/188.8MB
+[2023-01-11T03:05:20.934Z] 
+[2023-01-11T03:05:20.935Z] 680f4473808d: Pull complete 
+[2023-01-11T03:05:21.040Z] ba7e827ea8b6: Extracting  557.1kB/91.33MB
+[2023-01-11T03:05:21.144Z] ba7e827ea8b6: Extracting  3.899MB/91.33MB
+[2023-01-11T03:05:21.249Z] ba7e827ea8b6: Extracting  7.799MB/91.33MB
+[2023-01-11T03:05:21.358Z] ba7e827ea8b6: 
+[2023-01-11T03:05:21.358Z] Extracting   11.7MB/91.33MB
+[2023-01-11T03:05:21.456Z] ba7e827ea8b6: Extracting  14.48MB/91.33MB
+[2023-01-11T03:05:21.562Z] ba7e827ea8b6: Extracting  18.38MB/91.33MB
+[2023-01-11T03:05:21.674Z] ba7e827ea8b6: Extracting  22.84MB/91.33MB
+[2023-01-11T03:05:21.776Z] ba7e827ea8b6: Extracting  26.74MB/91.33MB
+[2023-01-11T03:05:21.887Z] ba7e827ea8b6: Extracting  30.64MB/91.33MB
+[2023-01-11T03:05:22.002Z] ba7e827ea8b6: Extracting  33.98MB/91.33MB
+[2023-01-11T03:05:22.152Z] 
+[2023-01-11T03:05:22.152Z] ba7e827ea8b6: Extracting  35.65MB/91.33MB
+[2023-01-11T03:05:22.259Z] ba7e827ea8b6: Extracting  36.77MB/91.33MB
+[2023-01-11T03:05:22.366Z] ba7e827ea8b6: Extracting  37.88MB/91.33MB
+[2023-01-11T03:05:22.509Z] ba7e827ea8b6: Extracting  38.99MB/91.33MB
+[2023-01-11T03:05:22.612Z] ba7e827ea8b6: Extracting  40.11MB/91.33MB
+[2023-01-11T03:05:22.751Z] ba7e827ea8b6: Extracting  41.78MB/91.33MB
+[2023-01-11T03:05:22.860Z] ba7e827ea8b6: Extracting  42.89MB/91.33MB
+[2023-01-11T03:05:22.984Z] ba7e827ea8b6: Extracting  44.01MB/91.33MB
+[2023-01-11T03:05:23.126Z] ba7e827ea8b6: Extracting  45.12MB/91.33MB
+[2023-01-11T03:05:23.247Z] ba7e827ea8b6: Extracting  46.24MB/91.33MB
+[2023-01-11T03:05:23.359Z] ba7e827ea8b6: Extracting  49.58MB/91.33MB
+[2023-01-11T03:05:23.466Z] ba7e827ea8b6: Extracting  53.48MB/91.33MB
+[2023-01-11T03:05:23.571Z] ba7e827ea8b6: Extracting  57.38MB/91.33MB
+[2023-01-11T03:05:23.675Z] ba7e827ea8b6: Extracting  60.16MB/91.33MB
+[2023-01-11T03:05:23.777Z] ba7e827ea8b6: Extracting   63.5MB/91.33MB
+[2023-01-11T03:05:23.883Z] ba7e827ea8b6: Extracting   67.4MB/91.33MB
+[2023-01-11T03:05:23.991Z] ba7e827ea8b6: Extracting  71.86MB/91.33MB
+[2023-01-11T03:05:24.096Z] ba7e827ea8b6: Extracting   75.2MB/91.33MB
+[2023-01-11T03:05:24.198Z] ba7e827ea8b6: Extracting  77.99MB/91.33MB
+[2023-01-11T03:05:24.311Z] ba7e827ea8b6: Extracting  80.22MB/91.33MB
+[2023-01-11T03:05:24.420Z] ba7e827ea8b6: Extracting  81.33MB/91.33MB
+[2023-01-11T03:05:24.571Z] ba7e827ea8b6: Extracting     83MB/91.33MB
+[2023-01-11T03:05:24.676Z] ba7e827ea8b6: Extracting  84.12MB/91.33MB
+[2023-01-11T03:05:24.784Z] ba7e827ea8b6: Extracting  85.23MB/91.33MB
+[2023-01-11T03:05:24.929Z] ba7e827ea8b6: Extracting   86.9MB/91.33MB
+[2023-01-11T03:05:25.086Z] 
+[2023-01-11T03:05:25.095Z] ba7e827ea8b6: Extracting  88.01MB/91.33MB
+[2023-01-11T03:05:25.350Z] ba7e827ea8b6: Extracting  88.57MB/91.33MB
+[2023-01-11T03:05:25.550Z] ba7e827ea8b6: Extracting  89.13MB/91.33MB
+[2023-01-11T03:05:25.756Z] ba7e827ea8b6: 
+[2023-01-11T03:05:25.758Z] Extracting  89.69MB/91.33MB
+[2023-01-11T03:05:25.872Z] ba7e827ea8b6: 
+[2023-01-11T03:05:25.872Z] Extracting  90.24MB/91.33MB
+[2023-01-11T03:05:25.979Z] ba7e827ea8b6: 
+[2023-01-11T03:05:25.979Z] Extracting   90.8MB/91.33MB
+[2023-01-11T03:05:26.116Z] ba7e827ea8b6: 
+[2023-01-11T03:05:26.117Z] Extracting  91.33MB/91.33MB
+[2023-01-11T03:05:26.134Z] ba7e827ea8b6: Extracting  91.33MB/91.33MB
+[2023-01-11T03:05:27.053Z] ba7e827ea8b6: Pull complete 
+[2023-01-11T03:05:27.102Z] a17bea57d6ef: 
+[2023-01-11T03:05:27.102Z] Extracting  32.77kB/2.936MB
+[2023-01-11T03:05:27.198Z] a17bea57d6ef: Extracting  1.212MB/2.936MB
+[2023-01-11T03:05:27.298Z] a17bea57d6ef: 
+[2023-01-11T03:05:27.298Z] Extracting  2.589MB/2.936MB
+[2023-01-11T03:05:27.402Z] a17bea57d6ef: Extracting  2.753MB/2.936MB
+[2023-01-11T03:05:27.443Z] a17bea57d6ef: Extracting  2.936MB/2.936MB
+[2023-01-11T03:05:27.722Z] 
+[2023-01-11T03:05:27.722Z] a17bea57d6ef: Pull complete 
+[2023-01-11T03:05:27.778Z] feab8334bcac: Extracting  32.77kB/570.8kB
+[2023-01-11T03:05:27.837Z] feab8334bcac: Extracting  570.8kB/570.8kB
+[2023-01-11T03:05:27.838Z] feab8334bcac: Extracting  570.8kB/570.8kB
+[2023-01-11T03:05:28.017Z] feab8334bcac: Pull complete 
+[2023-01-11T03:05:28.062Z] 
+[2023-01-11T03:05:28.062Z] aad4f15c1a1e: Extracting  229.4kB/20.6MB
+[2023-01-11T03:05:28.164Z] aad4f15c1a1e: Extracting  2.064MB/20.6MB
+[2023-01-11T03:05:28.269Z] aad4f15c1a1e: Extracting  5.505MB/20.6MB
+[2023-01-11T03:05:28.407Z] aad4f15c1a1e: 
+[2023-01-11T03:05:28.407Z] Extracting  7.111MB/20.6MB
+[2023-01-11T03:05:28.510Z] aad4f15c1a1e: Extracting  10.78MB/20.6MB
+[2023-01-11T03:05:28.613Z] aad4f15c1a1e: Extracting  14.68MB/20.6MB
+[2023-01-11T03:05:28.721Z] aad4f15c1a1e: Extracting  18.35MB/20.6MB
+[2023-01-11T03:05:28.835Z] aad4f15c1a1e: Extracting  19.27MB/20.6MB
+[2023-01-11T03:05:28.926Z] aad4f15c1a1e: Extracting   20.6MB/20.6MB
+[2023-01-11T03:05:29.442Z] aad4f15c1a1e: Pull complete 
+[2023-01-11T03:05:29.485Z] 
+[2023-01-11T03:05:29.486Z] 2a418c856895: Extracting  32.77kB/2.779MB
+[2023-01-11T03:05:29.585Z] 2a418c856895: Extracting  1.671MB/2.779MB
+[2023-01-11T03:05:29.652Z] 2a418c856895: Extracting  2.779MB/2.779MB
+[2023-01-11T03:05:29.844Z] 
+[2023-01-11T03:05:29.844Z] 2a418c856895: Pull complete 
+[2023-01-11T03:05:29.981Z] 3adc8a5186f7: Extracting  557.1kB/273.7MB
+[2023-01-11T03:05:30.096Z] 3adc8a5186f7: Extracting  4.456MB/273.7MB
+[2023-01-11T03:05:30.202Z] 3adc8a5186f7: Extracting  7.799MB/273.7MB
+[2023-01-11T03:05:30.310Z] 3adc8a5186f7: Extracting   11.7MB/273.7MB
+[2023-01-11T03:05:30.507Z] 3adc8a5186f7: Extracting   15.6MB/273.7MB
+[2023-01-11T03:05:30.635Z] 3adc8a5186f7: Extracting  16.15MB/273.7MB
+[2023-01-11T03:05:30.753Z] 3adc8a5186f7: Extracting  16.71MB/273.7MB
+[2023-01-11T03:05:31.002Z] 3adc8a5186f7: Extracting  17.83MB/273.7MB
+[2023-01-11T03:05:31.194Z] 3adc8a5186f7: Extracting  18.38MB/273.7MB
+[2023-01-11T03:05:31.301Z] 3adc8a5186f7: Extracting  18.94MB/273.7MB
+[2023-01-11T03:05:31.404Z] 3adc8a5186f7: 
+[2023-01-11T03:05:31.404Z] Extracting   19.5MB/273.7MB
+[2023-01-11T03:05:31.590Z] 3adc8a5186f7: Extracting  20.61MB/273.7MB
+[2023-01-11T03:05:31.761Z] 3adc8a5186f7: 
+[2023-01-11T03:05:31.762Z] Extracting  21.73MB/273.7MB
+[2023-01-11T03:05:31.996Z] 3adc8a5186f7: 
+[2023-01-11T03:05:31.996Z] Extracting   23.4MB/273.7MB
+[2023-01-11T03:05:32.140Z] 3adc8a5186f7: 
+[2023-01-11T03:05:32.140Z] Extracting  23.95MB/273.7MB
+[2023-01-11T03:05:32.413Z] 3adc8a5186f7: 
+[2023-01-11T03:05:32.414Z] Extracting  25.07MB/273.7MB
+[2023-01-11T03:05:32.534Z] 
+[2023-01-11T03:05:32.534Z] 3adc8a5186f7: Extracting  25.62MB/273.7MB
+[2023-01-11T03:05:32.652Z] 3adc8a5186f7: 
+[2023-01-11T03:05:32.652Z] Extracting  26.18MB/273.7MB
+[2023-01-11T03:05:32.846Z] 
+[2023-01-11T03:05:32.846Z] 3adc8a5186f7: Extracting   27.3MB/273.7MB
+[2023-01-11T03:05:32.999Z] 3adc8a5186f7: Extracting  27.85MB/273.7MB
+[2023-01-11T03:05:33.166Z] 3adc8a5186f7: Extracting  28.41MB/273.7MB
+[2023-01-11T03:05:33.311Z] 3adc8a5186f7: Extracting  29.52MB/273.7MB
+[2023-01-11T03:05:33.414Z] 3adc8a5186f7: Extracting  33.98MB/273.7MB
+[2023-01-11T03:05:33.519Z] 3adc8a5186f7: Extracting  40.67MB/273.7MB
+[2023-01-11T03:05:33.641Z] 3adc8a5186f7: 
+[2023-01-11T03:05:33.641Z] Extracting  45.68MB/273.7MB
+[2023-01-11T03:05:33.796Z] 3adc8a5186f7: Extracting  46.79MB/273.7MB
+[2023-01-11T03:05:33.911Z] 3adc8a5186f7: Extracting  49.02MB/273.7MB
+[2023-01-11T03:05:34.016Z] 3adc8a5186f7: Extracting  51.81MB/273.7MB
+[2023-01-11T03:05:34.130Z] 3adc8a5186f7: Extracting  54.59MB/273.7MB
+[2023-01-11T03:05:34.237Z] 3adc8a5186f7: Extracting  57.38MB/273.7MB
+[2023-01-11T03:05:34.337Z] 3adc8a5186f7: 
+[2023-01-11T03:05:34.338Z] Extracting   59.6MB/273.7MB
+[2023-01-11T03:05:34.464Z] 3adc8a5186f7: Extracting  61.28MB/273.7MB
+[2023-01-11T03:05:34.570Z] 
+[2023-01-11T03:05:34.571Z] 3adc8a5186f7: Extracting  61.83MB/273.7MB
+[2023-01-11T03:05:34.698Z] 
+[2023-01-11T03:05:34.701Z] 3adc8a5186f7: Extracting  62.39MB/273.7MB
+[2023-01-11T03:05:34.848Z] 
+[2023-01-11T03:05:34.849Z] 3adc8a5186f7: Extracting   63.5MB/273.7MB
+[2023-01-11T03:05:34.960Z] 
+[2023-01-11T03:05:34.961Z] 3adc8a5186f7: Extracting  64.62MB/273.7MB
+[2023-01-11T03:05:35.087Z] 
+[2023-01-11T03:05:35.087Z] 3adc8a5186f7: Extracting  65.73MB/273.7MB
+[2023-01-11T03:05:35.259Z] 
+[2023-01-11T03:05:35.260Z] 3adc8a5186f7: Extracting  66.85MB/273.7MB
+[2023-01-11T03:05:35.340Z] 3adc8a5186f7: 
+[2023-01-11T03:05:35.341Z] Extracting   67.4MB/273.7MB
+[2023-01-11T03:05:35.448Z] 3adc8a5186f7: Extracting  70.75MB/273.7MB
+[2023-01-11T03:05:35.549Z] 3adc8a5186f7: 
+[2023-01-11T03:05:35.549Z] Extracting  72.97MB/273.7MB
+[2023-01-11T03:05:35.659Z] 3adc8a5186f7: Extracting  75.76MB/273.7MB
+[2023-01-11T03:05:35.776Z] 3adc8a5186f7: 
+[2023-01-11T03:05:35.776Z] Extracting  77.99MB/273.7MB
+[2023-01-11T03:05:35.894Z] 3adc8a5186f7: Extracting  80.22MB/273.7MB
+[2023-01-11T03:05:36.054Z] 3adc8a5186f7: Extracting  81.89MB/273.7MB
+[2023-01-11T03:05:36.154Z] 3adc8a5186f7: Extracting     83MB/273.7MB
+[2023-01-11T03:05:36.272Z] 3adc8a5186f7: Extracting  85.23MB/273.7MB
+[2023-01-11T03:05:36.389Z] 3adc8a5186f7: Extracting  87.46MB/273.7MB
+[2023-01-11T03:05:36.504Z] 3adc8a5186f7: Extracting  89.13MB/273.7MB
+[2023-01-11T03:05:36.609Z] 3adc8a5186f7: Extracting  90.24MB/273.7MB
+[2023-01-11T03:05:36.724Z] 3adc8a5186f7: Extracting  91.36MB/273.7MB
+[2023-01-11T03:05:36.859Z] 3adc8a5186f7: Extracting  93.03MB/273.7MB
+[2023-01-11T03:05:37.186Z] 3adc8a5186f7: Extracting  94.14MB/273.7MB
+[2023-01-11T03:05:37.319Z] 3adc8a5186f7: Extracting   94.7MB/273.7MB
+[2023-01-11T03:05:37.418Z] 3adc8a5186f7: 
+[2023-01-11T03:05:37.419Z] Extracting  96.37MB/273.7MB
+[2023-01-11T03:05:37.528Z] 3adc8a5186f7: 
+[2023-01-11T03:05:37.528Z] Extracting  98.04MB/273.7MB
+[2023-01-11T03:05:37.644Z] 3adc8a5186f7: Extracting  99.71MB/273.7MB
+[2023-01-11T03:05:37.750Z] 3adc8a5186f7: 
+[2023-01-11T03:05:37.750Z] Extracting  103.1MB/273.7MB
+[2023-01-11T03:05:37.866Z] 3adc8a5186f7: 
+[2023-01-11T03:05:37.866Z] Extracting  105.3MB/273.7MB
+[2023-01-11T03:05:37.977Z] 3adc8a5186f7: Extracting  107.5MB/273.7MB
+[2023-01-11T03:05:38.077Z] 3adc8a5186f7: Extracting  109.7MB/273.7MB
+[2023-01-11T03:05:38.181Z] 3adc8a5186f7: 
+[2023-01-11T03:05:38.181Z] Extracting  112.5MB/273.7MB
+[2023-01-11T03:05:38.281Z] 3adc8a5186f7: 
+[2023-01-11T03:05:38.282Z] Extracting  115.9MB/273.7MB
+[2023-01-11T03:05:38.413Z] 3adc8a5186f7: 
+[2023-01-11T03:05:38.414Z] Extracting  118.7MB/273.7MB
+[2023-01-11T03:05:38.518Z] 3adc8a5186f7: Extracting  120.3MB/273.7MB
+[2023-01-11T03:05:38.632Z] 3adc8a5186f7: 
+[2023-01-11T03:05:38.632Z] Extracting    122MB/273.7MB
+[2023-01-11T03:05:38.742Z] 3adc8a5186f7: Extracting  123.7MB/273.7MB
+[2023-01-11T03:05:38.854Z] 3adc8a5186f7: Extracting  125.3MB/273.7MB
+[2023-01-11T03:05:38.996Z] 3adc8a5186f7: Extracting    127MB/273.7MB
+[2023-01-11T03:05:39.105Z] 3adc8a5186f7: Extracting  128.7MB/273.7MB
+[2023-01-11T03:05:39.228Z] 3adc8a5186f7: Extracting  130.4MB/273.7MB
+[2023-01-11T03:05:39.365Z] 3adc8a5186f7: Extracting  132.6MB/273.7MB
+[2023-01-11T03:05:39.466Z] 3adc8a5186f7: Extracting  134.3MB/273.7MB
+[2023-01-11T03:05:39.576Z] 3adc8a5186f7: Extracting  136.5MB/273.7MB
+[2023-01-11T03:05:39.688Z] 3adc8a5186f7: Extracting  139.8MB/273.7MB
+[2023-01-11T03:05:39.794Z] 3adc8a5186f7: 
+[2023-01-11T03:05:39.795Z] Extracting  142.6MB/273.7MB
+[2023-01-11T03:05:39.896Z] 3adc8a5186f7: Extracting  143.7MB/273.7MB
+[2023-01-11T03:05:40.009Z] 3adc8a5186f7: Extracting  145.9MB/273.7MB
+[2023-01-11T03:05:40.124Z] 3adc8a5186f7: Extracting  148.2MB/273.7MB
+[2023-01-11T03:05:40.265Z] 3adc8a5186f7: Extracting  151.5MB/273.7MB
+[2023-01-11T03:05:40.434Z] 3adc8a5186f7: Extracting  152.1MB/273.7MB
+[2023-01-11T03:05:40.581Z] 3adc8a5186f7: Extracting  153.2MB/273.7MB
+[2023-01-11T03:05:40.720Z] 
+[2023-01-11T03:05:40.722Z] 3adc8a5186f7: Extracting  154.3MB/273.7MB
+[2023-01-11T03:05:40.826Z] 3adc8a5186f7: Extracting    156MB/273.7MB
+[2023-01-11T03:05:40.939Z] 3adc8a5186f7: Extracting  159.3MB/273.7MB
+[2023-01-11T03:05:41.048Z] 3adc8a5186f7: Extracting  161.5MB/273.7MB
+[2023-01-11T03:05:41.211Z] 3adc8a5186f7: Extracting  164.9MB/273.7MB
+[2023-01-11T03:05:41.325Z] 3adc8a5186f7: Extracting  168.2MB/273.7MB
+[2023-01-11T03:05:41.436Z] 3adc8a5186f7: Extracting  171.6MB/273.7MB
+[2023-01-11T03:05:41.570Z] 3adc8a5186f7: Extracting  174.4MB/273.7MB
+[2023-01-11T03:05:41.683Z] 3adc8a5186f7: Extracting    176MB/273.7MB
+[2023-01-11T03:05:41.813Z] 3adc8a5186f7: Extracting  177.7MB/273.7MB
+[2023-01-11T03:05:41.927Z] 3adc8a5186f7: Extracting  179.4MB/273.7MB
+[2023-01-11T03:05:42.056Z] 3adc8a5186f7: Extracting    181MB/273.7MB
+[2023-01-11T03:05:42.178Z] 3adc8a5186f7: Extracting  182.7MB/273.7MB
+[2023-01-11T03:05:42.290Z] 3adc8a5186f7: Extracting  184.9MB/273.7MB
+[2023-01-11T03:05:42.397Z] 3adc8a5186f7: Extracting  187.2MB/273.7MB
+[2023-01-11T03:05:42.533Z] 3adc8a5186f7: Extracting  189.4MB/273.7MB
+[2023-01-11T03:05:42.661Z] 3adc8a5186f7: Extracting  191.6MB/273.7MB
+[2023-01-11T03:05:42.774Z] 3adc8a5186f7: Extracting  194.4MB/273.7MB
+[2023-01-11T03:05:42.893Z] 3adc8a5186f7: Extracting  197.2MB/273.7MB
+[2023-01-11T03:05:43.007Z] 3adc8a5186f7: Extracting  199.4MB/273.7MB
+[2023-01-11T03:05:43.127Z] 3adc8a5186f7: Extracting  201.7MB/273.7MB
+[2023-01-11T03:05:43.243Z] 3adc8a5186f7: 
+[2023-01-11T03:05:43.243Z] Extracting  203.9MB/273.7MB
+[2023-01-11T03:05:43.347Z] 3adc8a5186f7: 
+[2023-01-11T03:05:43.348Z] Extracting  206.7MB/273.7MB
+[2023-01-11T03:05:43.451Z] 3adc8a5186f7: 
+[2023-01-11T03:05:43.451Z] Extracting    210MB/273.7MB
+[2023-01-11T03:05:43.560Z] 3adc8a5186f7: 
+[2023-01-11T03:05:43.560Z] Extracting  213.9MB/273.7MB
+[2023-01-11T03:05:43.661Z] 3adc8a5186f7: Extracting  217.3MB/273.7MB
+[2023-01-11T03:05:43.766Z] 
+[2023-01-11T03:05:43.766Z] 3adc8a5186f7: Extracting  221.2MB/273.7MB
+[2023-01-11T03:05:43.869Z] 3adc8a5186f7: Extracting  225.1MB/273.7MB
+[2023-01-11T03:05:43.977Z] 3adc8a5186f7: Extracting    229MB/273.7MB
+[2023-01-11T03:05:44.135Z] 3adc8a5186f7: Extracting  230.1MB/273.7MB
+[2023-01-11T03:05:44.136Z] 
+[2023-01-11T03:05:44.242Z] 3adc8a5186f7: 
+[2023-01-11T03:05:44.242Z] Extracting  232.3MB/273.7MB
+[2023-01-11T03:05:44.346Z] 3adc8a5186f7: 
+[2023-01-11T03:05:44.346Z] Extracting  236.2MB/273.7MB
+[2023-01-11T03:05:44.451Z] 3adc8a5186f7: Extracting  242.9MB/273.7MB
+[2023-01-11T03:05:44.564Z] 3adc8a5186f7: 
+[2023-01-11T03:05:44.564Z] Extracting  247.3MB/273.7MB
+[2023-01-11T03:05:44.668Z] 3adc8a5186f7: 
+[2023-01-11T03:05:44.668Z] Extracting    249MB/273.7MB
+[2023-01-11T03:05:44.777Z] 3adc8a5186f7: 
+[2023-01-11T03:05:44.777Z] Extracting  250.1MB/273.7MB
+[2023-01-11T03:05:44.952Z] 3adc8a5186f7: 
+[2023-01-11T03:05:44.952Z] Extracting  251.2MB/273.7MB
+[2023-01-11T03:05:45.064Z] 3adc8a5186f7: 
+[2023-01-11T03:05:45.064Z] Extracting  253.5MB/273.7MB
+[2023-01-11T03:05:45.170Z] 3adc8a5186f7: 
+[2023-01-11T03:05:45.171Z] Extracting    259MB/273.7MB
+[2023-01-11T03:05:45.274Z] 3adc8a5186f7: Extracting  261.3MB/273.7MB
+[2023-01-11T03:05:45.384Z] 3adc8a5186f7: Extracting  263.5MB/273.7MB
+[2023-01-11T03:05:45.495Z] 3adc8a5186f7: Extracting  265.2MB/273.7MB
+[2023-01-11T03:05:45.597Z] 3adc8a5186f7: Extracting  267.4MB/273.7MB
+[2023-01-11T03:05:45.710Z] 3adc8a5186f7: Extracting  270.2MB/273.7MB
+[2023-01-11T03:05:45.830Z] 3adc8a5186f7: Extracting  271.8MB/273.7MB
+[2023-01-11T03:05:45.985Z] 3adc8a5186f7: Extracting  273.5MB/273.7MB
+[2023-01-11T03:05:46.013Z] 3adc8a5186f7: Extracting  273.7MB/273.7MB
+[2023-01-11T03:05:47.951Z] 3adc8a5186f7: Pull complete 
+[2023-01-11T03:05:48.048Z] c15cfdcf9457: 
+[2023-01-11T03:05:48.049Z] Extracting  557.1kB/132MB
+[2023-01-11T03:05:48.158Z] c15cfdcf9457: Extracting  7.242MB/132MB
+[2023-01-11T03:05:48.262Z] c15cfdcf9457: Extracting  14.48MB/132MB
+[2023-01-11T03:05:48.367Z] c15cfdcf9457: Extracting  21.73MB/132MB
+[2023-01-11T03:05:48.470Z] c15cfdcf9457: Extracting  29.52MB/132MB
+[2023-01-11T03:05:48.570Z] c15cfdcf9457: Extracting  37.88MB/132MB
+[2023-01-11T03:05:48.675Z] c15cfdcf9457: 
+[2023-01-11T03:05:48.675Z] Extracting  45.12MB/132MB
+[2023-01-11T03:05:48.781Z] c15cfdcf9457: 
+[2023-01-11T03:05:48.782Z] Extracting  52.92MB/132MB
+[2023-01-11T03:05:48.906Z] c15cfdcf9457: Extracting  60.16MB/132MB
+[2023-01-11T03:05:49.027Z] c15cfdcf9457: Extracting  61.83MB/132MB
+[2023-01-11T03:05:49.142Z] c15cfdcf9457: Extracting  65.18MB/132MB
+[2023-01-11T03:05:49.258Z] c15cfdcf9457: 
+[2023-01-11T03:05:49.258Z] Extracting  68.52MB/132MB
+[2023-01-11T03:05:49.392Z] c15cfdcf9457: 
+[2023-01-11T03:05:49.392Z] Extracting  70.75MB/132MB
+[2023-01-11T03:05:49.627Z] c15cfdcf9457: Extracting   71.3MB/132MB
+[2023-01-11T03:05:49.919Z] c15cfdcf9457: Extracting  71.86MB/132MB
+[2023-01-11T03:05:50.088Z] c15cfdcf9457: Extracting  72.42MB/132MB
+[2023-01-11T03:05:50.207Z] c15cfdcf9457: 
+[2023-01-11T03:05:50.208Z] Extracting  74.09MB/132MB
+[2023-01-11T03:05:50.311Z] c15cfdcf9457: 
+[2023-01-11T03:05:50.311Z] Extracting   75.2MB/132MB
+[2023-01-11T03:05:50.442Z] c15cfdcf9457: 
+[2023-01-11T03:05:50.442Z] Extracting  76.87MB/132MB
+[2023-01-11T03:05:50.543Z] c15cfdcf9457: 
+[2023-01-11T03:05:50.543Z] Extracting  77.99MB/132MB
+[2023-01-11T03:05:50.654Z] c15cfdcf9457: 
+[2023-01-11T03:05:50.654Z] Extracting   79.1MB/132MB
+[2023-01-11T03:05:50.756Z] c15cfdcf9457: 
+[2023-01-11T03:05:50.756Z] Extracting  80.22MB/132MB
+[2023-01-11T03:05:50.896Z] c15cfdcf9457: 
+[2023-01-11T03:05:50.896Z] Extracting  81.89MB/132MB
+[2023-01-11T03:05:51.021Z] c15cfdcf9457: 
+[2023-01-11T03:05:51.021Z] Extracting  83.56MB/132MB
+[2023-01-11T03:05:51.142Z] c15cfdcf9457: Extracting  85.79MB/132MB
+[2023-01-11T03:05:51.242Z] c15cfdcf9457: 
+[2023-01-11T03:05:51.242Z] Extracting  89.13MB/132MB
+[2023-01-11T03:05:51.349Z] c15cfdcf9457: Extracting   90.8MB/132MB
+[2023-01-11T03:05:51.454Z] c15cfdcf9457: Extracting  92.47MB/132MB
+[2023-01-11T03:05:51.565Z] c15cfdcf9457: Extracting  94.14MB/132MB
+[2023-01-11T03:05:51.704Z] c15cfdcf9457: 
+[2023-01-11T03:05:51.704Z] Extracting  96.37MB/132MB
+[2023-01-11T03:05:52.428Z] c15cfdcf9457: Extracting  96.93MB/132MB
+[2023-01-11T03:05:52.545Z] c15cfdcf9457: 
+[2023-01-11T03:05:52.545Z] Extracting  99.71MB/132MB
+[2023-01-11T03:05:52.662Z] c15cfdcf9457: 
+[2023-01-11T03:05:52.662Z] Extracting  101.9MB/132MB
+[2023-01-11T03:05:52.779Z] c15cfdcf9457: 
+[2023-01-11T03:05:52.779Z] Extracting  103.6MB/132MB
+[2023-01-11T03:05:52.924Z] c15cfdcf9457: Extracting  104.2MB/132MB
+[2023-01-11T03:05:53.042Z] c15cfdcf9457: Extracting  105.3MB/132MB
+[2023-01-11T03:05:53.159Z] c15cfdcf9457: Extracting  107.5MB/132MB
+[2023-01-11T03:05:53.278Z] c15cfdcf9457: 
+[2023-01-11T03:05:53.278Z] Extracting  110.3MB/132MB
+[2023-01-11T03:05:53.462Z] c15cfdcf9457: Extracting  111.4MB/132MB
+[2023-01-11T03:05:53.573Z] c15cfdcf9457: Extracting  112.5MB/132MB
+[2023-01-11T03:05:53.720Z] c15cfdcf9457: Extracting  113.6MB/132MB
+[2023-01-11T03:05:53.889Z] c15cfdcf9457: Extracting  115.3MB/132MB
+[2023-01-11T03:05:54.007Z] c15cfdcf9457: 
+[2023-01-11T03:05:54.007Z] Extracting  118.1MB/132MB
+[2023-01-11T03:05:54.137Z] c15cfdcf9457: 
+[2023-01-11T03:05:54.138Z] Extracting  119.8MB/132MB
+[2023-01-11T03:05:54.265Z] c15cfdcf9457: Extracting  121.4MB/132MB
+[2023-01-11T03:05:54.391Z] c15cfdcf9457: Extracting  123.7MB/132MB
+[2023-01-11T03:05:54.508Z] c15cfdcf9457: 
+[2023-01-11T03:05:54.509Z] Extracting  125.3MB/132MB
+[2023-01-11T03:05:54.632Z] c15cfdcf9457: Extracting  127.6MB/132MB
+[2023-01-11T03:05:54.734Z] c15cfdcf9457: 
+[2023-01-11T03:05:54.734Z] Extracting  128.7MB/132MB
+[2023-01-11T03:05:54.852Z] c15cfdcf9457: 
+[2023-01-11T03:05:54.852Z] Extracting  130.4MB/132MB
+[2023-01-11T03:05:54.935Z] c15cfdcf9457: Extracting    132MB/132MB
+[2023-01-11T03:05:56.451Z] c15cfdcf9457: Pull complete 
+[2023-01-11T03:05:56.484Z] 
+[2023-01-11T03:05:56.485Z] 71da1854f124: Extracting  32.77kB/2.509MB
+[2023-01-11T03:05:56.585Z] 71da1854f124: Extracting  1.638MB/2.509MB
+[2023-01-11T03:05:56.628Z] 71da1854f124: Extracting  2.509MB/2.509MB
+[2023-01-11T03:05:56.795Z] 71da1854f124: Pull complete 
+[2023-01-11T03:05:56.838Z] 7b9019b9fc76: Extracting  5.572kB/5.572kB7b9019b9fc76: Extracting  5.572kB/5.572kB
+[2023-01-11T03:05:56.985Z] 7b9019b9fc76: Pull complete 
+[2023-01-11T03:05:57.016Z] 
+[2023-01-11T03:05:57.017Z] e4a7150cbaeb: Extracting  2.073kB/2.073kB
+[2023-01-11T03:05:57.017Z] e4a7150cbaeb: Extracting  2.073kB/2.073kB
+[2023-01-11T03:05:57.175Z] e4a7150cbaeb: Pull complete 
+[2023-01-11T03:05:57.209Z] 
+[2023-01-11T03:05:57.209Z] 4f4fb700ef54: Extracting      32B/32B
+[2023-01-11T03:05:57.213Z] 4f4fb700ef54: Extracting      32B/32B
+[2023-01-11T03:05:57.372Z] 4f4fb700ef54: Pull complete 
+[2023-01-11T03:05:57.408Z] 
+[2023-01-11T03:05:57.408Z] 4dbaaf759770: Extracting  1.893kB/1.893kB
+[2023-01-11T03:05:57.411Z] 4dbaaf759770: Extracting  1.893kB/1.893kB
+[2023-01-11T03:05:57.580Z] 4dbaaf759770: Pull complete 
+[2023-01-11T03:05:57.614Z] 
+[2023-01-11T03:05:57.614Z] 57986b463c17: Extracting     955B/955B
+[2023-01-11T03:05:57.615Z] 
+[2023-01-11T03:05:57.615Z] 57986b463c17: Extracting     955B/955B
+[2023-01-11T03:05:57.770Z] 57986b463c17: Pull complete 
+[2023-01-11T03:05:57.805Z] 15924a8c2f5f: Extracting     165B/165B
+[2023-01-11T03:05:57.806Z] 15924a8c2f5f: Extracting     165B/165B
+[2023-01-11T03:05:57.958Z] 
+[2023-01-11T03:05:57.958Z] 15924a8c2f5f: Pull complete 
+[2023-01-11T03:05:58.187Z] 39c9fd8b4ca3: Extracting     197B/197B
+[2023-01-11T03:05:58.188Z] 39c9fd8b4ca3: Extracting     197B/197B
+[2023-01-11T03:05:58.354Z] 39c9fd8b4ca3: Pull complete 
+[2023-01-11T03:05:58.471Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:58.471Z] Extracting  557.1kB/59MB
+[2023-01-11T03:05:58.652Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:58.653Z] Extracting  1.671MB/59MB
+[2023-01-11T03:05:58.770Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:58.771Z] Extracting  4.456MB/59MB
+[2023-01-11T03:05:58.917Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:58.918Z] Extracting  6.128MB/59MB
+[2023-01-11T03:05:59.083Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:59.083Z] Extracting  7.242MB/59MB
+[2023-01-11T03:05:59.218Z] f3dd6f4a3d9a: Extracting  7.799MB/59MB
+[2023-01-11T03:05:59.218Z] 
+[2023-01-11T03:05:59.334Z] f3dd6f4a3d9a: Extracting  10.03MB/59MB
+[2023-01-11T03:05:59.451Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:59.452Z] Extracting  12.26MB/59MB
+[2023-01-11T03:05:59.618Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:59.618Z] Extracting  13.93MB/59MB
+[2023-01-11T03:05:59.726Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:59.727Z] Extracting   15.6MB/59MB
+[2023-01-11T03:05:59.840Z] f3dd6f4a3d9a: Extracting  17.27MB/59MB
+[2023-01-11T03:05:59.942Z] f3dd6f4a3d9a: 
+[2023-01-11T03:05:59.942Z] Extracting  18.94MB/59MB
+[2023-01-11T03:06:00.094Z] f3dd6f4a3d9a: Extracting  20.61MB/59MB
+[2023-01-11T03:06:00.196Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:00.197Z] Extracting  21.73MB/59MB
+[2023-01-11T03:06:00.361Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:00.362Z] Extracting  22.84MB/59MB
+[2023-01-11T03:06:00.519Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:00.519Z] Extracting  23.95MB/59MB
+[2023-01-11T03:06:00.703Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:00.703Z] Extracting  25.07MB/59MB
+[2023-01-11T03:06:00.839Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:00.839Z] Extracting  25.62MB/59MB
+[2023-01-11T03:06:00.944Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:00.944Z] Extracting  26.18MB/59MB
+[2023-01-11T03:06:01.110Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:01.110Z] Extracting  28.41MB/59MB
+[2023-01-11T03:06:01.217Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:01.217Z] Extracting  28.97MB/59MB
+[2023-01-11T03:06:01.327Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:01.327Z] Extracting  29.52MB/59MB
+[2023-01-11T03:06:01.520Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:01.520Z] Extracting  30.08MB/59MB
+[2023-01-11T03:06:01.640Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:01.640Z] Extracting   31.2MB/59MB
+[2023-01-11T03:06:01.917Z] f3dd6f4a3d9a: Extracting  32.31MB/59MB
+[2023-01-11T03:06:02.093Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:02.094Z] Extracting  32.87MB/59MB
+[2023-01-11T03:06:02.262Z] f3dd6f4a3d9a: Extracting  33.42MB/59MB
+[2023-01-11T03:06:02.386Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:02.387Z] Extracting  33.98MB/59MB
+[2023-01-11T03:06:02.526Z] f3dd6f4a3d9a: Extracting  34.54MB/59MB
+[2023-01-11T03:06:02.673Z] f3dd6f4a3d9a: Extracting  35.09MB/59MB
+[2023-01-11T03:06:02.778Z] f3dd6f4a3d9a: Extracting  37.88MB/59MB
+[2023-01-11T03:06:02.878Z] f3dd6f4a3d9a: Extracting  46.79MB/59MB
+[2023-01-11T03:06:02.979Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:02.980Z] Extracting  54.59MB/59MB
+[2023-01-11T03:06:03.079Z] f3dd6f4a3d9a: 
+[2023-01-11T03:06:03.079Z] Extracting     59MB/59MB
+[2023-01-11T03:06:05.281Z] f3dd6f4a3d9a: Pull complete 
+[2023-01-11T03:06:05.420Z] 88bd48efa698: Extracting  557.1kB/94.54MB
+[2023-01-11T03:06:05.531Z] 88bd48efa698: Extracting  3.899MB/94.54MB
+[2023-01-11T03:06:05.671Z] 88bd48efa698: Extracting  6.685MB/94.54MB
+[2023-01-11T03:06:05.772Z] 88bd48efa698: Extracting  8.913MB/94.54MB
+[2023-01-11T03:06:05.877Z] 88bd48efa698: Extracting  12.81MB/94.54MB
+[2023-01-11T03:06:05.984Z] 88bd48efa698: Extracting  16.15MB/94.54MB
+[2023-01-11T03:06:06.100Z] 88bd48efa698: Extracting  20.05MB/94.54MB
+[2023-01-11T03:06:06.217Z] 88bd48efa698: Extracting   23.4MB/94.54MB
+[2023-01-11T03:06:06.324Z] 88bd48efa698: 
+[2023-01-11T03:06:06.325Z] Extracting  25.62MB/94.54MB
+[2023-01-11T03:06:06.433Z] 88bd48efa698: 
+[2023-01-11T03:06:06.433Z] Extracting  28.41MB/94.54MB
+[2023-01-11T03:06:06.534Z] 88bd48efa698: Extracting  32.31MB/94.54MB
+[2023-01-11T03:06:06.637Z] 88bd48efa698: Extracting  36.21MB/94.54MB
+[2023-01-11T03:06:06.739Z] 88bd48efa698: Extracting  40.11MB/94.54MB
+[2023-01-11T03:06:06.844Z] 88bd48efa698: Extracting  44.01MB/94.54MB
+[2023-01-11T03:06:06.950Z] 88bd48efa698: Extracting  47.91MB/94.54MB
+[2023-01-11T03:06:07.069Z] 88bd48efa698: Extracting  50.14MB/94.54MB
+[2023-01-11T03:06:07.181Z] 88bd48efa698: Extracting  52.36MB/94.54MB
+[2023-01-11T03:06:07.292Z] 88bd48efa698: Extracting  55.15MB/94.54MB
+[2023-01-11T03:06:07.402Z] 88bd48efa698: 
+[2023-01-11T03:06:07.402Z] Extracting  58.49MB/94.54MB
+[2023-01-11T03:06:07.518Z] 88bd48efa698: Extracting  62.39MB/94.54MB
+[2023-01-11T03:06:07.629Z] 88bd48efa698: 
+[2023-01-11T03:06:07.630Z] Extracting  65.73MB/94.54MB
+[2023-01-11T03:06:07.736Z] 88bd48efa698: 
+[2023-01-11T03:06:07.736Z] Extracting  69.07MB/94.54MB
+[2023-01-11T03:06:07.837Z] 88bd48efa698: Extracting  72.42MB/94.54MB
+[2023-01-11T03:06:07.959Z] 88bd48efa698: Extracting  75.76MB/94.54MB
+[2023-01-11T03:06:08.072Z] 88bd48efa698: 
+[2023-01-11T03:06:08.072Z] Extracting  76.87MB/94.54MB
+[2023-01-11T03:06:08.177Z] 88bd48efa698: Extracting  79.66MB/94.54MB
+[2023-01-11T03:06:08.279Z] 88bd48efa698: Extracting  83.56MB/94.54MB
+[2023-01-11T03:06:08.388Z] 88bd48efa698: 
+[2023-01-11T03:06:08.388Z] Extracting  85.79MB/94.54MB
+[2023-01-11T03:06:08.638Z] 88bd48efa698: 
+[2023-01-11T03:06:08.638Z] Extracting  88.57MB/94.54MB
+[2023-01-11T03:06:08.783Z] 88bd48efa698: 
+[2023-01-11T03:06:08.784Z] Extracting  89.13MB/94.54MB
+[2023-01-11T03:06:09.270Z] 88bd48efa698: Extracting  90.24MB/94.54MB
+[2023-01-11T03:06:09.443Z] 88bd48efa698: Extracting   90.8MB/94.54MB
+[2023-01-11T03:06:09.840Z] 88bd48efa698: Extracting  91.36MB/94.54MB
+[2023-01-11T03:06:09.967Z] 88bd48efa698: Extracting  91.91MB/94.54MB
+[2023-01-11T03:06:10.130Z] 88bd48efa698: Extracting  93.03MB/94.54MB
+[2023-01-11T03:06:10.264Z] 88bd48efa698: 
+[2023-01-11T03:06:10.265Z] Extracting  94.14MB/94.54MB
+[2023-01-11T03:06:10.332Z] 88bd48efa698: 
+[2023-01-11T03:06:10.332Z] Extracting  94.54MB/94.54MB
+[2023-01-11T03:06:11.949Z] 88bd48efa698: Pull complete 
+[2023-01-11T03:06:11.981Z] 
+[2023-01-11T03:06:11.981Z] fc9b8b20f058: Extracting  32.77kB/1.389MB
+[2023-01-11T03:06:12.094Z] fc9b8b20f058: Extracting  1.114MB/1.389MB
+[2023-01-11T03:06:12.098Z] fc9b8b20f058: Extracting  1.389MB/1.389MB
+[2023-01-11T03:06:12.240Z] fc9b8b20f058: Pull complete 
+[2023-01-11T03:06:12.348Z] 0d12e33b7271: Extracting    426kB/41.14MB
+[2023-01-11T03:06:12.450Z] 0d12e33b7271: Extracting  7.242MB/41.14MB
+[2023-01-11T03:06:12.552Z] 0d12e33b7271: Extracting  13.63MB/41.14MB
+[2023-01-11T03:06:12.653Z] 0d12e33b7271: Extracting  20.45MB/41.14MB
+[2023-01-11T03:06:12.758Z] 0d12e33b7271: Extracting  28.11MB/41.14MB
+[2023-01-11T03:06:12.864Z] 0d12e33b7271: Extracting  30.24MB/41.14MB
+[2023-01-11T03:06:12.968Z] 0d12e33b7271: Extracting  34.08MB/41.14MB
+[2023-01-11T03:06:13.085Z] 0d12e33b7271: Extracting  37.91MB/41.14MB
+[2023-01-11T03:06:13.192Z] 0d12e33b7271: Extracting  38.76MB/41.14MB
+[2023-01-11T03:06:13.300Z] 0d12e33b7271: Extracting  40.47MB/41.14MB
+[2023-01-11T03:06:13.300Z] 
+[2023-01-11T03:06:13.348Z] 0d12e33b7271: 
+[2023-01-11T03:06:13.349Z] Extracting  41.14MB/41.14MB
+[2023-01-11T03:06:13.888Z] 0d12e33b7271: Pull complete 
+[2023-01-11T03:06:13.925Z] 
+[2023-01-11T03:06:13.925Z] c150b1fbe9d8: Extracting  32.77kB/629.8kB
+[2023-01-11T03:06:13.985Z] c150b1fbe9d8: Extracting  629.8kB/629.8kB
+[2023-01-11T03:06:13.987Z] c150b1fbe9d8: Extracting  629.8kB/629.8kB
+[2023-01-11T03:06:14.143Z] 
+[2023-01-11T03:06:14.143Z] c150b1fbe9d8: Pull complete 
+[2023-01-11T03:06:14.223Z] f125865743cc: Extracting  557.1kB/163.7MB
+[2023-01-11T03:06:14.325Z] f125865743cc: Extracting  7.242MB/163.7MB
+[2023-01-11T03:06:14.432Z] f125865743cc: Extracting   15.6MB/163.7MB
+[2023-01-11T03:06:14.537Z] f125865743cc: Extracting  23.95MB/163.7MB
+[2023-01-11T03:06:14.641Z] f125865743cc: Extracting  30.64MB/163.7MB
+[2023-01-11T03:06:14.742Z] f125865743cc: Extracting  36.21MB/163.7MB
+[2023-01-11T03:06:14.849Z] f125865743cc: Extracting  42.89MB/163.7MB
+[2023-01-11T03:06:14.951Z] f125865743cc: Extracting  50.14MB/163.7MB
+[2023-01-11T03:06:15.055Z] f125865743cc: Extracting  57.93MB/163.7MB
+[2023-01-11T03:06:15.159Z] f125865743cc: Extracting  66.29MB/163.7MB
+[2023-01-11T03:06:15.284Z] f125865743cc: Extracting   71.3MB/163.7MB
+[2023-01-11T03:06:15.401Z] f125865743cc: Extracting  74.09MB/163.7MB
+[2023-01-11T03:06:15.515Z] f125865743cc: Extracting  77.43MB/163.7MB
+[2023-01-11T03:06:15.631Z] f125865743cc: Extracting  80.77MB/163.7MB
+[2023-01-11T03:06:15.750Z] f125865743cc: Extracting  84.12MB/163.7MB
+[2023-01-11T03:06:15.874Z] f125865743cc: Extracting   86.9MB/163.7MB
+[2023-01-11T03:06:15.983Z] 
+[2023-01-11T03:06:15.983Z] f125865743cc: Extracting  89.13MB/163.7MB
+[2023-01-11T03:06:16.083Z] f125865743cc: Extracting  91.91MB/163.7MB
+[2023-01-11T03:06:16.192Z] f125865743cc: Extracting  95.26MB/163.7MB
+[2023-01-11T03:06:16.304Z] f125865743cc: Extracting  97.48MB/163.7MB
+[2023-01-11T03:06:16.421Z] f125865743cc: Extracting  99.71MB/163.7MB
+[2023-01-11T03:06:16.548Z] f125865743cc: Extracting  101.4MB/163.7MB
+[2023-01-11T03:06:16.665Z] f125865743cc: Extracting  103.1MB/163.7MB
+[2023-01-11T03:06:16.781Z] f125865743cc: Extracting  104.7MB/163.7MB
+[2023-01-11T03:06:16.891Z] f125865743cc: Extracting  106.4MB/163.7MB
+[2023-01-11T03:06:17.020Z] f125865743cc: Extracting  108.1MB/163.7MB
+[2023-01-11T03:06:17.152Z] f125865743cc: Extracting  109.2MB/163.7MB
+[2023-01-11T03:06:17.269Z] f125865743cc: Extracting  111.4MB/163.7MB
+[2023-01-11T03:06:17.379Z] f125865743cc: 
+[2023-01-11T03:06:17.379Z] Extracting  113.6MB/163.7MB
+[2023-01-11T03:06:17.482Z] f125865743cc: 
+[2023-01-11T03:06:17.482Z] Extracting  115.3MB/163.7MB
+[2023-01-11T03:06:17.587Z] f125865743cc: 
+[2023-01-11T03:06:17.587Z] Extracting  118.7MB/163.7MB
+[2023-01-11T03:06:17.717Z] f125865743cc: Extracting    122MB/163.7MB
+[2023-01-11T03:06:17.833Z] f125865743cc: Extracting  123.1MB/163.7MB
+[2023-01-11T03:06:17.941Z] f125865743cc: Extracting  125.3MB/163.7MB
+[2023-01-11T03:06:18.062Z] f125865743cc: Extracting  128.1MB/163.7MB
+[2023-01-11T03:06:18.177Z] f125865743cc: Extracting  130.9MB/163.7MB
+[2023-01-11T03:06:18.280Z] f125865743cc: Extracting  134.3MB/163.7MB
+[2023-01-11T03:06:18.391Z] f125865743cc: Extracting  137.6MB/163.7MB
+[2023-01-11T03:06:18.497Z] f125865743cc: Extracting  139.8MB/163.7MB
+[2023-01-11T03:06:18.733Z] f125865743cc: Extracting  141.5MB/163.7MB
+[2023-01-11T03:06:18.995Z] f125865743cc: 
+[2023-01-11T03:06:18.995Z] Extracting  142.6MB/163.7MB
+[2023-01-11T03:06:19.097Z] f125865743cc: Extracting  143.2MB/163.7MB
+[2023-01-11T03:06:19.246Z] f125865743cc: Extracting  144.3MB/163.7MB
+[2023-01-11T03:06:19.353Z] f125865743cc: Extracting  147.1MB/163.7MB
+[2023-01-11T03:06:19.458Z] f125865743cc: Extracting  149.8MB/163.7MB
+[2023-01-11T03:06:19.581Z] f125865743cc: Extracting  152.1MB/163.7MB
+[2023-01-11T03:06:19.709Z] f125865743cc: 
+[2023-01-11T03:06:19.709Z] Extracting  154.3MB/163.7MB
+[2023-01-11T03:06:19.821Z] f125865743cc: 
+[2023-01-11T03:06:19.822Z] Extracting    156MB/163.7MB
+[2023-01-11T03:06:19.940Z] f125865743cc: 
+[2023-01-11T03:06:19.940Z] Extracting  158.2MB/163.7MB
+[2023-01-11T03:06:20.046Z] f125865743cc: 
+[2023-01-11T03:06:20.047Z] Extracting  159.9MB/163.7MB
+[2023-01-11T03:06:20.168Z] f125865743cc: 
+[2023-01-11T03:06:20.169Z] Extracting  162.1MB/163.7MB
+[2023-01-11T03:06:20.259Z] f125865743cc: Extracting  163.7MB/163.7MB
+[2023-01-11T03:06:20.268Z] f125865743cc: Extracting  163.7MB/163.7MB
+[2023-01-11T03:06:21.666Z] f125865743cc: Pull complete 
+[2023-01-11T03:06:21.713Z] 995893064795: Extracting  163.8kB/13.18MB
+[2023-01-11T03:06:21.812Z] 995893064795: 
+[2023-01-11T03:06:21.813Z] Extracting  3.441MB/13.18MB
+[2023-01-11T03:06:21.912Z] 995893064795: 
+[2023-01-11T03:06:21.913Z] Extracting  10.81MB/13.18MB
+[2023-01-11T03:06:21.954Z] 995893064795: 
+[2023-01-11T03:06:21.954Z] Extracting  13.18MB/13.18MB
+[2023-01-11T03:06:22.165Z] 995893064795: Pull complete 
+[2023-01-11T03:06:22.232Z] 32142c02aa8e: Extracting     207B/207B32142c02aa8e: Extracting     207B/207B
+[2023-01-11T03:06:22.383Z] 32142c02aa8e: Pull complete 
+[2023-01-11T03:06:22.433Z] c9cb779ecb1b: Extracting  262.1kB/23.33MB
+[2023-01-11T03:06:22.549Z] c9cb779ecb1b: Extracting  2.097MB/23.33MB
+[2023-01-11T03:06:22.652Z] c9cb779ecb1b: Extracting  10.75MB/23.33MB
+[2023-01-11T03:06:22.755Z] c9cb779ecb1b: Extracting  17.56MB/23.33MB
+[2023-01-11T03:06:22.860Z] c9cb779ecb1b: 
+[2023-01-11T03:06:22.860Z] Extracting   21.5MB/23.33MB
+[2023-01-11T03:06:22.972Z] c9cb779ecb1b: 
+[2023-01-11T03:06:22.972Z] Extracting  23.07MB/23.33MB
+[2023-01-11T03:06:23.001Z] c9cb779ecb1b: 
+[2023-01-11T03:06:23.001Z] Extracting  23.33MB/23.33MB
+[2023-01-11T03:06:23.008Z] 
+[2023-01-11T03:06:23.008Z] c9cb779ecb1b: Extracting  23.33MB/23.33MB
+[2023-01-11T03:06:23.353Z] 
+[2023-01-11T03:06:23.353Z] c9cb779ecb1b: Pull complete 
+[2023-01-11T03:06:23.398Z] c321997378f3: Extracting  1.355kB/1.355kB
+[2023-01-11T03:06:23.398Z] c321997378f3: Extracting  1.355kB/1.355kB
+[2023-01-11T03:06:23.546Z] 
+[2023-01-11T03:06:23.546Z] c321997378f3: Pull complete 
+[2023-01-11T03:06:23.587Z] 734ffd4640b0: Extracting  32.77kB/63.6kB734ffd4640b0: Extracting   63.6kB/63.6kB
+[2023-01-11T03:06:23.749Z] 734ffd4640b0: 
+[2023-01-11T03:06:23.750Z] Pull complete 
+[2023-01-11T03:06:23.964Z] 5bb6b829f310: Extracting   1.05kB/1.05kB
+[2023-01-11T03:06:23.964Z] 
+[2023-01-11T03:06:23.965Z] 5bb6b829f310: 
+[2023-01-11T03:06:23.965Z] Extracting   1.05kB/1.05kB
+[2023-01-11T03:06:24.128Z] 5bb6b829f310: 
+[2023-01-11T03:06:24.128Z] Pull complete 
+[2023-01-11T03:06:24.159Z] bf918fc060a8: Extracting     180B/180Bbf918fc060a8: Extracting     180B/180B
+[2023-01-11T03:06:24.307Z] bf918fc060a8: Pull complete 
+[2023-01-11T03:06:24.538Z] 44e9ab4737ec: Extracting  65.54kB/4.934MB
+[2023-01-11T03:06:24.639Z] 44e9ab4737ec: Extracting  1.442MB/4.934MB
+[2023-01-11T03:06:24.740Z] 44e9ab4737ec: Extracting  4.934MB/4.934MB
+[2023-01-11T03:06:24.927Z] 
+[2023-01-11T03:06:24.927Z] 44e9ab4737ec: Pull complete 
+[2023-01-11T03:06:24.980Z] Digest: sha256:918741c66ddc50b005c79d625ea57ef89f1e7829ea093d14defc8ffc635fa2da
+[2023-01-11T03:06:24.981Z] 
+[2023-01-11T03:06:25.012Z] Status: Downloaded newer image for ghcr.io/cs50/codespace:f16c7548115aed264f416b1ac4959cf176d66190
+[2023-01-11T03:06:25.598Z] Stop (114414 ms): Starting container
+[2023-01-11T03:06:25.600Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2023-01-11T03:06:25.610Z] Container started
+[2023-01-11T03:06:25.611Z] Stop (114430 ms): Run: docker events --format {{json .}} --filter event=start
+[2023-01-11T03:06:25.655Z] Stop (55 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2023-01-11T03:06:25.656Z] Start: Run: docker inspect --type container 1b9ed6bfae71
+[2023-01-11T03:06:25.688Z] Stop (32 ms): Run: docker inspect --type container 1b9ed6bfae71
+[2023-01-11T03:06:25.689Z] Start: Inspecting container
+[2023-01-11T03:06:25.689Z] Start: Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:25.713Z] Stop (24 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:25.713Z] Stop (24 ms): Inspecting container
+[2023-01-11T03:06:25.715Z] Start: Run in container: /bin/sh
+[2023-01-11T03:06:25.719Z] Start: Run in container: uname -m
+[2023-01-11T03:06:25.809Z] x86_64
+[2023-01-11T03:06:25.809Z] 
+[2023-01-11T03:06:25.809Z] Stop (90 ms): Run in container: uname -m
+[2023-01-11T03:06:25.809Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2023-01-11T03:06:25.827Z] PRETTY_NAME="Ubuntu 22.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+[2023-01-11T03:06:25.827Z] 
+[2023-01-11T03:06:25.827Z] Stop (18 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2023-01-11T03:06:25.827Z] Start: Run in container: cat /etc/passwd
+[2023-01-11T03:06:25.829Z] Stop (2 ms): Run in container: cat /etc/passwd
+[2023-01-11T03:06:25.829Z] Start: Run in container: test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+[2023-01-11T03:06:25.834Z] 
+[2023-01-11T03:06:25.834Z] 
+[2023-01-11T03:06:25.834Z] Exit code 1
+[2023-01-11T03:06:25.834Z] Stop (5 ms): Run in container: test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+[2023-01-11T03:06:25.837Z] Start: Run in container: /bin/sh
+[2023-01-11T03:06:25.841Z] Start: Run in container: test ! -f '/var/vscode-remote/.patchEtcEnvironmentMarker' && set -o noclobber && mkdir -p '/var/vscode-remote' && { > '/var/vscode-remote/.patchEtcEnvironmentMarker' ; } 2> /dev/null
+[2023-01-11T03:06:25.999Z] 
+[2023-01-11T03:06:25.999Z] 
+[2023-01-11T03:06:25.999Z] Stop (158 ms): Run in container: test ! -f '/var/vscode-remote/.patchEtcEnvironmentMarker' && set -o noclobber && mkdir -p '/var/vscode-remote' && { > '/var/vscode-remote/.patchEtcEnvironmentMarker' ; } 2> /dev/null
+[2023-01-11T03:06:26.000Z] Start: Run in container: cat >> /etc/environment <<'etcEnvrionmentEOF'
+[2023-01-11T03:06:26.023Z] 
+[2023-01-11T03:06:26.023Z] 
+[2023-01-11T03:06:26.023Z] Stop (23 ms): Run in container: cat >> /etc/environment <<'etcEnvrionmentEOF'
+[2023-01-11T03:06:26.024Z] Start: Run in container: test -f '/var/vscode-remote/.patchEtcProfileMarker'
+[2023-01-11T03:06:26.025Z] 
+[2023-01-11T03:06:26.025Z] 
+[2023-01-11T03:06:26.025Z] Exit code 1
+[2023-01-11T03:06:26.025Z] Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcProfileMarker'
+[2023-01-11T03:06:26.025Z] Start: Run in container: test ! -f '/var/vscode-remote/.patchEtcProfileMarker' && set -o noclobber && mkdir -p '/var/vscode-remote' && { > '/var/vscode-remote/.patchEtcProfileMarker' ; } 2> /dev/null
+[2023-01-11T03:06:26.027Z] 
+[2023-01-11T03:06:26.027Z] 
+[2023-01-11T03:06:26.027Z] Stop (2 ms): Run in container: test ! -f '/var/vscode-remote/.patchEtcProfileMarker' && set -o noclobber && mkdir -p '/var/vscode-remote' && { > '/var/vscode-remote/.patchEtcProfileMarker' ; } 2> /dev/null
+[2023-01-11T03:06:26.027Z] Start: Run in container: sed -i -E 's/((^|\s)PATH=)([^\$]*)$/\1${PATH:-\3}/g' /etc/profile || true
+[2023-01-11T03:06:26.054Z] 
+[2023-01-11T03:06:26.054Z] 
+[2023-01-11T03:06:26.054Z] Stop (27 ms): Run in container: sed -i -E 's/((^|\s)PATH=)([^\$]*)$/\1${PATH:-\3}/g' /etc/profile || true
+[2023-01-11T03:06:26.055Z] Stop (115547 ms): Resolving Remote
+[2023-01-11T03:06:26.064Z] Stop (115869 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+[2023-01-11T03:06:26.065Z] Start: Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.098Z] Stop (33 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.100Z] Start: Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+[2023-01-11T03:06:26.333Z] @devcontainers/cli 0.26.0. Node.js v14.21.1. linux 5.4.0-1098-azure x64.
+[2023-01-11T03:06:26.333Z] Start: Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.364Z] Stop (31 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.370Z] Stop (270 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+[2023-01-11T03:06:26.370Z] Start: Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+[2023-01-11T03:06:26.567Z] @devcontainers/cli 0.26.0. Node.js v14.21.1. linux 5.4.0-1098-azure x64.
+[2023-01-11T03:06:26.567Z] Start: Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.602Z] Stop (35 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.609Z] Stop (239 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+[2023-01-11T03:06:26.609Z] Start: Inspecting container
+[2023-01-11T03:06:26.609Z] Start: Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.634Z] Stop (25 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+[2023-01-11T03:06:26.634Z] Stop (25 ms): Inspecting container
+[2023-01-11T03:06:26.635Z] Start: Run in container: /bin/sh
+[2023-01-11T03:06:26.639Z] Start: Run in container: uname -m
+[2023-01-11T03:06:26.714Z] x86_64
+[2023-01-11T03:06:26.715Z] 
+[2023-01-11T03:06:26.715Z] Stop (76 ms): Run in container: uname -m
+[2023-01-11T03:06:26.715Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2023-01-11T03:06:26.717Z] PRETTY_NAME="Ubuntu 22.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+[2023-01-11T03:06:26.717Z] 
+[2023-01-11T03:06:26.717Z] Stop (2 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2023-01-11T03:06:26.717Z] Start: Run in container: cat /etc/passwd
+[2023-01-11T03:06:26.718Z] Stop (1 ms): Run in container: cat /etc/passwd
+[2023-01-11T03:06:26.719Z] Start: Updating configuration state
+[2023-01-11T03:06:26.720Z] Stop (1 ms): Updating configuration state
+[2023-01-11T03:06:26.721Z] Start: Run in container: test -d /home/ubuntu/.vscode-remote
+[2023-01-11T03:06:26.722Z] 
+[2023-01-11T03:06:26.722Z] 
+[2023-01-11T03:06:26.722Z] Exit code 1
+[2023-01-11T03:06:26.722Z] Stop (1 ms): Run in container: test -d /home/ubuntu/.vscode-remote
+[2023-01-11T03:06:26.722Z] Start: Run in container: test -d /home/ubuntu/.vscode-remote
+[2023-01-11T03:06:26.723Z] 
+[2023-01-11T03:06:26.723Z] 
+[2023-01-11T03:06:26.723Z] Exit code 1
+[2023-01-11T03:06:26.723Z] Stop (1 ms): Run in container: test -d /home/ubuntu/.vscode-remote
+[2023-01-11T03:06:26.724Z] Start: Run in container: test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2023-01-11T03:06:26.726Z] 
+[2023-01-11T03:06:26.726Z] 
+[2023-01-11T03:06:26.726Z] Stop (2 ms): Run in container: test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2023-01-11T03:06:26.726Z] Start: Run in container: mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && cat >'/home/ubuntu/.vscode-remote/data/Machine/settings.json' <<'settingsJSON'
+[2023-01-11T03:06:26.728Z] 
+[2023-01-11T03:06:26.728Z] 
+[2023-01-11T03:06:26.728Z] Stop (2 ms): Run in container: mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && cat >'/home/ubuntu/.vscode-remote/data/Machine/settings.json' <<'settingsJSON'
+[2023-01-11T03:06:26.729Z] Stop (116566 ms): Resolving Remote

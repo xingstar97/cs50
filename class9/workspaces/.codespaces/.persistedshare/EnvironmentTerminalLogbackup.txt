@@ -1,0 +1,8 @@
+[[1m[38;2;99;143;79m16 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.78.0.
+[[1m[38;2;99;143;79m643 ms[39m[22m] @devcontainers/cli 0.26.0. Node.js v14.21.1. linux 5.4.0-1098-azure x64.
+[[1m[38;2;99;143;79m1586 ms[39m[22m] @devcontainers/cli 0.26.0. Node.js v14.21.1. linux 5.4.0-1098-azure x64.
+[[1m[38;2;99;143;79m2823 ms[39m[22m] @devcontainers/cli 0.26.0. Node.js v14.21.1. linux 5.4.0-1098-azure x64.
+[[1m[38;2;99;143;79m4046 ms[39m[22m] @devcontainers/cli 0.26.0. Node.js v14.21.1. linux 5.4.0-1098-azure x64.
+[1mRunning the postCreateCommand from devcontainer.json...[0m
+
+cp: cannot stat '/home/ubuntu/.ssh/authorized_keys': No such file or directory

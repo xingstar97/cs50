@@ -1,0 +1,1470 @@
+
+=================================================================================
+2023-01-30 22:47:49.813Z: Configuration starting...
+2023-01-30 22:47:49.845Z: Cloning...
+
+=================================================================================
+2023-01-30 22:47:49.950Z: Creating container...
+2023-01-30 22:47:49.968Z: $ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --skip-non-blocking-commands --skip-post-create --expect-existing-container --config "/var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache
+2023-01-30 22:47:50.258Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:55.822Z: Outcome: success User: ubuntu WorkspaceFolder: /workspaces/122420533
+2023-01-30 22:47:55.831Z: devcontainer process exited with exit code 0
+
+=================================================================================
+2023-01-30 22:47:56.187Z: Running blocking commands...
+2023-01-30 22:47:56.204Z: $ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --skip-non-blocking-commands --expect-existing-container --config "/var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache
+2023-01-30 22:47:56.418Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:56.845Z: Outcome: success User: ubuntu WorkspaceFolder: /workspaces/122420533
+2023-01-30 22:47:56.856Z: devcontainer process exited with exit code 0
+
+=================================================================================
+2023-01-30 22:47:56.866Z: Configuring codespace...
+2023-01-30 22:47:57.804Z: @microsoft/vscode-dev-containers-cli 0.80.0.
+2023-01-30 22:47:57.804Z: Start: Resolving Remote
+2023-01-30 22:47:57.804Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.804Z: Stop (43 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.805Z: $ docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.805Z: Stop (33 ms): Run: docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.805Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.805Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.805Z: $ docker buildx version
+2023-01-30 22:47:57.805Z: Stop (105 ms): Run: docker buildx version
+2023-01-30 22:47:57.806Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.806Z: 
+2023-01-30 22:47:57.806Z: Start: Resolving Remote
+2023-01-30 22:47:57.806Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.806Z: Stop (23 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.813Z: $ docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.814Z: Stop (25 ms): Run: docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.819Z: Start: Inspecting container
+2023-01-30 22:47:57.822Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.823Z: Stop (24 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.823Z: Stop (25 ms): Inspecting container
+2023-01-30 22:47:57.823Z: $ /bin/sh
+2023-01-30 22:47:57.823Z: $ uname -m
+2023-01-30 22:47:57.824Z: x86_64
+2023-01-30 22:47:57.824Z: 
+2023-01-30 22:47:57.824Z: Stop (75 ms): Run in container: uname -m
+2023-01-30 22:47:57.824Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.824Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.824Z: NAME="Ubuntu"
+2023-01-30 22:47:57.824Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.824Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.824Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.824Z: ID=ubuntu
+2023-01-30 22:47:57.824Z: ID_LIKE=debian
+2023-01-30 22:47:57.824Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.824Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.824Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.824Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.824Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.824Z: 
+2023-01-30 22:47:57.824Z: Stop (4 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.824Z: $ cat /etc/passwd
+2023-01-30 22:47:57.824Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.824Z: $ test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.824Z: 
+2023-01-30 22:47:57.824Z: 
+2023-01-30 22:47:57.824Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.824Z: $ test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.824Z: 
+2023-01-30 22:47:57.825Z: 
+2023-01-30 22:47:57.825Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.825Z: Stop (174 ms): Resolving Remote
+2023-01-30 22:47:57.825Z: Stop (705 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.825Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.826Z: Stop (37 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.826Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.826Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.826Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.826Z: Stop (29 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.826Z: Stop (242 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.826Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.826Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.826Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.826Z: Stop (43 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.826Z: Stop (383 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.826Z: Start: Inspecting container
+2023-01-30 22:47:57.826Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.827Z: Stop (144 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.827Z: Stop (145 ms): Inspecting container
+2023-01-30 22:47:57.827Z: $ /bin/sh
+2023-01-30 22:47:57.827Z: $ uname -m
+2023-01-30 22:47:57.827Z: x86_64
+2023-01-30 22:47:57.827Z: 
+2023-01-30 22:47:57.827Z: Stop (107 ms): Run in container: uname -m
+2023-01-30 22:47:57.827Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.827Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.827Z: NAME="Ubuntu"
+2023-01-30 22:47:57.827Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.827Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.827Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.827Z: ID=ubuntu
+2023-01-30 22:47:57.827Z: ID_LIKE=debian
+2023-01-30 22:47:57.827Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.827Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.827Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.827Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.827Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.827Z: 
+2023-01-30 22:47:57.827Z: Stop (2 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.827Z: $ cat /etc/passwd
+2023-01-30 22:47:57.827Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.827Z: $ test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.827Z: 
+2023-01-30 22:47:57.827Z: 
+2023-01-30 22:47:57.827Z: Stop (1 ms): Run in container: test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.827Z: $ test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.827Z: 
+2023-01-30 22:47:57.828Z: 
+2023-01-30 22:47:57.828Z: Exit code 1
+2023-01-30 22:47:57.828Z: Stop (1 ms): Run in container: test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.828Z: $ cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:57.828Z: {
+2023-01-30 22:47:57.828Z: 	"C_Cpp.autocomplete": "Disabled",
+2023-01-30 22:47:57.828Z: 	"C_Cpp.codeFolding": "Disabled",
+2023-01-30 22:47:57.828Z: 	"C_Cpp.debugShortcut": false,
+2023-01-30 22:47:57.828Z: 	"C_Cpp.dimInactiveRegions": false,
+2023-01-30 22:47:57.828Z: 	"C_Cpp.doxygen.generateOnType": false,
+2023-01-30 22:47:57.828Z: 	"C_Cpp.enhancedColorization": "Enabled",
+2023-01-30 22:47:57.828Z: 	"C_Cpp.errorSquiggles": "Disabled",
+2023-01-30 22:47:57.828Z: 	"breadcrumbs.enabled": false,
+2023-01-30 22:47:57.884Z: 	"editor.autoClosingQuotes": "never",
+2023-01-30 22:47:57.884Z: 	"editor.colorDecorators": false,
+2023-01-30 22:47:57.884Z: 	"editor.emptySelectionClipboard": false,
+2023-01-30 22:47:57.884Z: 	"editor.folding": false,
+2023-01-30 22:47:57.884Z: 	"editor.foldingHighlight": false,
+2023-01-30 22:47:57.884Z: 	"editor.guides.indentation": false,
+2023-01-30 22:47:57.884Z: 	"editor.hover.enabled": false,
+2023-01-30 22:47:57.884Z: 	"editor.lightbulb.enabled": false,
+2023-01-30 22:47:57.884Z: 	"editor.matchBrackets": "never",
+2023-01-30 22:47:57.884Z: 	"editor.minimap.enabled": false,
+2023-01-30 22:47:57.884Z: 	"editor.occurrencesHighlight": false,
+2023-01-30 22:47:57.884Z: 	"editor.parameterHints.enabled": false,
+2023-01-30 22:47:57.884Z: 	"editor.quickSuggestions": {
+2023-01-30 22:47:57.884Z: 		"comments": "off",
+2023-01-30 22:47:57.884Z: 		"other": "off",
+2023-01-30 22:47:57.884Z: 		"strings": "off"
+2023-01-30 22:47:57.884Z: 	},
+2023-01-30 22:47:57.884Z: 	"editor.renderWhitespace": "selection",
+2023-01-30 22:47:57.884Z: 	"editor.selectionHighlight": false,
+2023-01-30 22:47:57.884Z: 	"editor.semanticTokenColorCustomizations": {
+2023-01-30 22:47:57.884Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:57.884Z: 			"rules": {
+2023-01-30 22:47:57.884Z: 				"type": "#FF7E76"
+2023-01-30 22:47:57.885Z: 			}
+2023-01-30 22:47:57.885Z: 		},
+2023-01-30 22:47:57.885Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:57.885Z: 			"rules": {
+2023-01-30 22:47:57.885Z: 				"type": "#D2343F"
+2023-01-30 22:47:57.885Z: 			}
+2023-01-30 22:47:57.885Z: 		}
+2023-01-30 22:47:57.885Z: 	},
+2023-01-30 22:47:57.885Z: 	"editor.suggestOnTriggerCharacters": false,
+2023-01-30 22:47:57.885Z: 	"explorer.compactFolders": false,
+2023-01-30 22:47:57.885Z: 	"extension-uninstaller.uninstall": [
+2023-01-30 22:47:57.885Z: 		"github.copilot",
+2023-01-30 22:47:57.885Z: 		"github.copilot-nightly",
+2023-01-30 22:47:57.885Z: 		"ms-toolsai.vscode-jupyter-cell-tags",
+2023-01-30 22:47:57.885Z: 		"tabnine.tabnine-vscode"
+2023-01-30 22:47:57.885Z: 	],
+2023-01-30 22:47:57.885Z: 	"extensions.ignoreRecommendations": true,
+2023-01-30 22:47:57.885Z: 	"files.autoSave": "afterDelay",
+2023-01-30 22:47:57.885Z: 	"files.exclude": {
+2023-01-30 22:47:57.885Z: 		"**/.*": true
+2023-01-30 22:47:57.885Z: 	},
+2023-01-30 22:47:57.885Z: 	"files.trimTrailingWhitespace": true,
+2023-01-30 22:47:57.885Z: 	"files.watcherExclude": {
+2023-01-30 22:47:57.885Z: 		"**/.git/objects/**": true,
+2023-01-30 22:47:57.885Z: 		"**/.git/subtree-cache/**": true,
+2023-01-30 22:47:57.885Z: 		"**/node_modules/*/**": true
+2023-01-30 22:47:57.885Z: 	},
+2023-01-30 22:47:57.885Z: 	"git.autofetch": true,
+2023-01-30 22:47:57.885Z: 	"git.decorations.enabled": false,
+2023-01-30 22:47:57.885Z: 	"git.terminalAuthentication": true,
+2023-01-30 22:47:57.885Z: 	"gitdoc.autoPull": "off",
+2023-01-30 22:47:57.885Z: 	"gitdoc.commitMessageFormat": "ccc, LLL d, kkkk, h:mm a ZZ",
+2023-01-30 22:47:57.885Z: 	"gitdoc.commitValidationLevel": "none",
+2023-01-30 22:47:57.885Z: 	"gitdoc.enabled": true,
+2023-01-30 22:47:57.885Z: 	"gitdoc.pullOnOpen": false,
+2023-01-30 22:47:57.885Z: 	"github.codespaces.devcontainerChangedNotificationStyle": "none",
+2023-01-30 22:47:57.886Z: 	"github.gitAuthentication": true,
+2023-01-30 22:47:57.886Z: 	"html.suggest.html5": false,
+2023-01-30 22:47:57.886Z: 	"java.configuration.runtimes": [
+2023-01-30 22:47:57.886Z: 		{
+2023-01-30 22:47:57.886Z: 			"default": true,
+2023-01-30 22:47:57.886Z: 			"name": "JavaSE-18",
+2023-01-30 22:47:57.886Z: 			"path": "/opt/jdk-18.0.2.1"
+2023-01-30 22:47:57.886Z: 		}
+2023-01-30 22:47:57.886Z: 	],
+2023-01-30 22:47:57.886Z: 	"java.debug.settings.enableRunDebugCodeLens": false,
+2023-01-30 22:47:57.886Z: 	"java.inlayHints.parameterNames.enabled": "none",
+2023-01-30 22:47:57.886Z: 	"java.server.launchMode": "Standard",
+2023-01-30 22:47:57.886Z: 	"javascript.suggest.enabled": false,
+2023-01-30 22:47:57.886Z: 	"javascript.validate.enable": false,
+2023-01-30 22:47:57.886Z: 	"problems.decorations.enabled": false,
+2023-01-30 22:47:57.886Z: 	"remote.otherPortsAttributes": {
+2023-01-30 22:47:57.886Z: 		"onAutoForward": "silent"
+2023-01-30 22:47:57.886Z: 	},
+2023-01-30 22:47:57.886Z: 	"scm.countBadge": "off",
+2023-01-30 22:47:57.886Z: 	"terminal.integrated.commandsToSkipShell": [
+2023-01-30 22:47:57.886Z: 		"workbench.action.toggleSidebarVisibility"
+2023-01-30 22:47:57.886Z: 	],
+2023-01-30 22:47:57.886Z: 	"terminal.integrated.defaultProfile.linux": "bash",
+2023-01-30 22:47:57.886Z: 	"terminal.integrated.gpuAcceleration": "off",
+2023-01-30 22:47:57.886Z: 	"terminal.integrated.persistentSessionReviveProcess": "never",
+2023-01-30 22:47:57.886Z: 	"terminal.integrated.profiles.linux": {
+2023-01-30 22:47:57.886Z: 		"JavaScript Debug Terminal": null,
+2023-01-30 22:47:57.886Z: 		"bash": {
+2023-01-30 22:47:57.886Z: 			"args": [
+2023-01-30 22:47:57.886Z: 				"--login"
+2023-01-30 22:47:57.886Z: 			],
+2023-01-30 22:47:57.886Z: 			"icon": "terminal",
+2023-01-30 22:47:57.886Z: 			"path": "bash"
+2023-01-30 22:47:57.886Z: 		}
+2023-01-30 22:47:57.886Z: 	},
+2023-01-30 22:47:57.886Z: 	"terminal.integrated.sendKeybindingsToShell": true,
+2023-01-30 22:47:57.886Z: 	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+2023-01-30 22:47:57.887Z: 	"terminal.integrated.shellIntegration.enabled": true,
+2023-01-30 22:47:57.887Z: 	"terminal.integrated.tabs.description": "${task}${separator}${local}",
+2023-01-30 22:47:57.887Z: 	"terminal.integrated.tabs.showActiveTerminal": "never",
+2023-01-30 22:47:57.887Z: 	"window.autoDetectColorScheme": true,
+2023-01-30 22:47:57.887Z: 	"window.commandCenter": false,
+2023-01-30 22:47:57.887Z: 	"workbench.colorCustomizations": {
+2023-01-30 22:47:57.887Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:57.887Z: 			"activityBar.background": "#000",
+2023-01-30 22:47:57.887Z: 			"editor.background": "#000",
+2023-01-30 22:47:57.887Z: 			"editor.lineHighlightBackground": "#0000",
+2023-01-30 22:47:57.887Z: 			"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:57.887Z: 			"editorWhitespace.foreground": "#59A5FC",
+2023-01-30 22:47:57.887Z: 			"panel.background": "#000",
+2023-01-30 22:47:57.887Z: 			"sideBar.background": "#000",
+2023-01-30 22:47:57.887Z: 			"terminal.background": "#000",
+2023-01-30 22:47:57.887Z: 			"terminal.foreground": "#fff"
+2023-01-30 22:47:57.887Z: 		},
+2023-01-30 22:47:57.887Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:57.888Z: 			"activityBar.background": "#fff",
+2023-01-30 22:47:57.888Z: 			"editor.background": "#fff",
+2023-01-30 22:47:57.889Z: 			"editor.lineHighlightBackground": "#fff0",
+2023-01-30 22:47:57.889Z: 			"editor.lineHighlightBorder": "#fff0",
+2023-01-30 22:47:57.889Z: 			"editorWhitespace.foreground": "#1167D7",
+2023-01-30 22:47:57.889Z: 			"panel.background": "#fff",
+2023-01-30 22:47:57.889Z: 			"sideBar.background": "#fff",
+2023-01-30 22:47:57.889Z: 			"terminal.background": "#fff",
+2023-01-30 22:47:57.889Z: 			"terminal.foreground": "#000"
+2023-01-30 22:47:57.889Z: 		},
+2023-01-30 22:47:57.889Z: 		"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:57.889Z: 		"editorError.foreground": "#0000",
+2023-01-30 22:47:57.889Z: 		"editorGutter.addedBackground": "#0000",
+2023-01-30 22:47:57.889Z: 		"editorGutter.deletedBackground": "#0000",
+2023-01-30 22:47:57.889Z: 		"editorGutter.modifiedBackground": "#0000",
+2023-01-30 22:47:57.889Z: 		"editorWarning.foreground": "#0000"
+2023-01-30 22:47:57.889Z: 	},
+2023-01-30 22:47:57.889Z: 	"workbench.editor.closeOnFileDelete": true,
+2023-01-30 22:47:57.889Z: 	"workbench.editor.enablePreview": false,
+2023-01-30 22:47:57.889Z: 	"workbench.editor.untitled.hint": "hidden",
+2023-01-30 22:47:57.889Z: 	"workbench.editorAssociations": {
+2023-01-30 22:47:57.889Z: 		"*.wav": "vscode.audioPreview",
+2023-01-30 22:47:57.889Z: 		"README.md": "lab50.editor"
+2023-01-30 22:47:57.889Z: 	},
+2023-01-30 22:47:57.889Z: 	"workbench.iconTheme": "vs-minimal",
+2023-01-30 22:47:57.889Z: 	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
+2023-01-30 22:47:57.889Z: 	"workbench.preferredLightColorTheme": "GitHub Light Default",
+2023-01-30 22:47:57.889Z: 	"workbench.startupEditor": "none",
+2023-01-30 22:47:57.889Z: 	"workbench.statusBar.visible": false,
+2023-01-30 22:47:57.889Z: 	"workbench.tips.enabled": false,
+2023-01-30 22:47:57.889Z: 	"workbench.welcomePage.walkthroughs.openOnInstall": false
+2023-01-30 22:47:57.889Z: }
+2023-01-30 22:47:57.890Z: 
+2023-01-30 22:47:57.890Z: Stop (8 ms): Run in container: cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:57.890Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.890Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.890Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.890Z: Stop (1751 ms): Resolving Remote
+2023-01-30 22:47:57.890Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.890Z: $ /bin/bash -lic echo -n a280144085491b2c02a33688aa07ec5e; cat /proc/self/environ; echo -n a280144085491b2c02a33688aa07ec5e
+2023-01-30 22:47:57.891Z: Stop (349 ms): Run in container: /bin/bash -lic echo -n a280144085491b2c02a33688aa07ec5e; cat /proc/self/environ; echo -n a280144085491b2c02a33688aa07ec5e
+2023-01-30 22:47:57.891Z: userEnvProbe PATHs:
+2023-01-30 22:47:57.894Z: Probe:     '/home/ubuntu/.gem/bin:/home/ubuntu/.local/bin:/opt/cs50/bin:/opt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+2023-01-30 22:47:57.895Z: Container: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+2023-01-30 22:47:57.895Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.896Z: $ docker buildx version
+2023-01-30 22:47:57.896Z: Stop (74 ms): Run: docker buildx version
+2023-01-30 22:47:57.897Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.897Z: 
+2023-01-30 22:47:57.897Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.897Z: Stop (26 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.897Z: Start: Inspecting container
+2023-01-30 22:47:57.897Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.898Z: Stop (34 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.898Z: Stop (35 ms): Inspecting container
+2023-01-30 22:47:57.898Z: $ /bin/sh
+2023-01-30 22:47:57.899Z: $ uname -m
+2023-01-30 22:47:57.899Z: x86_64
+2023-01-30 22:47:57.899Z: 
+2023-01-30 22:47:57.899Z: Stop (80 ms): Run in container: uname -m
+2023-01-30 22:47:57.899Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.899Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.899Z: NAME="Ubuntu"
+2023-01-30 22:47:57.899Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.899Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.899Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.899Z: ID=ubuntu
+2023-01-30 22:47:57.899Z: ID_LIKE=debian
+2023-01-30 22:47:57.899Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.899Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.899Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.899Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.899Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.899Z: 
+2023-01-30 22:47:57.899Z: Stop (2 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.899Z: $ cat /etc/passwd
+2023-01-30 22:47:57.899Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.899Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.899Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.900Z: $25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.900Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.900Z: $ /bin/bash -lic echo -n 3cf84ecbcf57a037c8e58262b48dd9b1; cat /proc/self/environ; echo -n 3cf84ecbcf57a037c8e58262b48dd9b1
+2023-01-30 22:47:57.900Z: 
+2023-01-30 22:47:57.900Z: 
+2023-01-30 22:47:57.900Z: Exit code 1
+2023-01-30 22:47:57.900Z: && echo '2023-01-11T03:06:25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.900Z: $25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.900Z: 
+2023-01-30 22:47:57.900Z: 
+2023-01-30 22:47:57.900Z: Exit code 1
+2023-01-30 22:47:57.900Z: && echo '2023-01-11T03:06:25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.900Z: $25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.900Z: 
+2023-01-30 22:47:57.900Z: 
+2023-01-30 22:47:57.900Z: Exit code 1
+2023-01-30 22:47:57.900Z: && echo '2023-01-11T03:06:25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.900Z: Stop (686 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.900Z: @microsoft/vscode-dev-containers-cli 0.80.0.
+2023-01-30 22:47:57.900Z: Start: Resolving Remote
+2023-01-30 22:47:57.900Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.900Z: Stop (30 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.900Z: $ docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.901Z: Stop (30 ms): Run: docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.901Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.901Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.901Z: $ docker buildx version
+2023-01-30 22:47:57.901Z: Stop (77 ms): Run: docker buildx version
+2023-01-30 22:47:57.901Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.901Z: 
+2023-01-30 22:47:57.901Z: Start: Resolving Remote
+2023-01-30 22:47:57.901Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.901Z: Stop (28 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.901Z: $ docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.901Z: Stop (30 ms): Run: docker inspect --type container 1b9ed6bfae71
+2023-01-30 22:47:57.901Z: Start: Inspecting container
+2023-01-30 22:47:57.901Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.901Z: Stop (27 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.901Z: Stop (28 ms): Inspecting container
+2023-01-30 22:47:57.901Z: $ /bin/sh
+2023-01-30 22:47:57.901Z: $ uname -m
+2023-01-30 22:47:57.901Z: x86_64
+2023-01-30 22:47:57.901Z: 
+2023-01-30 22:47:57.901Z: Stop (85 ms): Run in container: uname -m
+2023-01-30 22:47:57.901Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.901Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.901Z: NAME="Ubuntu"
+2023-01-30 22:47:57.901Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.901Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.901Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.901Z: ID=ubuntu
+2023-01-30 22:47:57.902Z: ID_LIKE=debian
+2023-01-30 22:47:57.902Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.902Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.902Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.902Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.902Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.902Z: 
+2023-01-30 22:47:57.902Z: Stop (4 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.902Z: $ cat /etc/passwd
+2023-01-30 22:47:57.902Z: Stop (3 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.902Z: $ test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.902Z: 
+2023-01-30 22:47:57.902Z: 
+2023-01-30 22:47:57.902Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.902Z: $ test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.902Z: 
+2023-01-30 22:47:57.902Z: 
+2023-01-30 22:47:57.902Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.902Z: Stop (199 ms): Resolving Remote
+2023-01-30 22:47:57.902Z: Stop (498 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.902Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.902Z: Stop (38 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.902Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.902Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.902Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.903Z: Stop (33 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.903Z: Stop (390 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.903Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.903Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.903Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.903Z: Stop (32 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.903Z: Stop (311 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.903Z: Start: Inspecting container
+2023-01-30 22:47:57.903Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.903Z: Stop (29 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.903Z: Stop (29 ms): Inspecting container
+2023-01-30 22:47:57.903Z: $ /bin/sh
+2023-01-30 22:47:57.903Z: $ uname -m
+2023-01-30 22:47:57.903Z: x86_64
+2023-01-30 22:47:57.903Z: 
+2023-01-30 22:47:57.903Z: Stop (88 ms): Run in container: uname -m
+2023-01-30 22:47:57.903Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.903Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.903Z: NAME="Ubuntu"
+2023-01-30 22:47:57.903Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.903Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.903Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.903Z: ID=ubuntu
+2023-01-30 22:47:57.903Z: ID_LIKE=debian
+2023-01-30 22:47:57.903Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.903Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.904Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.904Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.904Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.904Z: 
+2023-01-30 22:47:57.904Z: Stop (4 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.904Z: $ cat /etc/passwd
+2023-01-30 22:47:57.904Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.904Z: $ test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.904Z: 
+2023-01-30 22:47:57.904Z: 
+2023-01-30 22:47:57.904Z: Stop (1 ms): Run in container: test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.904Z: $ test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.904Z: 
+2023-01-30 22:47:57.904Z: 
+2023-01-30 22:47:57.904Z: Exit code 1
+2023-01-30 22:47:57.904Z: Stop (1 ms): Run in container: test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.904Z: $ cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:57.904Z: {
+2023-01-30 22:47:57.904Z: 	"C_Cpp.autocomplete": "Disabled",
+2023-01-30 22:47:57.904Z: 	"C_Cpp.codeFolding": "Disabled",
+2023-01-30 22:47:57.904Z: 	"C_Cpp.debugShortcut": false,
+2023-01-30 22:47:57.904Z: 	"C_Cpp.dimInactiveRegions": false,
+2023-01-30 22:47:57.904Z: 	"C_Cpp.doxygen.generateOnType": false,
+2023-01-30 22:47:57.904Z: 	"C_Cpp.enhancedColorization": "Enabled",
+2023-01-30 22:47:57.904Z: 	"C_Cpp.errorSquiggles": "Disabled",
+2023-01-30 22:47:57.904Z: 	"breadcrumbs.enabled": false,
+2023-01-30 22:47:57.904Z: 	"editor.autoClosingQuotes": "never",
+2023-01-30 22:47:57.904Z: 	"editor.colorDecorators": false,
+2023-01-30 22:47:57.904Z: 	"editor.emptySelectionClipboard": false,
+2023-01-30 22:47:57.904Z: 	"editor.folding": false,
+2023-01-30 22:47:57.904Z: 	"editor.foldingHighlight": false,
+2023-01-30 22:47:57.904Z: 	"editor.guides.indentation": false,
+2023-01-30 22:47:57.905Z: 	"editor.hover.enabled": false,
+2023-01-30 22:47:57.905Z: 	"editor.lightbulb.enabled": false,
+2023-01-30 22:47:57.905Z: 	"editor.matchBrackets": "never",
+2023-01-30 22:47:57.905Z: 	"editor.minimap.enabled": false,
+2023-01-30 22:47:57.905Z: 	"editor.occurrencesHighlight": false,
+2023-01-30 22:47:57.905Z: 	"editor.parameterHints.enabled": false,
+2023-01-30 22:47:57.905Z: 	"editor.quickSuggestions": {
+2023-01-30 22:47:57.905Z: 		"comments": "off",
+2023-01-30 22:47:57.905Z: 		"other": "off",
+2023-01-30 22:47:57.905Z: 		"strings": "off"
+2023-01-30 22:47:57.905Z: 	},
+2023-01-30 22:47:57.905Z: 	"editor.renderWhitespace": "selection",
+2023-01-30 22:47:57.905Z: 	"editor.selectionHighlight": false,
+2023-01-30 22:47:57.905Z: 	"editor.semanticTokenColorCustomizations": {
+2023-01-30 22:47:57.905Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:57.905Z: 			"rules": {
+2023-01-30 22:47:57.905Z: 				"type": "#FF7E76"
+2023-01-30 22:47:57.905Z: 			}
+2023-01-30 22:47:57.905Z: 		},
+2023-01-30 22:47:57.905Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:57.905Z: 			"rules": {
+2023-01-30 22:47:57.905Z: 				"type": "#D2343F"
+2023-01-30 22:47:57.905Z: 			}
+2023-01-30 22:47:57.905Z: 		}
+2023-01-30 22:47:57.905Z: 	},
+2023-01-30 22:47:57.905Z: 	"editor.suggestOnTriggerCharacters": false,
+2023-01-30 22:47:57.905Z: 	"explorer.compactFolders": false,
+2023-01-30 22:47:57.905Z: 	"extension-uninstaller.uninstall": [
+2023-01-30 22:47:57.905Z: 		"github.copilot",
+2023-01-30 22:47:57.905Z: 		"github.copilot-nightly",
+2023-01-30 22:47:57.905Z: 		"ms-toolsai.vscode-jupyter-cell-tags",
+2023-01-30 22:47:57.905Z: 		"tabnine.tabnine-vscode"
+2023-01-30 22:47:57.905Z: 	],
+2023-01-30 22:47:57.905Z: 	"extensions.ignoreRecommendations": true,
+2023-01-30 22:47:57.905Z: 	"files.autoSave": "afterDelay",
+2023-01-30 22:47:57.905Z: 	"files.exclude": {
+2023-01-30 22:47:57.905Z: 		"**/.*": true
+2023-01-30 22:47:57.906Z: 	},
+2023-01-30 22:47:57.906Z: 	"files.trimTrailingWhitespace": true,
+2023-01-30 22:47:57.906Z: 	"files.watcherExclude": {
+2023-01-30 22:47:57.906Z: 		"**/.git/objects/**": true,
+2023-01-30 22:47:57.906Z: 		"**/.git/subtree-cache/**": true,
+2023-01-30 22:47:57.906Z: 		"**/node_modules/*/**": true
+2023-01-30 22:47:57.906Z: 	},
+2023-01-30 22:47:57.906Z: 	"git.autofetch": true,
+2023-01-30 22:47:57.906Z: 	"git.decorations.enabled": false,
+2023-01-30 22:47:57.906Z: 	"git.terminalAuthentication": true,
+2023-01-30 22:47:57.906Z: 	"gitdoc.autoPull": "off",
+2023-01-30 22:47:57.906Z: 	"gitdoc.commitMessageFormat": "ccc, LLL d, kkkk, h:mm a ZZ",
+2023-01-30 22:47:57.906Z: 	"gitdoc.commitValidationLevel": "none",
+2023-01-30 22:47:57.906Z: 	"gitdoc.enabled": true,
+2023-01-30 22:47:57.906Z: 	"gitdoc.pullOnOpen": false,
+2023-01-30 22:47:57.906Z: 	"github.codespaces.devcontainerChangedNotificationStyle": "none",
+2023-01-30 22:47:57.906Z: 	"github.gitAuthentication": true,
+2023-01-30 22:47:57.906Z: 	"html.suggest.html5": false,
+2023-01-30 22:47:57.906Z: 	"java.configuration.runtimes": [
+2023-01-30 22:47:57.906Z: 		{
+2023-01-30 22:47:57.906Z: 			"default": true,
+2023-01-30 22:47:57.906Z: 			"name": "JavaSE-18",
+2023-01-30 22:47:57.906Z: 			"path": "/opt/jdk-18.0.2.1"
+2023-01-30 22:47:57.906Z: 		}
+2023-01-30 22:47:57.906Z: 	],
+2023-01-30 22:47:57.906Z: 	"java.debug.settings.enableRunDebugCodeLens": false,
+2023-01-30 22:47:57.906Z: 	"java.inlayHints.parameterNames.enabled": "none",
+2023-01-30 22:47:57.906Z: 	"java.server.launchMode": "Standard",
+2023-01-30 22:47:57.906Z: 	"javascript.suggest.enabled": false,
+2023-01-30 22:47:57.906Z: 	"javascript.validate.enable": false,
+2023-01-30 22:47:57.906Z: 	"problems.decorations.enabled": false,
+2023-01-30 22:47:57.906Z: 	"remote.otherPortsAttributes": {
+2023-01-30 22:47:57.906Z: 		"onAutoForward": "silent"
+2023-01-30 22:47:57.906Z: 	},
+2023-01-30 22:47:57.906Z: 	"scm.countBadge": "off",
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.commandsToSkipShell": [
+2023-01-30 22:47:57.907Z: 		"workbench.action.toggleSidebarVisibility"
+2023-01-30 22:47:57.907Z: 	],
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.defaultProfile.linux": "bash",
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.gpuAcceleration": "off",
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.persistentSessionReviveProcess": "never",
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.profiles.linux": {
+2023-01-30 22:47:57.907Z: 		"JavaScript Debug Terminal": null,
+2023-01-30 22:47:57.907Z: 		"bash": {
+2023-01-30 22:47:57.907Z: 			"args": [
+2023-01-30 22:47:57.907Z: 				"--login"
+2023-01-30 22:47:57.907Z: 			],
+2023-01-30 22:47:57.907Z: 			"icon": "terminal",
+2023-01-30 22:47:57.907Z: 			"path": "bash"
+2023-01-30 22:47:57.907Z: 		}
+2023-01-30 22:47:57.907Z: 	},
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.sendKeybindingsToShell": true,
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.shellIntegration.enabled": true,
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.tabs.description": "${task}${separator}${local}",
+2023-01-30 22:47:57.907Z: 	"terminal.integrated.tabs.showActiveTerminal": "never",
+2023-01-30 22:47:57.907Z: 	"window.autoDetectColorScheme": true,
+2023-01-30 22:47:57.907Z: 	"window.commandCenter": false,
+2023-01-30 22:47:57.907Z: 	"workbench.colorCustomizations": {
+2023-01-30 22:47:57.907Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:57.907Z: 			"activityBar.background": "#000",
+2023-01-30 22:47:57.907Z: 			"editor.background": "#000",
+2023-01-30 22:47:57.907Z: 			"editor.lineHighlightBackground": "#0000",
+2023-01-30 22:47:57.907Z: 			"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:57.907Z: 			"editorWhitespace.foreground": "#59A5FC",
+2023-01-30 22:47:57.907Z: 			"panel.background": "#000",
+2023-01-30 22:47:57.907Z: 			"sideBar.background": "#000",
+2023-01-30 22:47:57.907Z: 			"terminal.background": "#000",
+2023-01-30 22:47:57.907Z: 			"terminal.foreground": "#fff"
+2023-01-30 22:47:57.907Z: 		},
+2023-01-30 22:47:57.908Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:57.908Z: 			"activityBar.background": "#fff",
+2023-01-30 22:47:57.908Z: 			"editor.background": "#fff",
+2023-01-30 22:47:57.908Z: 			"editor.lineHighlightBackground": "#fff0",
+2023-01-30 22:47:57.908Z: 			"editor.lineHighlightBorder": "#fff0",
+2023-01-30 22:47:57.908Z: 			"editorWhitespace.foreground": "#1167D7",
+2023-01-30 22:47:57.908Z: 			"panel.background": "#fff",
+2023-01-30 22:47:57.908Z: 			"sideBar.background": "#fff",
+2023-01-30 22:47:57.908Z: 			"terminal.background": "#fff",
+2023-01-30 22:47:57.908Z: 			"terminal.foreground": "#000"
+2023-01-30 22:47:57.908Z: 		},
+2023-01-30 22:47:57.908Z: 		"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:57.908Z: 		"editorError.foreground": "#0000",
+2023-01-30 22:47:57.908Z: 		"editorGutter.addedBackground": "#0000",
+2023-01-30 22:47:57.908Z: 		"editorGutter.deletedBackground": "#0000",
+2023-01-30 22:47:57.908Z: 		"editorGutter.modifiedBackground": "#0000",
+2023-01-30 22:47:57.908Z: 		"editorWarning.foreground": "#0000"
+2023-01-30 22:47:57.908Z: 	},
+2023-01-30 22:47:57.908Z: 	"workbench.editor.closeOnFileDelete": true,
+2023-01-30 22:47:57.908Z: 	"workbench.editor.enablePreview": false,
+2023-01-30 22:47:57.908Z: 	"workbench.editor.untitled.hint": "hidden",
+2023-01-30 22:47:57.908Z: 	"workbench.editorAssociations": {
+2023-01-30 22:47:57.908Z: 		"*.wav": "vscode.audioPreview",
+2023-01-30 22:47:57.908Z: 		"README.md": "lab50.editor"
+2023-01-30 22:47:57.908Z: 	},
+2023-01-30 22:47:57.908Z: 	"workbench.iconTheme": "vs-minimal",
+2023-01-30 22:47:57.908Z: 	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
+2023-01-30 22:47:57.908Z: 	"workbench.preferredLightColorTheme": "GitHub Light Default",
+2023-01-30 22:47:57.908Z: 	"workbench.startupEditor": "none",
+2023-01-30 22:47:57.908Z: 	"workbench.statusBar.visible": false,
+2023-01-30 22:47:57.908Z: 	"workbench.tips.enabled": false,
+2023-01-30 22:47:57.908Z: 	"workbench.welcomePage.walkthroughs.openOnInstall": false
+2023-01-30 22:47:57.908Z: }
+2023-01-30 22:47:57.908Z: 
+2023-01-30 22:47:57.908Z: Stop (8 ms): Run in container: cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:57.908Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.909Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.909Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.909Z: Stop (1458 ms): Resolving Remote
+2023-01-30 22:47:57.909Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.909Z: $ /bin/bash -lic echo -n 6a11ded67b153fd9d268d41473e1d364; cat /proc/self/environ; echo -n 6a11ded67b153fd9d268d41473e1d364
+2023-01-30 22:47:57.909Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.909Z: $ docker buildx version
+2023-01-30 22:47:57.909Z: Stop (100 ms): Run: docker buildx version
+2023-01-30 22:47:57.909Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.909Z: 
+2023-01-30 22:47:57.909Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.909Z: Stop (48 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.909Z: Start: Inspecting container
+2023-01-30 22:47:57.909Z: $ docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.909Z: Stop (33 ms): Run: docker inspect --type container 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331
+2023-01-30 22:47:57.909Z: Stop (33 ms): Inspecting container
+2023-01-30 22:47:57.909Z: $ /bin/sh
+2023-01-30 22:47:57.909Z: $ uname -m
+2023-01-30 22:47:57.909Z: x86_64
+2023-01-30 22:47:57.909Z: 
+2023-01-30 22:47:57.909Z: Stop (145 ms): Run in container: uname -m
+2023-01-30 22:47:57.909Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.909Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.909Z: NAME="Ubuntu"
+2023-01-30 22:47:57.909Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.909Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.909Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.909Z: ID=ubuntu
+2023-01-30 22:47:57.910Z: ID_LIKE=debian
+2023-01-30 22:47:57.910Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.910Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.910Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.910Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.910Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.910Z: 
+2023-01-30 22:47:57.910Z: Stop (11 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.910Z: $ cat /etc/passwd
+2023-01-30 22:47:57.910Z: Stop (6 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.910Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.910Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.910Z: $25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.910Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.910Z: $ /bin/bash -lic echo -n a9e4d3b8e44ea8e04e6ce54ac6847eda; cat /proc/self/environ; echo -n a9e4d3b8e44ea8e04e6ce54ac6847eda
+2023-01-30 22:47:57.910Z: 
+2023-01-30 22:47:57.910Z: 
+2023-01-30 22:47:57.910Z: Exit code 1
+2023-01-30 22:47:57.910Z: && echo '2023-01-11T03:06:25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.910Z: $25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.910Z: 
+2023-01-30 22:47:57.910Z: 
+2023-01-30 22:47:57.910Z: Exit code 1
+2023-01-30 22:47:57.911Z: && echo '2023-01-11T03:06:25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.911Z: $25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.911Z: 
+2023-01-30 22:47:57.911Z: 
+2023-01-30 22:47:57.911Z: Exit code 1
+2023-01-30 22:47:57.911Z: && echo '2023-01-11T03:06:25.021740433Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.911Z: Stop (804 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 1b9ed6bfae71cff0f2e737a79755acd2b1f4aa5b1c0aafc7cac47a176da63331 --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.911Z: @microsoft/vscode-dev-containers-cli 0.80.0.
+2023-01-30 22:47:57.911Z: Start: Resolving Remote
+2023-01-30 22:47:57.911Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.911Z: Stop (29 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.911Z: $ docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.911Z: Stop (29 ms): Run: docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.911Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.911Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.911Z: $ docker buildx version
+2023-01-30 22:47:57.911Z: Stop (88 ms): Run: docker buildx version
+2023-01-30 22:47:57.911Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.911Z: 
+2023-01-30 22:47:57.911Z: Start: Resolving Remote
+2023-01-30 22:47:57.911Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.911Z: Stop (27 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.911Z: $ docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.911Z: Stop (26 ms): Run: docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.912Z: Start: Inspecting container
+2023-01-30 22:47:57.912Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.912Z: Stop (27 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.912Z: Stop (28 ms): Inspecting container
+2023-01-30 22:47:57.912Z: $ /bin/sh
+2023-01-30 22:47:57.912Z: $ uname -m
+2023-01-30 22:47:57.912Z: x86_64
+2023-01-30 22:47:57.912Z: 
+2023-01-30 22:47:57.912Z: Stop (78 ms): Run in container: uname -m
+2023-01-30 22:47:57.912Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.912Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.912Z: NAME="Ubuntu"
+2023-01-30 22:47:57.912Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.912Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.912Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.912Z: ID=ubuntu
+2023-01-30 22:47:57.912Z: ID_LIKE=debian
+2023-01-30 22:47:57.912Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.912Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.912Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.912Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.912Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.912Z: 
+2023-01-30 22:47:57.912Z: Stop (35 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.912Z: $ cat /etc/passwd
+2023-01-30 22:47:57.912Z: Stop (3 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.912Z: $ test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.912Z: 
+2023-01-30 22:47:57.912Z: 
+2023-01-30 22:47:57.912Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.912Z: $ test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.913Z: 
+2023-01-30 22:47:57.913Z: 
+2023-01-30 22:47:57.913Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.913Z: Stop (217 ms): Resolving Remote
+2023-01-30 22:47:57.913Z: Stop (542 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.913Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.913Z: Stop (102 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.913Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.913Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.913Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.913Z: Stop (35 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.913Z: Stop (254 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.913Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.913Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.913Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.913Z: Stop (54 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.913Z: Stop (343 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.913Z: Start: Inspecting container
+2023-01-30 22:47:57.913Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.913Z: Stop (45 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.914Z: Stop (46 ms): Inspecting container
+2023-01-30 22:47:57.914Z: $ /bin/sh
+2023-01-30 22:47:57.914Z: $ uname -m
+2023-01-30 22:47:57.914Z: x86_64
+2023-01-30 22:47:57.914Z: 
+2023-01-30 22:47:57.914Z: Stop (114 ms): Run in container: uname -m
+2023-01-30 22:47:57.914Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.914Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.914Z: NAME="Ubuntu"
+2023-01-30 22:47:57.914Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.914Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.914Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.914Z: ID=ubuntu
+2023-01-30 22:47:57.914Z: ID_LIKE=debian
+2023-01-30 22:47:57.914Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.914Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.914Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.914Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.914Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.914Z: 
+2023-01-30 22:47:57.914Z: Stop (12 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.914Z: $ cat /etc/passwd
+2023-01-30 22:47:57.914Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.914Z: $ test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.914Z: 
+2023-01-30 22:47:57.914Z: 
+2023-01-30 22:47:57.914Z: Stop (2 ms): Run in container: test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.914Z: $ test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.914Z: 
+2023-01-30 22:47:57.914Z: 
+2023-01-30 22:47:57.915Z: Stop (3 ms): Run in container: test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.915Z: $ mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && cat >'/home/ubuntu/.vscode-remote/data/Machine/settings.json' <<'settingsJSON'
+2023-01-30 22:47:57.915Z: 
+2023-01-30 22:47:57.915Z: 
+2023-01-30 22:47:57.915Z: Stop (4 ms): Run in container: mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && cat >'/home/ubuntu/.vscode-remote/data/Machine/settings.json' <<'settingsJSON'
+2023-01-30 22:47:57.915Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.915Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.915Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.915Z: Stop (1508 ms): Resolving Remote
+2023-01-30 22:47:57.915Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.915Z: $ /bin/bash -lic echo -n 8924adf3e4916d89bfb0c47ca22076ec; cat /proc/self/environ; echo -n 8924adf3e4916d89bfb0c47ca22076ec
+2023-01-30 22:47:57.915Z: Stop (526 ms): Run in container: /bin/bash -lic echo -n 8924adf3e4916d89bfb0c47ca22076ec; cat /proc/self/environ; echo -n 8924adf3e4916d89bfb0c47ca22076ec
+2023-01-30 22:47:57.915Z: userEnvProbe PATHs:
+2023-01-30 22:47:57.915Z: Probe:     '/home/ubuntu/.gem/bin:/home/ubuntu/.local/bin:/opt/cs50/bin:/opt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+2023-01-30 22:47:57.915Z: Container: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+2023-01-30 22:47:57.915Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.915Z: $ docker buildx version
+2023-01-30 22:47:57.915Z: Stop (288 ms): Run: docker buildx version
+2023-01-30 22:47:57.915Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.915Z: 
+2023-01-30 22:47:57.915Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.915Z: Stop (49 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.915Z: Start: Inspecting container
+2023-01-30 22:47:57.915Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.915Z: Stop (49 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.916Z: Stop (51 ms): Inspecting container
+2023-01-30 22:47:57.916Z: $ /bin/sh
+2023-01-30 22:47:57.916Z: $ uname -m
+2023-01-30 22:47:57.916Z: x86_64
+2023-01-30 22:47:57.916Z: 
+2023-01-30 22:47:57.916Z: Stop (148 ms): Run in container: uname -m
+2023-01-30 22:47:57.916Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.916Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.916Z: NAME="Ubuntu"
+2023-01-30 22:47:57.917Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.917Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.918Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.918Z: ID=ubuntu
+2023-01-30 22:47:57.918Z: ID_LIKE=debian
+2023-01-30 22:47:57.918Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.918Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.918Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.918Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.918Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.918Z: 
+2023-01-30 22:47:57.918Z: Stop (5 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.918Z: $ cat /etc/passwd
+2023-01-30 22:47:57.918Z: Stop (3 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.918Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.918Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.918Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.918Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.918Z: $ /bin/bash -lic echo -n 42a9d2aacfd77ee747052c9a472d32ab; cat /proc/self/environ; echo -n 42a9d2aacfd77ee747052c9a472d32ab
+2023-01-30 22:47:57.919Z: 
+2023-01-30 22:47:57.920Z: 
+2023-01-30 22:47:57.920Z: Exit code 1
+2023-01-30 22:47:57.920Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.920Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.920Z: 
+2023-01-30 22:47:57.920Z: 
+2023-01-30 22:47:57.920Z: Exit code 1
+2023-01-30 22:47:57.920Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.920Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.920Z: 
+2023-01-30 22:47:57.920Z: 
+2023-01-30 22:47:57.920Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.920Z: Running the postCreateCommand from devcontainer.json...
+2023-01-30 22:47:57.920Z: 
+2023-01-30 22:47:57.920Z: Stop (404 ms): Run in container: /bin/bash -lic echo -n 42a9d2aacfd77ee747052c9a472d32ab; cat /proc/self/environ; echo -n 42a9d2aacfd77ee747052c9a472d32ab
+2023-01-30 22:47:57.920Z: userEnvProbe PATHs:
+2023-01-30 22:47:57.920Z: Probe:     '/home/ubuntu/.gem/bin:/home/ubuntu/.local/bin:/opt/cs50/bin:/opt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+2023-01-30 22:47:57.920Z: Container: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+2023-01-30 22:47:57.920Z: $ /bin/sh -c /opt/cs50/bin/postCreateCommand
+2023-01-30 22:47:57.920Z: cp: cannot stat '/home/ubuntu/.ssh/authorized_keys': No such file or directory
+2023-01-30 22:47:57.920Z: Stop (214 ms): Run in container: /bin/sh -c /opt/cs50/bin/postCreateCommand
+2023-01-30 22:47:57.920Z: Stop (1802 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.920Z: @microsoft/vscode-dev-containers-cli 0.80.0.
+2023-01-30 22:47:57.920Z: Start: Resolving Remote
+2023-01-30 22:47:57.921Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.921Z: Stop (26 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.921Z: $ docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.921Z: Stop (42 ms): Run: docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.921Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.921Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.921Z: $ docker buildx version
+2023-01-30 22:47:57.921Z: Stop (88 ms): Run: docker buildx version
+2023-01-30 22:47:57.921Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.921Z: 
+2023-01-30 22:47:57.921Z: Start: Resolving Remote
+2023-01-30 22:47:57.921Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.921Z: Stop (25 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.921Z: $ docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.921Z: Stop (23 ms): Run: docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.921Z: Start: Inspecting container
+2023-01-30 22:47:57.921Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.921Z: Stop (22 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.921Z: Stop (23 ms): Inspecting container
+2023-01-30 22:47:57.921Z: $ /bin/sh
+2023-01-30 22:47:57.921Z: $ uname -m
+2023-01-30 22:47:57.921Z: x86_64
+2023-01-30 22:47:57.921Z: 
+2023-01-30 22:47:57.921Z: Stop (74 ms): Run in container: uname -m
+2023-01-30 22:47:57.921Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.921Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.922Z: NAME="Ubuntu"
+2023-01-30 22:47:57.922Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.922Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.922Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.922Z: ID=ubuntu
+2023-01-30 22:47:57.922Z: ID_LIKE=debian
+2023-01-30 22:47:57.922Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.922Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.922Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.922Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.922Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.922Z: 
+2023-01-30 22:47:57.922Z: Stop (2 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.922Z: $ cat /etc/passwd
+2023-01-30 22:47:57.922Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.922Z: $ test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.922Z: 
+2023-01-30 22:47:57.922Z: 
+2023-01-30 22:47:57.922Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.922Z: $ test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.922Z: 
+2023-01-30 22:47:57.927Z: 
+2023-01-30 22:47:57.928Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.928Z: Stop (170 ms): Resolving Remote
+2023-01-30 22:47:57.928Z: Stop (467 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.928Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: Stop (28 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.929Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.929Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: Stop (28 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: Stop (228 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:57.929Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.929Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.929Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: Stop (28 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: Stop (230 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:57.929Z: Start: Inspecting container
+2023-01-30 22:47:57.929Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: Stop (24 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.929Z: Stop (24 ms): Inspecting container
+2023-01-30 22:47:57.929Z: $ /bin/sh
+2023-01-30 22:47:57.929Z: $ uname -m
+2023-01-30 22:47:57.929Z: x86_64
+2023-01-30 22:47:57.929Z: 
+2023-01-30 22:47:57.929Z: Stop (85 ms): Run in container: uname -m
+2023-01-30 22:47:57.929Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.930Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.930Z: NAME="Ubuntu"
+2023-01-30 22:47:57.930Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.930Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.930Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.930Z: ID=ubuntu
+2023-01-30 22:47:57.930Z: ID_LIKE=debian
+2023-01-30 22:47:57.930Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.930Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.930Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.930Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.930Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.930Z: 
+2023-01-30 22:47:57.930Z: Stop (2 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.930Z: $ cat /etc/passwd
+2023-01-30 22:47:57.930Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.930Z: $ test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.930Z: 
+2023-01-30 22:47:57.930Z: 
+2023-01-30 22:47:57.930Z: Stop (1 ms): Run in container: test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:57.930Z: $ test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.930Z: 
+2023-01-30 22:47:57.930Z: 
+2023-01-30 22:47:57.930Z: Exit code 1
+2023-01-30 22:47:57.930Z: Stop (1 ms): Run in container: test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:57.930Z: $ cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:57.930Z: {
+2023-01-30 22:47:57.930Z: 	"C_Cpp.autocomplete": "Disabled",
+2023-01-30 22:47:57.931Z: 	"C_Cpp.codeFolding": "Disabled",
+2023-01-30 22:47:57.931Z: 	"C_Cpp.debugShortcut": false,
+2023-01-30 22:47:57.931Z: 	"C_Cpp.dimInactiveRegions": false,
+2023-01-30 22:47:57.931Z: 	"C_Cpp.doxygen.generateOnType": false,
+2023-01-30 22:47:57.931Z: 	"C_Cpp.enhancedColorization": "Enabled",
+2023-01-30 22:47:57.931Z: 	"C_Cpp.errorSquiggles": "Disabled",
+2023-01-30 22:47:57.931Z: 	"breadcrumbs.enabled": false,
+2023-01-30 22:47:57.931Z: 	"editor.autoClosingQuotes": "never",
+2023-01-30 22:47:57.931Z: 	"editor.colorDecorators": false,
+2023-01-30 22:47:57.931Z: 	"editor.emptySelectionClipboard": false,
+2023-01-30 22:47:57.931Z: 	"editor.folding": false,
+2023-01-30 22:47:57.931Z: 	"editor.foldingHighlight": false,
+2023-01-30 22:47:57.931Z: 	"editor.guides.indentation": false,
+2023-01-30 22:47:57.931Z: 	"editor.hover.enabled": false,
+2023-01-30 22:47:57.931Z: 	"editor.lightbulb.enabled": false,
+2023-01-30 22:47:57.931Z: 	"editor.matchBrackets": "never",
+2023-01-30 22:47:57.931Z: 	"editor.minimap.enabled": false,
+2023-01-30 22:47:57.931Z: 	"editor.occurrencesHighlight": false,
+2023-01-30 22:47:57.931Z: 	"editor.parameterHints.enabled": false,
+2023-01-30 22:47:57.931Z: 	"editor.quickSuggestions": {
+2023-01-30 22:47:57.931Z: 		"comments": "off",
+2023-01-30 22:47:57.931Z: 		"other": "off",
+2023-01-30 22:47:57.931Z: 		"strings": "off"
+2023-01-30 22:47:57.931Z: 	},
+2023-01-30 22:47:57.931Z: 	"editor.renderWhitespace": "selection",
+2023-01-30 22:47:57.931Z: 	"editor.selectionHighlight": false,
+2023-01-30 22:47:57.931Z: 	"editor.semanticTokenColorCustomizations": {
+2023-01-30 22:47:57.931Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:57.931Z: 			"rules": {
+2023-01-30 22:47:57.931Z: 				"type": "#FF7E76"
+2023-01-30 22:47:57.931Z: 			}
+2023-01-30 22:47:57.931Z: 		},
+2023-01-30 22:47:57.931Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:57.932Z: 			"rules": {
+2023-01-30 22:47:57.932Z: 				"type": "#D2343F"
+2023-01-30 22:47:57.932Z: 			}
+2023-01-30 22:47:57.932Z: 		}
+2023-01-30 22:47:57.932Z: 	},
+2023-01-30 22:47:57.932Z: 	"editor.suggestOnTriggerCharacters": false,
+2023-01-30 22:47:57.932Z: 	"explorer.compactFolders": false,
+2023-01-30 22:47:57.932Z: 	"extension-uninstaller.uninstall": [
+2023-01-30 22:47:57.932Z: 		"github.copilot",
+2023-01-30 22:47:57.932Z: 		"github.copilot-nightly",
+2023-01-30 22:47:57.932Z: 		"ms-toolsai.vscode-jupyter-cell-tags",
+2023-01-30 22:47:57.932Z: 		"tabnine.tabnine-vscode"
+2023-01-30 22:47:57.932Z: 	],
+2023-01-30 22:47:57.932Z: 	"extensions.ignoreRecommendations": true,
+2023-01-30 22:47:57.932Z: 	"files.autoSave": "afterDelay",
+2023-01-30 22:47:57.932Z: 	"files.exclude": {
+2023-01-30 22:47:57.932Z: 		"**/.*": true
+2023-01-30 22:47:57.932Z: 	},
+2023-01-30 22:47:57.932Z: 	"files.trimTrailingWhitespace": true,
+2023-01-30 22:47:57.932Z: 	"files.watcherExclude": {
+2023-01-30 22:47:57.932Z: 		"**/.git/objects/**": true,
+2023-01-30 22:47:57.932Z: 		"**/.git/subtree-cache/**": true,
+2023-01-30 22:47:57.932Z: 		"**/node_modules/*/**": true
+2023-01-30 22:47:57.932Z: 	},
+2023-01-30 22:47:57.932Z: 	"git.autofetch": true,
+2023-01-30 22:47:57.932Z: 	"git.decorations.enabled": false,
+2023-01-30 22:47:57.932Z: 	"git.terminalAuthentication": true,
+2023-01-30 22:47:57.932Z: 	"gitdoc.autoPull": "off",
+2023-01-30 22:47:57.932Z: 	"gitdoc.commitMessageFormat": "ccc, LLL d, kkkk, h:mm a ZZ",
+2023-01-30 22:47:57.932Z: 	"gitdoc.commitValidationLevel": "none",
+2023-01-30 22:47:57.932Z: 	"gitdoc.enabled": true,
+2023-01-30 22:47:57.932Z: 	"gitdoc.pullOnOpen": false,
+2023-01-30 22:47:57.932Z: 	"github.codespaces.devcontainerChangedNotificationStyle": "none",
+2023-01-30 22:47:57.933Z: 	"github.gitAuthentication": true,
+2023-01-30 22:47:57.933Z: 	"html.suggest.html5": false,
+2023-01-30 22:47:57.933Z: 	"java.configuration.runtimes": [
+2023-01-30 22:47:57.933Z: 		{
+2023-01-30 22:47:57.933Z: 			"default": true,
+2023-01-30 22:47:57.933Z: 			"name": "JavaSE-18",
+2023-01-30 22:47:57.933Z: 			"path": "/opt/jdk-18.0.2.1"
+2023-01-30 22:47:57.933Z: 		}
+2023-01-30 22:47:57.933Z: 	],
+2023-01-30 22:47:57.933Z: 	"java.debug.settings.enableRunDebugCodeLens": false,
+2023-01-30 22:47:57.933Z: 	"java.inlayHints.parameterNames.enabled": "none",
+2023-01-30 22:47:57.933Z: 	"java.server.launchMode": "Standard",
+2023-01-30 22:47:57.933Z: 	"javascript.suggest.enabled": false,
+2023-01-30 22:47:57.933Z: 	"javascript.validate.enable": false,
+2023-01-30 22:47:57.933Z: 	"problems.decorations.enabled": false,
+2023-01-30 22:47:57.933Z: 	"remote.otherPortsAttributes": {
+2023-01-30 22:47:57.933Z: 		"onAutoForward": "silent"
+2023-01-30 22:47:57.933Z: 	},
+2023-01-30 22:47:57.933Z: 	"scm.countBadge": "off",
+2023-01-30 22:47:57.933Z: 	"terminal.integrated.commandsToSkipShell": [
+2023-01-30 22:47:57.933Z: 		"workbench.action.toggleSidebarVisibility"
+2023-01-30 22:47:57.933Z: 	],
+2023-01-30 22:47:57.933Z: 	"terminal.integrated.defaultProfile.linux": "bash",
+2023-01-30 22:47:57.933Z: 	"terminal.integrated.gpuAcceleration": "off",
+2023-01-30 22:47:57.933Z: 	"terminal.integrated.persistentSessionReviveProcess": "never",
+2023-01-30 22:47:57.933Z: 	"terminal.integrated.profiles.linux": {
+2023-01-30 22:47:57.933Z: 		"JavaScript Debug Terminal": null,
+2023-01-30 22:47:57.933Z: 		"bash": {
+2023-01-30 22:47:57.933Z: 			"args": [
+2023-01-30 22:47:57.933Z: 				"--login"
+2023-01-30 22:47:57.933Z: 			],
+2023-01-30 22:47:57.933Z: 			"icon": "terminal",
+2023-01-30 22:47:57.933Z: 			"path": "bash"
+2023-01-30 22:47:57.933Z: 		}
+2023-01-30 22:47:57.933Z: 	},
+2023-01-30 22:47:57.934Z: 	"terminal.integrated.sendKeybindingsToShell": true,
+2023-01-30 22:47:57.934Z: 	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+2023-01-30 22:47:57.934Z: 	"terminal.integrated.shellIntegration.enabled": true,
+2023-01-30 22:47:57.934Z: 	"terminal.integrated.tabs.description": "${task}${separator}${local}",
+2023-01-30 22:47:57.934Z: 	"terminal.integrated.tabs.showActiveTerminal": "never",
+2023-01-30 22:47:57.934Z: 	"window.autoDetectColorScheme": true,
+2023-01-30 22:47:57.934Z: 	"window.commandCenter": false,
+2023-01-30 22:47:57.934Z: 	"workbench.colorCustomizations": {
+2023-01-30 22:47:57.934Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:57.934Z: 			"activityBar.background": "#000",
+2023-01-30 22:47:57.934Z: 			"editor.background": "#000",
+2023-01-30 22:47:57.934Z: 			"editor.lineHighlightBackground": "#0000",
+2023-01-30 22:47:57.934Z: 			"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:57.934Z: 			"editorWhitespace.foreground": "#59A5FC",
+2023-01-30 22:47:57.934Z: 			"panel.background": "#000",
+2023-01-30 22:47:57.934Z: 			"sideBar.background": "#000",
+2023-01-30 22:47:57.934Z: 			"terminal.background": "#000",
+2023-01-30 22:47:57.934Z: 			"terminal.foreground": "#fff"
+2023-01-30 22:47:57.934Z: 		},
+2023-01-30 22:47:57.934Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:57.935Z: 			"activityBar.background": "#fff",
+2023-01-30 22:47:57.935Z: 			"editor.background": "#fff",
+2023-01-30 22:47:57.935Z: 			"editor.lineHighlightBackground": "#fff0",
+2023-01-30 22:47:57.935Z: 			"editor.lineHighlightBorder": "#fff0",
+2023-01-30 22:47:57.936Z: 			"editorWhitespace.foreground": "#1167D7",
+2023-01-30 22:47:57.936Z: 			"panel.background": "#fff",
+2023-01-30 22:47:57.936Z: 			"sideBar.background": "#fff",
+2023-01-30 22:47:57.936Z: 			"terminal.background": "#fff",
+2023-01-30 22:47:57.937Z: 			"terminal.foreground": "#000"
+2023-01-30 22:47:57.937Z: 		},
+2023-01-30 22:47:57.937Z: 		"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:57.937Z: 		"editorError.foreground": "#0000",
+2023-01-30 22:47:57.937Z: 		"editorGutter.addedBackground": "#0000",
+2023-01-30 22:47:57.938Z: 		"editorGutter.deletedBackground": "#0000",
+2023-01-30 22:47:57.938Z: 		"editorGutter.modifiedBackground": "#0000",
+2023-01-30 22:47:57.938Z: 		"editorWarning.foreground": "#0000"
+2023-01-30 22:47:57.939Z: 	},
+2023-01-30 22:47:57.939Z: 	"workbench.editor.closeOnFileDelete": true,
+2023-01-30 22:47:57.939Z: 	"workbench.editor.enablePreview": false,
+2023-01-30 22:47:57.939Z: 	"workbench.editor.untitled.hint": "hidden",
+2023-01-30 22:47:57.940Z: 	"workbench.editorAssociations": {
+2023-01-30 22:47:57.940Z: 		"*.wav": "vscode.audioPreview",
+2023-01-30 22:47:57.940Z: 		"README.md": "lab50.editor"
+2023-01-30 22:47:57.940Z: 	},
+2023-01-30 22:47:57.941Z: 	"workbench.iconTheme": "vs-minimal",
+2023-01-30 22:47:57.941Z: 	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
+2023-01-30 22:47:57.941Z: 	"workbench.preferredLightColorTheme": "GitHub Light Default",
+2023-01-30 22:47:57.941Z: 	"workbench.startupEditor": "none",
+2023-01-30 22:47:57.941Z: 	"workbench.statusBar.visible": false,
+2023-01-30 22:47:57.941Z: 	"workbench.tips.enabled": false,
+2023-01-30 22:47:57.941Z: 	"workbench.welcomePage.walkthroughs.openOnInstall": false
+2023-01-30 22:47:57.942Z: }
+2023-01-30 22:47:57.942Z: 
+2023-01-30 22:47:57.942Z: Stop (24 ms): Run in container: cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:57.942Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.942Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.942Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.944Z: Stop (1183 ms): Resolving Remote
+2023-01-30 22:47:57.944Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.944Z: $ /bin/bash -lic echo -n 5d344bca5cf0c861c4faf64324ef2273; cat /proc/self/environ; echo -n 5d344bca5cf0c861c4faf64324ef2273
+2023-01-30 22:47:57.944Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.944Z: $ docker buildx version
+2023-01-30 22:47:57.945Z: Stop (90 ms): Run: docker buildx version
+2023-01-30 22:47:57.945Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.945Z: 
+2023-01-30 22:47:57.946Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.946Z: Stop (26 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.946Z: Start: Inspecting container
+2023-01-30 22:47:57.946Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.946Z: Stop (24 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.946Z: Stop (25 ms): Inspecting container
+2023-01-30 22:47:57.946Z: $ /bin/sh
+2023-01-30 22:47:57.946Z: $ uname -m
+2023-01-30 22:47:57.947Z: x86_64
+2023-01-30 22:47:57.947Z: 
+2023-01-30 22:47:57.947Z: Stop (121 ms): Run in container: uname -m
+2023-01-30 22:47:57.947Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.947Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.947Z: NAME="Ubuntu"
+2023-01-30 22:47:57.947Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.947Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.948Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.948Z: ID=ubuntu
+2023-01-30 22:47:57.948Z: ID_LIKE=debian
+2023-01-30 22:47:57.948Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.948Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.948Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.948Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.948Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.948Z: 
+2023-01-30 22:47:57.948Z: Stop (4 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.948Z: $ cat /etc/passwd
+2023-01-30 22:47:57.948Z: Stop (1 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.948Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:57.948Z: userEnvProbe: not found in cache
+2023-01-30 22:47:57.948Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.948Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:57.949Z: $ /bin/bash -lic echo -n dda6a3f9f7e5e7aa8b5b1e03abb95719; cat /proc/self/environ; echo -n dda6a3f9f7e5e7aa8b5b1e03abb95719
+2023-01-30 22:47:57.949Z: 
+2023-01-30 22:47:57.949Z: 
+2023-01-30 22:47:57.949Z: Exit code 1
+2023-01-30 22:47:57.949Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:47:57.949Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.949Z: 
+2023-01-30 22:47:57.949Z: 
+2023-01-30 22:47:57.949Z: Exit code 1
+2023-01-30 22:47:57.949Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:47:57.949Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.949Z: 
+2023-01-30 22:47:57.949Z: 
+2023-01-30 22:47:57.949Z: Exit code 1
+2023-01-30 22:47:57.949Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:47:57.949Z: Stop (594 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:57.949Z: @microsoft/vscode-dev-containers-cli 0.80.0.
+2023-01-30 22:47:57.949Z: Start: Resolving Remote
+2023-01-30 22:47:57.949Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.949Z: Stop (30 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.950Z: $ docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.950Z: Stop (27 ms): Run: docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.950Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.950Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:57.950Z: $ docker buildx version
+2023-01-30 22:47:57.950Z: Stop (76 ms): Run: docker buildx version
+2023-01-30 22:47:57.950Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:57.950Z: 
+2023-01-30 22:47:57.950Z: Start: Resolving Remote
+2023-01-30 22:47:57.950Z: $ docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.950Z: Stop (26 ms): Run: docker ps -q -a --filter label=Type=codespaces
+2023-01-30 22:47:57.950Z: $ docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.950Z: Stop (26 ms): Run: docker inspect --type container 44eb5ce64231
+2023-01-30 22:47:57.950Z: Start: Inspecting container
+2023-01-30 22:47:57.950Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.950Z: Stop (25 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.950Z: Stop (26 ms): Inspecting container
+2023-01-30 22:47:57.950Z: $ /bin/sh
+2023-01-30 22:47:57.950Z: $ uname -m
+2023-01-30 22:47:57.950Z: x86_64
+2023-01-30 22:47:57.950Z: 
+2023-01-30 22:47:57.950Z: Stop (80 ms): Run in container: uname -m
+2023-01-30 22:47:57.950Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.951Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:57.951Z: NAME="Ubuntu"
+2023-01-30 22:47:57.951Z: VERSION_ID="22.04"
+2023-01-30 22:47:57.951Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:57.951Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:57.951Z: ID=ubuntu
+2023-01-30 22:47:57.951Z: ID_LIKE=debian
+2023-01-30 22:47:57.951Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:57.951Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:57.951Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:57.951Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:57.951Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:57.951Z: 
+2023-01-30 22:47:57.951Z: Stop (3 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:57.951Z: $ cat /etc/passwd
+2023-01-30 22:47:57.951Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:57.951Z: $ test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.951Z: 
+2023-01-30 22:47:57.951Z: 
+2023-01-30 22:47:57.951Z: Stop (1 ms): Run in container: test -f '/var/vscode-remote/.patchEtcEnvironmentMarker'
+2023-01-30 22:47:57.951Z: $ test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.951Z: 
+2023-01-30 22:47:57.951Z: 
+2023-01-30 22:47:57.951Z: Stop (2 ms): Run in container: test -f '/var/vscode-remote/.patchEtcProfileMarker'
+2023-01-30 22:47:57.951Z: Stop (185 ms): Resolving Remote
+2023-01-30 22:47:57.951Z: Stop (487 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --expect-existing-container --mount type=bind,source=/tmp/vsch-root,target=/vscode --skip-post-create --update-remote-user-uid-default never --mount-workspace-git-root false
+2023-01-30 22:47:57.951Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.951Z: Stop (31 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:57.952Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:58.199Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:58.200Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:58.230Z: Stop (43 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:58.260Z: Stop (475 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --mount-workspace-git-root false
+2023-01-30 22:47:58.261Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:58.595Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:58.595Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:58.651Z: Stop (49 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:58.679Z: Stop (419 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --include-merged-configuration --mount-workspace-git-root false
+2023-01-30 22:47:58.679Z: Start: Inspecting container
+2023-01-30 22:47:58.679Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:58.707Z: Stop (44 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:58.707Z: Stop (44 ms): Inspecting container
+2023-01-30 22:47:58.707Z: $ /bin/sh
+2023-01-30 22:47:58.707Z: $ uname -m
+2023-01-30 22:47:58.855Z: x86_64
+2023-01-30 22:47:58.855Z: 
+2023-01-30 22:47:58.855Z: Stop (135 ms): Run in container: uname -m
+2023-01-30 22:47:58.855Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:58.855Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:47:58.855Z: NAME="Ubuntu"
+2023-01-30 22:47:58.855Z: VERSION_ID="22.04"
+2023-01-30 22:47:58.855Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:47:58.855Z: VERSION_CODENAME=jammy
+2023-01-30 22:47:58.855Z: ID=ubuntu
+2023-01-30 22:47:58.855Z: ID_LIKE=debian
+2023-01-30 22:47:58.856Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:47:58.856Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:47:58.856Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:47:58.856Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:47:58.856Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:47:58.856Z: 
+2023-01-30 22:47:58.856Z: Stop (3 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:47:58.856Z: $ cat /etc/passwd
+2023-01-30 22:47:58.856Z: Stop (2 ms): Run in container: cat /etc/passwd
+2023-01-30 22:47:58.856Z: $ test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:58.856Z: 
+2023-01-30 22:47:58.856Z: 
+2023-01-30 22:47:58.856Z: Stop (2 ms): Run in container: test -d /home/ubuntu/.vscode-remote
+2023-01-30 22:47:58.856Z: $ test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:58.856Z: 
+2023-01-30 22:47:58.856Z: 
+2023-01-30 22:47:58.856Z: Exit code 1
+2023-01-30 22:47:58.856Z: Stop (1 ms): Run in container: test ! -f '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/ubuntu/.vscode-remote/data/Machine' && { > '/home/ubuntu/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+2023-01-30 22:47:58.856Z: $ cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:58.911Z: {
+2023-01-30 22:47:58.911Z: 	"C_Cpp.autocomplete": "Disabled",
+2023-01-30 22:47:58.911Z: 	"C_Cpp.codeFolding": "Disabled",
+2023-01-30 22:47:58.911Z: 	"C_Cpp.debugShortcut": false,
+2023-01-30 22:47:58.911Z: 	"C_Cpp.dimInactiveRegions": false,
+2023-01-30 22:47:58.911Z: 	"C_Cpp.doxygen.generateOnType": false,
+2023-01-30 22:47:58.911Z: 	"C_Cpp.enhancedColorization": "Enabled",
+2023-01-30 22:47:58.911Z: 	"C_Cpp.errorSquiggles": "Disabled",
+2023-01-30 22:47:58.911Z: 	"breadcrumbs.enabled": false,
+2023-01-30 22:47:58.911Z: 	"editor.autoClosingQuotes": "never",
+2023-01-30 22:47:58.911Z: 	"editor.colorDecorators": false,
+2023-01-30 22:47:58.911Z: 	"editor.emptySelectionClipboard": false,
+2023-01-30 22:47:58.911Z: 	"editor.folding": false,
+2023-01-30 22:47:58.911Z: 	"editor.foldingHighlight": false,
+2023-01-30 22:47:58.911Z: 	"editor.guides.indentation": false,
+2023-01-30 22:47:58.911Z: 	"editor.hover.enabled": false,
+2023-01-30 22:47:58.911Z: 	"editor.lightbulb.enabled": false,
+2023-01-30 22:47:58.911Z: 	"editor.matchBrackets": "never",
+2023-01-30 22:47:58.911Z: 	"editor.minimap.enabled": false,
+2023-01-30 22:47:58.911Z: 	"editor.occurrencesHighlight": false,
+2023-01-30 22:47:58.911Z: 	"editor.parameterHints.enabled": false,
+2023-01-30 22:47:58.911Z: 	"editor.quickSuggestions": {
+2023-01-30 22:47:58.911Z: 		"comments": "off",
+2023-01-30 22:47:58.912Z: 		"other": "off",
+2023-01-30 22:47:58.912Z: 		"strings": "off"
+2023-01-30 22:47:58.912Z: 	},
+2023-01-30 22:47:58.912Z: 	"editor.renderWhitespace": "selection",
+2023-01-30 22:47:58.912Z: 	"editor.selectionHighlight": false,
+2023-01-30 22:47:58.912Z: 	"editor.semanticTokenColorCustomizations": {
+2023-01-30 22:47:58.912Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:58.912Z: 			"rules": {
+2023-01-30 22:47:58.912Z: 				"type": "#FF7E76"
+2023-01-30 22:47:58.912Z: 			}
+2023-01-30 22:47:58.912Z: 		},
+2023-01-30 22:47:58.912Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:58.912Z: 			"rules": {
+2023-01-30 22:47:58.912Z: 				"type": "#D2343F"
+2023-01-30 22:47:58.912Z: 			}
+2023-01-30 22:47:58.912Z: 		}
+2023-01-30 22:47:58.912Z: 	},
+2023-01-30 22:47:58.912Z: 	"editor.suggestOnTriggerCharacters": false,
+2023-01-30 22:47:58.912Z: 	"explorer.compactFolders": false,
+2023-01-30 22:47:58.912Z: 	"extension-uninstaller.uninstall": [
+2023-01-30 22:47:58.912Z: 		"github.copilot",
+2023-01-30 22:47:58.912Z: 		"github.copilot-nightly",
+2023-01-30 22:47:58.912Z: 		"ms-toolsai.vscode-jupyter-cell-tags",
+2023-01-30 22:47:58.912Z: 		"tabnine.tabnine-vscode"
+2023-01-30 22:47:58.912Z: 	],
+2023-01-30 22:47:58.912Z: 	"extensions.ignoreRecommendations": true,
+2023-01-30 22:47:58.912Z: 	"files.autoSave": "afterDelay",
+2023-01-30 22:47:58.912Z: 	"files.exclude": {
+2023-01-30 22:47:58.912Z: 		"**/.*": true
+2023-01-30 22:47:58.912Z: 	},
+2023-01-30 22:47:58.912Z: 	"files.trimTrailingWhitespace": true,
+2023-01-30 22:47:58.912Z: 	"files.watcherExclude": {
+2023-01-30 22:47:58.912Z: 		"**/.git/objects/**": true,
+2023-01-30 22:47:58.912Z: 		"**/.git/subtree-cache/**": true,
+2023-01-30 22:47:58.912Z: 		"**/node_modules/*/**": true
+2023-01-30 22:47:58.912Z: 	},
+2023-01-30 22:47:58.912Z: 	"git.autofetch": true,
+2023-01-30 22:47:58.912Z: 	"git.decorations.enabled": false,
+2023-01-30 22:47:58.912Z: 	"git.terminalAuthentication": true,
+2023-01-30 22:47:58.912Z: 	"gitdoc.autoPull": "off",
+2023-01-30 22:47:58.912Z: 	"gitdoc.commitMessageFormat": "ccc, LLL d, kkkk, h:mm a ZZ",
+2023-01-30 22:47:58.912Z: 	"gitdoc.commitValidationLevel": "none",
+2023-01-30 22:47:58.912Z: 	"gitdoc.enabled": true,
+2023-01-30 22:47:58.913Z: 	"gitdoc.pullOnOpen": false,
+2023-01-30 22:47:58.913Z: 	"github.codespaces.devcontainerChangedNotificationStyle": "none",
+2023-01-30 22:47:58.913Z: 	"github.gitAuthentication": true,
+2023-01-30 22:47:58.913Z: 	"html.suggest.html5": false,
+2023-01-30 22:47:58.913Z: 	"java.configuration.runtimes": [
+2023-01-30 22:47:58.913Z: 		{
+2023-01-30 22:47:58.913Z: 			"default": true,
+2023-01-30 22:47:58.913Z: 			"name": "JavaSE-18",
+2023-01-30 22:47:58.913Z: 			"path": "/opt/jdk-18.0.2.1"
+2023-01-30 22:47:58.913Z: 		}
+2023-01-30 22:47:58.913Z: 	],
+2023-01-30 22:47:58.913Z: 	"java.debug.settings.enableRunDebugCodeLens": false,
+2023-01-30 22:47:58.913Z: 	"java.inlayHints.parameterNames.enabled": "none",
+2023-01-30 22:47:58.913Z: 	"java.server.launchMode": "Standard",
+2023-01-30 22:47:58.913Z: 	"javascript.suggest.enabled": false,
+2023-01-30 22:47:58.913Z: 	"javascript.validate.enable": false,
+2023-01-30 22:47:58.913Z: 	"problems.decorations.enabled": false,
+2023-01-30 22:47:58.913Z: 	"remote.otherPortsAttributes": {
+2023-01-30 22:47:58.913Z: 		"onAutoForward": "silent"
+2023-01-30 22:47:58.913Z: 	},
+2023-01-30 22:47:58.913Z: 	"scm.countBadge": "off",
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.commandsToSkipShell": [
+2023-01-30 22:47:58.913Z: 		"workbench.action.toggleSidebarVisibility"
+2023-01-30 22:47:58.913Z: 	],
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.defaultProfile.linux": "bash",
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.gpuAcceleration": "off",
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.persistentSessionReviveProcess": "never",
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.profiles.linux": {
+2023-01-30 22:47:58.913Z: 		"JavaScript Debug Terminal": null,
+2023-01-30 22:47:58.913Z: 		"bash": {
+2023-01-30 22:47:58.913Z: 			"args": [
+2023-01-30 22:47:58.913Z: 				"--login"
+2023-01-30 22:47:58.913Z: 			],
+2023-01-30 22:47:58.913Z: 			"icon": "terminal",
+2023-01-30 22:47:58.913Z: 			"path": "bash"
+2023-01-30 22:47:58.913Z: 		}
+2023-01-30 22:47:58.913Z: 	},
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.sendKeybindingsToShell": true,
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+2023-01-30 22:47:58.913Z: 	"terminal.integrated.shellIntegration.enabled": true,
+2023-01-30 22:47:58.914Z: 	"terminal.integrated.tabs.description": "${task}${separator}${local}",
+2023-01-30 22:47:58.914Z: 	"terminal.integrated.tabs.showActiveTerminal": "never",
+2023-01-30 22:47:58.914Z: 	"window.autoDetectColorScheme": true,
+2023-01-30 22:47:58.914Z: 	"window.commandCenter": false,
+2023-01-30 22:47:58.914Z: 	"workbench.colorCustomizations": {
+2023-01-30 22:47:58.914Z: 		"[GitHub Dark Default]": {
+2023-01-30 22:47:58.914Z: 			"activityBar.background": "#000",
+2023-01-30 22:47:58.914Z: 			"editor.background": "#000",
+2023-01-30 22:47:58.914Z: 			"editor.lineHighlightBackground": "#0000",
+2023-01-30 22:47:58.914Z: 			"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:58.914Z: 			"editorWhitespace.foreground": "#59A5FC",
+2023-01-30 22:47:58.914Z: 			"panel.background": "#000",
+2023-01-30 22:47:58.914Z: 			"sideBar.background": "#000",
+2023-01-30 22:47:58.914Z: 			"terminal.background": "#000",
+2023-01-30 22:47:58.914Z: 			"terminal.foreground": "#fff"
+2023-01-30 22:47:58.914Z: 		},
+2023-01-30 22:47:58.914Z: 		"[GitHub Light Default]": {
+2023-01-30 22:47:58.915Z: 			"activityBar.background": "#fff",
+2023-01-30 22:47:58.915Z: 			"editor.background": "#fff",
+2023-01-30 22:47:58.915Z: 			"editor.lineHighlightBackground": "#fff0",
+2023-01-30 22:47:58.915Z: 			"editor.lineHighlightBorder": "#fff0",
+2023-01-30 22:47:58.915Z: 			"editorWhitespace.foreground": "#1167D7",
+2023-01-30 22:47:58.915Z: 			"panel.background": "#fff",
+2023-01-30 22:47:58.915Z: 			"sideBar.background": "#fff",
+2023-01-30 22:47:58.915Z: 			"terminal.background": "#fff",
+2023-01-30 22:47:58.915Z: 			"terminal.foreground": "#000"
+2023-01-30 22:47:58.916Z: 		},
+2023-01-30 22:47:58.916Z: 		"editor.lineHighlightBorder": "#0000",
+2023-01-30 22:47:58.916Z: 		"editorError.foreground": "#0000",
+2023-01-30 22:47:58.916Z: 		"editorGutter.addedBackground": "#0000",
+2023-01-30 22:47:58.916Z: 		"editorGutter.deletedBackground": "#0000",
+2023-01-30 22:47:58.916Z: 		"editorGutter.modifiedBackground": "#0000",
+2023-01-30 22:47:58.916Z: 		"editorWarning.foreground": "#0000"
+2023-01-30 22:47:58.916Z: 	},
+2023-01-30 22:47:58.916Z: 	"workbench.editor.closeOnFileDelete": true,
+2023-01-30 22:47:58.916Z: 	"workbench.editor.enablePreview": false,
+2023-01-30 22:47:58.916Z: 	"workbench.editor.untitled.hint": "hidden",
+2023-01-30 22:47:58.916Z: 	"workbench.editorAssociations": {
+2023-01-30 22:47:58.916Z: 		"*.wav": "vscode.audioPreview",
+2023-01-30 22:47:58.916Z: 		"README.md": "lab50.editor"
+2023-01-30 22:47:58.916Z: 	},
+2023-01-30 22:47:58.916Z: 	"workbench.iconTheme": "vs-minimal",
+2023-01-30 22:47:58.916Z: 	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
+2023-01-30 22:47:58.916Z: 	"workbench.preferredLightColorTheme": "GitHub Light Default",
+2023-01-30 22:47:58.916Z: 	"workbench.startupEditor": "none",
+2023-01-30 22:47:58.916Z: 	"workbench.statusBar.visible": false,
+2023-01-30 22:47:58.916Z: 	"workbench.tips.enabled": false,
+2023-01-30 22:47:58.917Z: 	"workbench.welcomePage.walkthroughs.openOnInstall": false
+2023-01-30 22:47:58.917Z: }
+2023-01-30 22:47:58.917Z: 
+2023-01-30 22:47:58.917Z: Stop (30 ms): Run in container: cat /home/ubuntu/.vscode-remote/data/Machine/settings.json
+2023-01-30 22:47:58.917Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:47:58.917Z: userEnvProbe: not found in cache
+2023-01-30 22:47:58.917Z: $ /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+2023-01-30 22:47:58.917Z: Stop (1719 ms): Resolving Remote
+2023-01-30 22:47:58.917Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:47:58.917Z: $ /bin/bash -lic echo -n 0104b82076b277f0a102246c437eff93; cat /proc/self/environ; echo -n 0104b82076b277f0a102246c437eff93
+2023-01-30 22:47:59.419Z: @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+2023-01-30 22:47:59.419Z: $ docker buildx version
+2023-01-30 22:47:59.670Z: Stop (240 ms): Run: docker buildx version
+2023-01-30 22:47:59.670Z: github.com/docker/buildx 0.10.0+azure-1 876462897612d36679153c3414f7689626251501
+2023-01-30 22:47:59.671Z: 
+2023-01-30 22:47:59.671Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:59.727Z: Stop (55 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:59.755Z: Start: Inspecting container
+2023-01-30 22:47:59.755Z: $ docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:59.811Z: Stop (58 ms): Run: docker inspect --type container 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe
+2023-01-30 22:47:59.811Z: Stop (59 ms): Inspecting container
+2023-01-30 22:47:59.811Z: $ /bin/sh
+2023-01-30 22:47:59.839Z: $ uname -m
+2023-01-30 22:48:00.011Z: x86_64
+2023-01-30 22:48:00.041Z: 
+2023-01-30 22:48:00.041Z: Stop (197 ms): Run in container: uname -m
+2023-01-30 22:48:00.041Z: $ (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:48:00.041Z: PRETTY_NAME="Ubuntu 22.04.1 LTS"
+2023-01-30 22:48:00.041Z: NAME="Ubuntu"
+2023-01-30 22:48:00.041Z: VERSION_ID="22.04"
+2023-01-30 22:48:00.041Z: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+2023-01-30 22:48:00.041Z: VERSION_CODENAME=jammy
+2023-01-30 22:48:00.041Z: ID=ubuntu
+2023-01-30 22:48:00.041Z: ID_LIKE=debian
+2023-01-30 22:48:00.041Z: HOME_URL="https://www.ubuntu.com/"
+2023-01-30 22:48:00.041Z: SUPPORT_URL="https://help.ubuntu.com/"
+2023-01-30 22:48:00.042Z: BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+2023-01-30 22:48:00.042Z: PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+2023-01-30 22:48:00.042Z: UBUNTU_CODENAME=jammy
+2023-01-30 22:48:00.042Z: 
+2023-01-30 22:48:00.042Z: Stop (7 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+2023-01-30 22:48:00.042Z: $ cat /etc/passwd
+2023-01-30 22:48:00.042Z: Stop (5 ms): Run in container: cat /etc/passwd
+2023-01-30 22:48:00.042Z: userEnvProbe: loginInteractiveShell (default)
+2023-01-30 22:48:00.042Z: userEnvProbe: not found in cache
+2023-01-30 22:48:00.042Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:48:00.042Z: userEnvProbe shell: /bin/bash
+2023-01-30 22:48:00.042Z: $ /bin/bash -lic echo -n ed1bb28ff5ea8b8fa49a7cd8ebdbd197; cat /proc/self/environ; echo -n ed1bb28ff5ea8b8fa49a7cd8ebdbd197
+2023-01-30 22:48:00.080Z: 
+2023-01-30 22:48:00.080Z: 
+2023-01-30 22:48:00.080Z: Exit code 1
+2023-01-30 22:48:00.080Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.onCreateCommandMarker'
+2023-01-30 22:48:00.080Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:48:00.080Z: 
+2023-01-30 22:48:00.080Z: 
+2023-01-30 22:48:00.080Z: Exit code 1
+2023-01-30 22:48:00.080Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.updateContentCommandMarker'
+2023-01-30 22:48:00.080Z: $43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:48:00.113Z: 
+2023-01-30 22:48:00.113Z: 
+2023-01-30 22:48:00.113Z: Exit code 1
+2023-01-30 22:48:00.113Z: && echo '2023-01-30T18:36:43.994391003Z' > '/home/ubuntu/.vscode-remote/data/Machine/.postCreateCommandMarker'
+2023-01-30 22:48:00.113Z: Stop (1225 ms): Run: /usr/bin/node /usr/lib/node_modules/@microsoft/vscode-dev-containers-cli/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /tmp --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --workspace-folder /var/lib/docker/codespacemount/workspace/122420533 --id-label Type=codespaces --container-id 44eb5ce64231c958c29e73f3b9fd953f0679ad5187a5a43502133964fff6c2fe --log-level info --log-format json --config /var/lib/docker/codespacemount/workspace/122420533/.devcontainer.json --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --skip-post-attach --prebuild false --stop-for-personalization true --mount-workspace-git-root false
+
+=================================================================================
+2023-01-30 22:48:00.263Z: Finished configuring codespace.

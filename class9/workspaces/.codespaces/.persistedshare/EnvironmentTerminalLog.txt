@@ -1,0 +1,28 @@
+[[1m[38;2;99;143;79m9 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.80.0.
+[[1m[38;2;99;143;79m503 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1032 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1402 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m2168 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m19 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.80.0.
+[[1m[38;2;99;143;79m302 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m970 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1284 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1790 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m8 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.80.0.
+[[1m[38;2;99;143;79m280 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m930 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1247 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m2087 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[1mRunning the postCreateCommand from devcontainer.json...[0m
+
+cp: cannot stat '/home/ubuntu/.ssh/authorized_keys': No such file or directory
+[[1m[38;2;99;143;79m7 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.80.0.
+[[1m[38;2;99;143;79m285 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m773 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1001 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1458 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m9 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.80.0.
+[[1m[38;2;99;143;79m281 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1017 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m1427 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
+[[1m[38;2;99;143;79m2253 ms[39m[22m] @devcontainers/cli 0.28.0. Node.js v14.21.2. linux 5.4.0-1100-azure x64.
