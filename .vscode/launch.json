@@ -5,7 +5,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["speller","texts/lalaland"],
+            "args":["./texts/lalaland.txt"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

@@ -28,9 +28,10 @@ bool check(const char *word)
     //word = tolower(word);
     //tolower convert a char to a char
     int i = hash(word);
-    node *tmp = malloc(sizeof(node));
-    tmp = table[i];
-    while(tmp->next!=NULL)
+    // node *tmp = malloc(sizeof(node))
+    //if tmp = table[i], free tmp means free table[i], and did not free original malloc(sizeof(node))
+    node* tmp = table[i];
+    while(tmp !=NULL)
     {
         if (strcasecmp(word, tmp->word)==0)
         {
@@ -41,7 +42,6 @@ bool check(const char *word)
             tmp = tmp->next;
         }
     }
-    free(tmp);
     return false;
 }
 
@@ -50,6 +50,13 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     return toupper(word[0]) - 'A';
+    // unsigned long hash = 5381;
+    // int c;
+    // while ((c = toupper(*word++)))
+    // {
+    //     hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+    // }
+    // return hash % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -78,6 +85,7 @@ bool load(const char *dictionary)
             //use strcpy instead of = ?
             tmp->next = table[i];
             table[i]=tmp;
+        
         }
             // node *curr = table[i];
             // if (curr == NULL)
@@ -107,17 +115,16 @@ unsigned int size(void)
 {
     // TODO
     int count = 0;
-    node *tmp = malloc(sizeof(node));
+    node *tmp;
     for (int i = 0; i < N; i++)
     {
         tmp = table[i];
-        if (tmp != NULL)
+        while (tmp != NULL)
         {
             tmp = tmp->next;
             count++;
         }
     }
-    free(tmp);
     return count;
 }
 
@@ -127,6 +134,7 @@ bool unload(void)
     // TODO
     for (int i = 0; i < N; i++)
     {
+        int a = i;
         while (table[i] != NULL)
         {
             node *tmp = table[i]->next;
