@@ -14,4 +14,11 @@ def get_height():
     # n is declared within loop, but still can be used outsise the loop,
     # it can be used anywhere within the get_height function
 
+# alternatively, just return n
+# def get_height():
+#     while True:
+#         n = get_int("Height: ")
+#         if n > 0:
+#             return n
+
 main()

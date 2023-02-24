@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    buy
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="symbol" type="text">
+        </div>
+        <div class="mb-3">
+            <!-- WRONG: type as text -->
+            <!-- <input autocomplete="off" class="form-control mx-auto w-auto" id="share" name="share" placeholder="Share" type="text"> -->
+            <!-- type as number only applies to client not server (only html knows it is number) -->
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="share" name="share" min =1 placeholder="Share" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">buy</button>
+    </form>
+{% endblock %}

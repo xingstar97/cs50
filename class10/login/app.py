@@ -29,7 +29,7 @@ def login():
 def logout():
     session["name"] = None
     return redirect("/")
-
-@app.route("/index")
-def index2():
-    return render_template("index.html")
+    
+# @app.route("/index")
+# def index2():
+#     return render_template("index.html")

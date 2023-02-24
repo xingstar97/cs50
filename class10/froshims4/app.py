@@ -33,7 +33,8 @@ def deregister():
 def register():
 
     # Validate submission
-    name, sport = populateValue(request.form)
+    name = request.form.get("name")
+    sport = request.form.get("sport")
     if not name or sport not in SPORTS:
         return render_template("failure.html")
 
@@ -43,11 +44,6 @@ def register():
     # Confirm registration
     return redirect("/registrants")
 
-
-def populateValue(form):
-    name = form.get("name")
-    sport = form.get("sport")
-    return name, sport
 
 @app.route("/registrants")
 def registrants():

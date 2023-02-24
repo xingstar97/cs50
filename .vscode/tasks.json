@@ -10,7 +10,8 @@
                 "${fileDirname}/**.c",
                 //"${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lcs50"
             ],
             "options": {
                 "cwd": "${fileDirname}"

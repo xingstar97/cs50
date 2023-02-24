@@ -21,3 +21,20 @@ except ValueError:
     exit()
 
 print(a+b)
+
+# when input is cat, it will lead to a name error, as it can not pass int cat to a
+try:
+    a = int(input("a: "))
+except ValueError:
+    print("That is not an int!")
+
+print(a)
+
+
+# if somthing goes wrong do except, if nothing goes wrong, do print a
+try:
+    a = int(input("a: "))
+except ValueError:
+    print("That is not an int!")
+else:
+    print(a)
